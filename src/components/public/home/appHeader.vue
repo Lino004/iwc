@@ -36,27 +36,31 @@
           </div>
         </div>
       </div>
-      <div class="bg-white -bottom-2 w-full absolute p-10 rounded-2xl flex justify-between">
+      <div class="bg-white -bottom-2 w-full absolute rounded-2xl flex justify-between px-10">
         <div class="flex items-center space-x-8 text-lg font-bold text-primary">
-          <router-link
+          <div
             v-for="(item, i) in menu"
             :key="i"
-            :to="{ name: item.to }"
-            tag="a"
-            class="relative" @mouseover.native="item.show = true"
-            @mouseleave.native="item.show = false">
-            <span class="hover:text-secondary">{{ item.label }}</span>
-            <div class="absolute top-24 bg-white rounded-xl p-5 space-y-2 flex flex-col" v-if="item.children.length && item.show">
-              <router-link
-                v-for="(child, index) in item.children"
-                :key="index + 'child'"
-                :to="{ name: child.to }"
-                tag="a"
-                class="hover:text-secondary truncate">
-                {{ child.label }}
-              </router-link>
+            class="relative inline-block dropdown py-10">
+            <router-link
+              :to="{ name: item.to }"
+              tag="a"
+              class="relative">
+              <span class="hover:text-secondary">{{ item.label }}</span>
+            </router-link>
+            <div class="animated fadeIn dropdown-content absolute hidden" v-if="item.children.length">
+              <div class="bg-white rounded-xl p-5 mt-14 space-y-2 flex flex-col">
+                <router-link
+                  v-for="(child, index) in item.children"
+                  :key="index + 'child'"
+                  :to="{ name: child.to }"
+                  tag="a"
+                  class="hover:text-secondary truncate">
+                  {{ child.label }}
+                </router-link>
+              </div>
             </div>
-          </router-link>
+          </div>
         </div>
         <div class="flex items-center text-lg space-x-8">
           <router-link
@@ -139,5 +143,5 @@ export default {
 </script>
 
 <style>
-
+.dropdown:hover .dropdown-content {display: block;}
 </style>
