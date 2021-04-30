@@ -24,11 +24,23 @@ module.exports = {
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']
     },
+    fontSize: {
+      ...defaultTheme.fontSize,
+      '42px': '2.625rem'
+    },
     fill: theme => ({
       primary: '#152237',
       secondary: '#C29C4A'
     }),
     stroke: theme => ({
+      primary: '#152237',
+      secondary: '#C29C4A'
+    }),
+    boxShadow: {
+      box1: '0px 3px 6px #00000029'
+    },
+    borderColor: theme => ({
+      ...theme('colors'),
       primary: '#152237',
       secondary: '#C29C4A'
     }),
