@@ -32,20 +32,20 @@
         </div>
 
         <div class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-40 leading-9">
-          <p class="text-body1 mb-12">
+          <p class="text-lg mb-12">
             IWC Wellness and Preventive Consultancy Inc ., was established in
             2016 with a commitment to provide and deliver the best oral care
             every Filipino deserves. It was created to provide a link to various
             dental professionals and an easy access to affordable dental health
             plans fit for everyone’s unique needs.
           </p>
-          <p class="text-body1 mb-12">
+          <p class="text-lg mb-12">
             The company is managed by a group of dedicated professionals and
             powered by an upright system that makes the link between its members
             and partners fast and easy, making every client-dentist transaction
             exceptionally convenient.
           </p>
-          <p class="text-body1 mb-12">
+          <p class="text-lg mb-12">
             The idea of having someone handle the marketing aspects of dental
             services was taking off in the dental industry. Dentists wanted to
             focus on patients and not on everyday aspects of promoting their
@@ -63,8 +63,8 @@
         <div class="bg-yellow col-span-1"></div>
         <div class="col-span-12 shadow-xl flex">
           <div class="w-4/5 ml-5 self-center">
-            <h3 class="text-h3 font-bold mb-3">Vision</h3>
-            <p class="text-body1 leading-9">
+            <h3 class="text-4xl font-bold mb-3">Vision</h3>
+            <p class="text-lg leading-9">
               To be the preferred provider of carefully-packaged, affordable
               dental care plans fit for every Filipino’s exclusive needs and
               remove the barrier that seems to get in the way in their ability
@@ -88,8 +88,8 @@
         </div>
         <div class="col-span-12 shadow-xl flex">
           <div class="w-4/5 ml-5 self-center">
-            <h3 class="text-h3 font-bold mb-3">Mission</h3>
-            <p class="text-body1 leading-9">
+            <h3 class="text-4xl font-bold mb-3">Mission</h3>
+            <p class="text-lg leading-9">
               IWC Wellness remains committed to providing the finest avenue
               where its clients can explore options for the best dental
               experience , while giving its dental partners a strong boost their
@@ -114,7 +114,7 @@
         />
       </div>
       <div class="w-1/2 mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
-        <p class="text-body1 leading-9">
+        <p class="text-lg leading-9">
           IWC Wellness and Preventive Consultancy Inc ., was established in 2016
           with a commitment to provide and deliver the best oral care every
           Filipino deserves. It was created to provide a link to various dental
@@ -126,7 +126,7 @@
       >
         <div v-for="item in team" :key="item.name">
           <img :src="item.src" :alt="item.name" />
-          <p class="text-center text-body1 leading-9 mt-4">{{ item.name }}</p>
+          <p class="text-center text-lg leading-9 mt-4">{{ item.name }}</p>
         </div>
       </div>
     </section>
@@ -143,7 +143,7 @@
         />
       </div>
       <div class="w-1/2 mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
-        <p class="text-body1 leading-9">
+        <p class="text-lg leading-9">
           IWC Wellness and Preventive Consultancy Inc ., was established in 2016
           with a commitment to provide and deliver the best oral care every
           Filipino deserves. It was created to provide a link to various dental
@@ -155,7 +155,7 @@
       >
         <div v-for="item in management" :key="item.name">
           <img :src="item.src" :alt="item.name" />
-          <p class="text-center text-body1 leading-9 mt-4">{{ item.name }}</p>
+          <p class="text-center text-lg leading-9 mt-4">{{ item.name }}</p>
         </div>
       </div>
     </section>
