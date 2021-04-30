@@ -19,7 +19,8 @@ module.exports = {
       grid1: '#374152',
       grid2: '#5A6A85',
       grid3: '#F9F8F6',
-      grid4: '#ACB4C1'
+      grid4: '#ACB4C1',
+      grid5: '#D9DDE4'
     }),
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']
@@ -53,6 +54,9 @@ module.exports = {
       },
       padding: {
         '104px': '104px'
+      },
+      borderWidth: {
+        3: '3px'
       }
     }
   },

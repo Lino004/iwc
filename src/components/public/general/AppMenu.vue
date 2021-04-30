@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sticky top-0 z-10 px-104px -my-14">
+  <div class="w-full sticky top-0 z-10 px-104px -my-12">
     <div class="bg-white rounded-2xl flex justify-between px-10 shadow-box1">
       <div class="flex items-center space-x-8 text-lg font-bold text-primary">
         <div
@@ -34,8 +34,8 @@
           SIGN IN
         </router-link>
         <button class="hover:bg-secondary
-        bg-primary rounded-2xl font-bold
-        text-white px-5 py-2 text-lg">
+        bg-grid1 rounded-2xl font-bold
+        text-white px-9 py-2 text-lg">
           APPLY FOR ACCREDITATION
         </button>
         <IconCart
