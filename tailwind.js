@@ -24,6 +24,14 @@ module.exports = {
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']
     },
+    fill: theme => ({
+      primary: '#152237',
+      secondary: '#C29C4A'
+    }),
+    stroke: theme => ({
+      primary: '#152237',
+      secondary: '#C29C4A'
+    }),
     extend: {
       fontFamily: {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif]
@@ -37,7 +45,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      stroke: ['hover']
+    }
   },
   plugins: []
 }

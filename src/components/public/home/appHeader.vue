@@ -43,9 +43,10 @@
             :key="i"
             :to="{ name: item.to }"
             tag="a"
-            class="relative" @mouseover="item.show = true">
+            class="relative" @mouseover.native="item.show = true"
+            @mouseleave.native="item.show = false">
             <span class="hover:text-secondary">{{ item.label }}</span>
-            <div class="absolute top-20 bg-white rounded-xl p-3 flex flex-col" v-if="item.children.length && item.show">
+            <div class="absolute top-24 bg-white rounded-xl p-5 space-y-2 flex flex-col" v-if="item.children.length && item.show">
               <router-link
                 v-for="(child, index) in item.children"
                 :key="index + 'child'"
@@ -69,6 +70,10 @@
            text-white px-5 py-2">
             APPLY FOR ACCREDITATION
           </button>
+          <IconCart
+          class="stroke-primary hover:stroke-secondary"
+          width="2.5rem"
+          height="2.375rem"/>
         </div>
       </div>
     </div>
