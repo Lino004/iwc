@@ -6,7 +6,7 @@
           <div class="">
             <img src="@/assets/images/logo.svg" alt="">
           </div>
-          <div class="flex space-x-24">
+          <div class="hidden lg:flex space-x-24">
             <div class="flex text-grid4 items-center">
               <div class="text-lg mr-4">
                 <p class="text-right font-bold text-grid4">
