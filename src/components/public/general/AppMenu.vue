@@ -67,7 +67,7 @@ export default {
           show: false,
           children: [
             {
-              label: 'COMPAGY',
+              label: 'COMPANY',
               to: ''
             },
             {
