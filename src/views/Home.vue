@@ -17,8 +17,9 @@
             pertaining to oral hygiene and dental care.
           </p>
           <button
-            class="bg-secondary rounded-2xl font-bold
-                   text-white px-5 py-2 text-lg">
+            class="bg-grid1 rounded-2xl font-bold
+                   text-white px-5 py-2 text-lg
+                   border-3 border-grid1 hover:border-secondary">
               LEARN MORE
             </button>
         </div>
@@ -48,7 +49,8 @@
           </ul>
           <button
             class="bg-grid1 rounded-2xl font-bold
-                   text-white px-5 py-2 text-lg">
+                   text-white px-5 py-2 text-lg
+                   border-3 hover:border-secondary">
             LEARN MORE
           </button>
         </div>
@@ -77,7 +79,8 @@
           </p>
           <button
             class="bg-grid1 rounded-2xl font-bold
-                   text-white px-5 py-2 text-lg">
+                   text-white px-5 py-2 text-lg
+                   border-3 hover:border-secondary">
             APPLY FOR ACCREDITATION
           </button>
         </div>
@@ -103,7 +106,8 @@
           </p>
           <button
             class="bg-grid1 rounded-2xl font-bold
-                   text-white px-5 py-2 text-lg">
+                   text-white px-5 py-2 text-lg
+                   border-3 hover:border-secondary">
             LEARN MORE
           </button>
         </div>

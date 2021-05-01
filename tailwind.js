@@ -43,7 +43,8 @@ module.exports = {
     borderColor: theme => ({
       ...theme('colors'),
       primary: '#152237',
-      secondary: '#C29C4A'
+      secondary: '#C29C4A',
+      grid1: '#374152'
     }),
     extend: {
       fontFamily: {
