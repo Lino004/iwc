@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-header bg-primary px-8 lg:px-104px pt-12">
+    <div class="h-header bg-primary px-8 xl:px-104px pt-12">
       <div class="flex">
         <div class="flex w-full justify-center lg:justify-between items-center">
           <router-link to="/">

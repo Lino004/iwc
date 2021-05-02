@@ -47,6 +47,13 @@ module.exports = {
       secondary: '#C29C4A',
       grid1: '#374152'
     }),
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1330px',
+      '2xl': '1536px'
+    },
     extend: {
       fontFamily: {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif]

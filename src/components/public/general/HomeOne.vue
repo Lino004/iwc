@@ -1,6 +1,6 @@
 <template>
   <section class="relative bg-imageOne lg:h-screen">
-    <div class="top-0 bg-opacity-50 w-full h-full bg-black px-8 lg:px-104px py-20 flex items-center">
+    <div class="top-0 bg-opacity-50 w-full h-full bg-black px-8 xl:px-104px py-20 flex items-center">
       <div class="text-white w-full lg:w-3/5">
         <h3 class="text-3xl lg:text-42px leading-tight font-serif font-bold w-5/6 lg:w-4/5 mb-7">Discover what makes us stand out!</h3>
         <p class="text-lg lg:text-2xl mb-16 text-justify lg:text-left">

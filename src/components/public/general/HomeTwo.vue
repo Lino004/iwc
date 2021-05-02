@@ -1,7 +1,7 @@
 <template>
   <section class="relative bg-imageTwo lg:h-screen">
-    <div  class="top-0 bg-white bg-opacity-25 w-full h-full p-5 flex flex-row-reverse items-center px-8 lg:pr-104px">
-      <div class="bg-grid3 w-full lg:w-7/12 p-10 lg:px-20 lg:py-16 rounded-2xl shadow-box1">
+    <div  class="top-0 bg-white bg-opacity-25 w-full h-full p-5 flex flex-row-reverse items-center px-8 xl:pr-104px">
+      <div class="bg-grid3 w-full lg:w-10/12 xl:w-8/12 p-10 lg:px-20 lg:py-16 rounded-2xl shadow-box1">
         <h3 class="text-3xl lg:text-42px text-primary leading-tight font-serif font-bold  w-5/6 lg:w-4/5">
           What Do We Offer?
         </h3>
