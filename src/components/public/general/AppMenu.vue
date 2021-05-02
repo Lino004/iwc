@@ -80,6 +80,12 @@
             </router-link>
           </template>
         </template>
+        <button
+          class="hover:bg-secondary
+                 bg-grid1 rounded-2xl font-bold
+                 text-white px-9 py-2 text-lg">
+          APPLY FOR ACCREDITATION
+        </button>
       </div>
     </div>
   </div>
