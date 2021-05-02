@@ -8,11 +8,11 @@ export default [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/views/Home.vue')
+    component: () => import('@/views/public/Home.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('@/views/About.vue')
+    component: () => import('@/views/public/About.vue')
   }
 ]
