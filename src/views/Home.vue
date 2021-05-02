@@ -1,22 +1,37 @@
 <template>
   <div>
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-      <div class="flex-shrink-0">
-        <img class="h-12 w-12" src="@/assets/logo.png" alt="ChitChat Logo">
-      </div>
-      <div>
-        <div class="text-xl font-medium text-black">ChitChat</div>
-        <p class="text-gray-500">You have a new message!</p>
-      </div>
-    </div>
+    <app-header></app-header>
+    <app-menu></app-menu>
+    <home-one></home-one>
+    <home-two></home-two>
+    <home-three></home-three>
+    <home-four></home-four>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
+import AppHeader from '@/components/public/general/AppHeader'
+import AppMenu from '@/components/public/general/AppMenu'
+import AppFooter from '@/components/public/general/AppFooter'
+import HomeOne from '@/components/public/general/HomeOne'
+import HomeTwo from '@/components/public/general/HomeTwo'
+import HomeThree from '@/components/public/general/HomeThree'
+import HomeFour from '@/components/public/general/HomeFour'
 
 export default {
   name: 'Home',
   components: {
+    AppHeader,
+    AppMenu,
+    AppFooter,
+    HomeOne,
+    HomeTwo,
+    HomeThree,
+    HomeFour
   }
 }
 </script>
+
+<style>
+</style>
