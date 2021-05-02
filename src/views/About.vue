@@ -61,10 +61,11 @@
     <section class="container py-20 mx-auto">
       <div class="grid grid-cols-25 w-11/12 mx-auto mb-80">
         <div class="bg-yellow col-span-1"></div>
+
         <div class="col-span-12 shadow-xl flex">
           <div class="w-4/5 ml-5 self-center">
-            <h3 class="text-4xl font-bold mb-3">Vision</h3>
-            <p class="text-lg leading-9">
+            <h3 class="text-4xl font-bold mb-3 md:text-3xl sm:text-2xl">Vision</h3>
+            <p class="text-lg leading-9 md:text-base sm:text-sm">
               To be the preferred provider of carefully-packaged, affordable
               dental care plans fit for every Filipino’s exclusive needs and
               remove the barrier that seems to get in the way in their ability
@@ -72,24 +73,32 @@
             </p>
           </div>
         </div>
+
         <div class="col-span-12 w-full h-full">
           <img
             src="../assets/img/cooperation.png"
-            width="auto"
-            height="auto"
+            width="100%"
+            height="100%"
             alt=""
+            class="h-full object-cover"
           />
         </div>
       </div>
 
       <div class="grid grid-cols-25 w-11/12 mx-auto mb-40">
         <div class="col-span-12">
-          <img src="../assets/img/mission woman.png" alt="" />
+          <img
+            src="../assets/img/mission woman.png"
+            alt=""
+            width="100%"
+            height="100%"
+            class="h-full object-cover"
+          />
         </div>
         <div class="col-span-12 shadow-xl flex">
           <div class="w-4/5 ml-5 self-center">
-            <h3 class="text-4xl font-bold mb-3">Mission</h3>
-            <p class="text-lg leading-9">
+            <h3 class="text-4xl font-bold mb-3 md:text-3xl sm:text-2xl">Mission</h3>
+            <p class="text-lg leading-9 md:text-base sm:text-sm">
               IWC Wellness remains committed to providing the finest avenue
               where its clients can explore options for the best dental
               experience , while giving its dental partners a strong boost their
