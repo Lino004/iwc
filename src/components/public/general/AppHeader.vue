@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="h-header bg-primary px-104px pt-12">
+    <div class="h-header bg-primary px-8 lg:px-104px pt-12">
       <div class="flex">
-        <div class="flex w-full justify-between items-center">
+        <div class="flex w-full justify-center lg:justify-between items-center">
           <div class="">
             <img src="@/assets/images/logo.svg" alt="">
           </div>

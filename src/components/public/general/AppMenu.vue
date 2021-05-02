@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sticky top-0 z-10 px-104px -my-12">
+  <div class="w-full sticky top-0 z-10 px-8 lg:px-104px -my-12">
     <div class="bg-white rounded-2xl flex justify-between px-10 shadow-box1">
       <div class="hidden lg:flex items-center space-x-8 text-lg font-bold text-primary">
         <div
@@ -27,7 +27,11 @@
         </div>
       </div>
       <div class="py-8 lg:hidden">
-        ok
+        <button @click="showModalMenu = true">
+          <span class="text-grid2 text-2xl">
+            <i class="mdi mdi-menu"></i>
+          </span>
+        </button>
       </div>
       <div class="flex items-center text-lg space-x-8">
         <router-link
@@ -42,9 +46,40 @@
           APPLY FOR ACCREDITATION
         </button>
         <IconCart
-        class="stroke-primary hover:stroke-secondary"
-        width="2.5rem"
-        height="2.375rem"/>
+          class="stroke-primary hover:stroke-secondary"
+          width="2.5rem"
+          height="2.375rem"/>
+      </div>
+    </div>
+    <div class="fixed h-screen w-screen bg-white text-white top-0 left-0" v-if="showModalMenu">
+      <button @click="showModalMenu = false" class="absolute p-4">
+        <span class="text-4xl text-primary">
+          <i class="mdi mdi-close"></i>
+        </span>
+      </button>
+      <div class="flex flex-col space-y-4 items-center text-lg pt-6 text-primary">
+        <template v-for="(item, i) in menu">
+          <router-link
+            :key="i"
+            :to="{ name: item.to }"
+            tag="a"
+            class="">
+            <span class="hover:text-secondary text-lg font-bold">{{ item.label }}</span>
+          </router-link>
+
+          <template
+            v-if="item.children.length"
+            class="bg-white rounded-xl p-5 space-y-2 flex flex-col items-center">
+            <router-link
+              v-for="(child, index) in item.children"
+              :key="index + 'child'"
+              :to="{ name: child.to }"
+              tag="a"
+              class="hover:text-secondary truncate text-lg">
+              {{ child.label }}
+            </router-link>
+          </template>
+        </template>
       </div>
     </div>
   </div>
@@ -94,7 +129,8 @@ export default {
           show: false,
           children: []
         }
-      ]
+      ],
+      showModalMenu: false
     }
   }
 }

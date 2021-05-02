@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-primary text-grid5 text-center space-x-9 py-20 text-lg">
-    <a class="cursor-pointer hover:text-secondary">FAQ</a>
-    <a class="cursor-pointer hover:text-secondary">TERMS</a>
-    <a class="cursor-pointer hover:text-secondary">PRIVACY POLICY</a>
-    <a class="cursor-pointer hover:text-secondary">DATA SHARING POLICY</a>
+  <div class="bg-primary text-grid5 lg:space-x-9 py-20 text-lg flex justify-center flex-col lg:flex-row">
+    <a class="cursor-pointer hover:text-secondary text-center">FAQ</a>
+    <a class="cursor-pointer hover:text-secondary text-center">TERMS</a>
+    <a class="cursor-pointer hover:text-secondary text-center">PRIVACY POLICY</a>
+    <a class="cursor-pointer hover:text-secondary text-center">DATA SHARING POLICY</a>
   </div>
 </template>
 
