@@ -1,6 +1,6 @@
 <template>
-  <section class="relative bg-imageThree">
-    <div  class="top-0 bg-white bg-opacity-25 w-full h-full p-5 flex items-center px-8 xl:pl-104px">
+  <section class="relative bg-imageThree lg:min-h-screen">
+    <div  class="top-0 bg-white bg-opacity-25 w-full min-h-screen p-5 flex items-center px-8 xl:pl-104px">
       <div class="bg-grid3 w-full lg:w-1/2 p-10 lg:px-20 lg:py-16 rounded-2xl shadow-box1">
         <h3 class="text-3xl lg:text-42px text-primary leading-tight font-serif font-bold  w-5/6 lg:w-4/5">
           Promoting Oral Health Thru Solid Partnership
