@@ -2,7 +2,7 @@
   <section class="h-auto relative">
       <img
         class="filter brightness-50"
-        src="../../../assets/img/network.png"
+        src="@/assets/images/about/network.png"
         alt=""
         height="100%"
         width="100%"

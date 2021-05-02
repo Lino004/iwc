@@ -1,5 +1,5 @@
 <template>
-  <section id="bg2" class="lg:container py-24 mx-auto">
+  <section id="bg2" class="lg:container py-10 sm:py-16 lg:py-24 mx-auto">
       <div>
         <div class="w-auto relative">
           <h3
@@ -13,7 +13,7 @@
           />
         </div>
 
-        <div class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-40 leading-9">
+        <div class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-14 sm:mt-20 lg:mt-28 xl:mt-40 leading-9">
           <p class="text-lg mb-12">
             IWC Wellness and Preventive Consultancy Inc ., was established in
             2016 with a commitment to provide and deliver the best oral care
@@ -49,7 +49,7 @@ export default {
 
 <style lang="css" scoped>
 #bg2 {
-  background: url("../../../assets/img/LikeAToothInTheNight.png") no-repeat;
+  background: url("../../../assets/images/about/LikeTooth.png") no-repeat;
   background-position: 20px 172px;
 }
 </style>

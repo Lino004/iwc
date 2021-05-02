@@ -1,64 +1,5 @@
 <template>
-  <div class="w-full mx-auto">
-    <app-header></app-header>
-    <app-menu></app-menu>
-
-    <about-us></about-us>
-    <about-company></about-company>
-
-    <section class="container py-20 mx-auto">
-      <div class="grid grid-cols-25 w-11/12 mx-auto mb-80">
-        <div class="bg-secondary col-span-1"></div>
-
-        <div class="col-span-12 shadow-xl flex">
-          <div class="w-4/5 ml-5 self-center">
-            <h3 class="text-4xl font-bold mb-3 md:text-3xl sm:text-2xl">Vision</h3>
-            <p class="text-lg leading-9 md:text-base sm:text-sm">
-              To be the preferred provider of carefully-packaged, affordable
-              dental care plans fit for every Filipino’s exclusive needs and
-              remove the barrier that seems to get in the way in their ability
-              to maintain and show a happy, healthy smile.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-span-12 w-full h-full">
-          <img
-            src="../assets/img/cooperation.png"
-            width="100%"
-            height="100%"
-            alt=""
-            class="h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <div class="grid grid-cols-25 w-11/12 mx-auto mb-40">
-        <div class="col-span-12">
-          <img
-            src="../assets/img/mission woman.png"
-            alt=""
-            width="100%"
-            height="100%"
-            class="h-full object-cover"
-          />
-        </div>
-        <div class="col-span-12 shadow-xl flex">
-          <div class="w-4/5 ml-5 self-center">
-            <h3 class="text-4xl font-bold mb-3 md:text-3xl sm:text-2xl">Mission</h3>
-            <p class="text-lg leading-9 md:text-base sm:text-sm">
-              IWC Wellness remains committed to providing the finest avenue
-              where its clients can explore options for the best dental
-              experience , while giving its dental partners a strong boost their
-              business deserves.
-            </p>
-          </div>
-        </div>
-        <div class="bg-secondary col-span-1"></div>
-      </div>
-      <hr class="w-11/12 mx-auto border-2 border-grid2" />
-    </section>
-
+  <div>
     <section class="container pb-20 mx-auto">
       <div class="my-10">
         <h1
@@ -116,29 +57,14 @@
         </div>
       </div>
     </section>
-
-    <Footer />
   </div>
 </template>
 
 <script>
-import boyet from '../assets/img/boyet.png'
-import sam from '../assets/img/Sam-Heughan.png'
-
-import Footer from '../components/public/general/AppFooter'
-import AppHeader from '@/components/public/general/AppHeader'
-import AppMenu from '@/components/public/general/AppMenu'
-import AboutCompany from '@/components/public/general/AboutCompany'
-import AboutUs from '../components/public/general/AboutUs.vue'
+import boyet from '@/assets/images/about/boyet.png'
+import sam from '@/assets/images/about/Sam-Heughan.png'
 
 export default {
-  components: {
-    Footer,
-    AppHeader,
-    AppMenu,
-    AboutCompany,
-    AboutUs
-  },
   data: () => {
     return {
       team: [
@@ -160,9 +86,6 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-#bg2 {
-  background: url("../assets/img/LikeAToothInTheNight.png") no-repeat;
-  background-position: 20px 172px;
-}
+<style scoped>
+
 </style>
