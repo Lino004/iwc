@@ -14,13 +14,16 @@
 import AppHeader from '@/components/public/general/AppHeader'
 import AppMenu from '@/components/public/general/AppMenu'
 import AppFooter from '@/components/public/general/AppFooter'
-import HomeOne from '@/components/public/general/HomeOne'
-import HomeTwo from '@/components/public/general/HomeTwo'
-import HomeThree from '@/components/public/general/HomeThree'
-import HomeFour from '@/components/public/general/HomeFour'
+import HomeOne from '@/components/public/home/HomeOne'
+import HomeTwo from '@/components/public/home/HomeTwo'
+import HomeThree from '@/components/public/home/HomeThree'
+import HomeFour from '@/components/public/home/HomeFour'
 
 export default {
   name: 'Home',
+  metaInfo: {
+    title: 'Home'
+  },
   components: {
     AppHeader,
     AppMenu,
