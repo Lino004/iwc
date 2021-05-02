@@ -5,10 +5,10 @@
 
       <div class="col-span-12 shadow-xl flex">
         <div class="w-4/5 ml-5 self-center">
-          <h3 class="xl:text-5xl lg:text-4xl font-bold lg:mb-5 xl:mb-7 mb-3 md:text-3xl sm:text-2xl">
+          <h3 class="xl:text-5xl lg:text-4xl text-primary font-bold lg:mb-5 xl:mb-7 mb-3 md:text-3xl sm:text-2xl">
             Vision
           </h3>
-          <p class="text-xs xl:text-xl lg:text-lg leading-5 sm:leading-6 xl:leading-9 md:text-base sm:text-sm">
+          <p class="text-xs xl:text-xl lg:text-lg leading-5 sm:leading-6 xl:leading-9 md:text-base sm:text-sm text-primary">
             To be the preferred provider of carefully-packaged, affordable
             dental care plans fit for every Filipino’s exclusive needs and
             remove the barrier that seems to get in the way in their ability to
@@ -40,10 +40,10 @@
       </div>
       <div class="col-span-12 shadow-xl flex">
         <div class="w-4/5 ml-5 self-center">
-          <h3 class="xl:text-5xl lg:text-4xl font-bold lg:mb-5 xl:mb-7 mb-3 md:text-3xl sm:text-2xl">
+          <h3 class="xl:text-5xl lg:text-4xl font-bold text-primary lg:mb-5 xl:mb-7 mb-3 md:text-3xl sm:text-2xl">
             Mission
           </h3>
-          <p class="text-xs xl:text-xl lg:text-lg leading-5 sm:leading-6 xl:leading-9 md:text-base sm:text-sm">
+          <p class="text-xs xl:text-xl lg:text-lg leading-5 text-primary sm:leading-6 xl:leading-9 md:text-base sm:text-sm">
             IWC Wellness remains committed to providing the finest avenue where
             its clients can explore options for the best dental experience ,
             while giving its dental partners a strong boost their business

@@ -11,8 +11,8 @@ export default [
     component: () => import('@/views/public/Home.vue')
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('@/views/public/About.vue')
+    path: '/about-company',
+    name: 'about-company',
+    component: () => import('@/views/public/About/Company.vue')
   }
 ]

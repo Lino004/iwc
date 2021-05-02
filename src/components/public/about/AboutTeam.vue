@@ -12,7 +12,7 @@
         />
       </div>
       <div class="w-1/2 mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
-        <p class="text-lg leading-9">
+        <p class="text-lg text-primary leading-9">
           IWC Wellness and Preventive Consultancy Inc ., was established in 2016
           with a commitment to provide and deliver the best oral care every
           Filipino deserves. It was created to provide a link to various dental
@@ -24,7 +24,7 @@
       >
         <div v-for="item in team" :key="item.name">
           <img :src="item.src" :alt="item.name" />
-          <p class="text-center text-lg leading-9 mt-4">{{ item.name }}</p>
+          <p class="text-center text-primary text-lg leading-9 mt-4">{{ item.name }}</p>
         </div>
       </div>
     </section>
@@ -41,7 +41,7 @@
         />
       </div>
       <div class="w-1/2 mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
-        <p class="text-lg leading-9">
+        <p class="text-lg leading-9 text-primary">
           IWC Wellness and Preventive Consultancy Inc ., was established in 2016
           with a commitment to provide and deliver the best oral care every
           Filipino deserves. It was created to provide a link to various dental
@@ -53,7 +53,7 @@
       >
         <div v-for="item in management" :key="item.name">
           <img :src="item.src" :alt="item.name" />
-          <p class="text-center text-lg leading-9 mt-4">{{ item.name }}</p>
+          <p class="text-center text-primary text-lg leading-9 mt-4">{{ item.name }}</p>
         </div>
       </div>
     </section>

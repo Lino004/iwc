@@ -13,7 +13,7 @@
           />
         </div>
 
-        <div class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-14 sm:mt-20 lg:mt-28 xl:mt-40 leading-9">
+        <div class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-14 sm:mt-20 lg:mt-28 xl:mt-40 leading-9 text-primary">
           <p class="text-lg mb-12">
             IWC Wellness and Preventive Consultancy Inc ., was established in
             2016 with a commitment to provide and deliver the best oral care
