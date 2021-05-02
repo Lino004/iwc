@@ -11,7 +11,7 @@
               <div class="text-lg mr-4">
                 <p class="text-right font-bold text-grid4">
                   Email <br>
-                  <span class="text-grid5">contact@mail.com</span>
+                  <span class="text-grid5"> {{email}} </span>
                 </p>
               </div>
               <div class="h-20 w-20 bg-grid1 rounded-full flex items-center">
@@ -25,7 +25,7 @@
               <div class="text-lg mr-4">
                 <p class="text-right font-bold text-grid4">
                   Phone <br>
-                  <span class="text-grid5">123-456-7890</span>
+                  <span class="text-grid5"> {{mobileNumber}} </span>
                 </p>
               </div>
               <div class="h-20 w-20 bg-grid1 rounded-full flex items-center">
@@ -43,15 +43,27 @@
 </template>
 
 <script>
+import { get } from '@/api/public/siteInfo'
 
 export default {
   components: {
   },
   data () {
     return {
+      email: '',
+      mobileNumber: ''
     }
   },
   methods: {
+  },
+  async created () {
+    try {
+      const res = (await get()).data.data
+      this.email = res.emailAddresses.primary
+      this.mobileNumber = res.mobileNumbers.primary
+    } catch (error) {
+      //
+    }
   }
 }
 </script>
