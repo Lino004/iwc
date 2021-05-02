@@ -1,7 +1,7 @@
 <template>
   <div class="w-full sticky top-0 z-10 px-8 lg:px-104px -my-14">
     <div class="bg-white rounded-2xl flex justify-between px-10 shadow-box1">
-      <div class="hidden lg:flex items-center space-x-8 text-lg font-bold text-primary">
+      <div class="hidden lg:flex items-center space-x-11 text-lg font-bold text-primary">
         <div
           v-for="(item, i) in menu"
           :key="i"

@@ -3,15 +3,15 @@
     <div class="h-header bg-primary px-8 lg:px-104px pt-12">
       <div class="flex">
         <div class="flex w-full justify-center lg:justify-between items-center">
-          <div class="">
+          <router-link to="/">
             <img src="@/assets/images/logo.svg" alt="">
-          </div>
+          </router-link>
           <div class="hidden lg:flex space-x-24">
             <div class="flex text-grid4 items-center">
               <div class="text-lg mr-4">
                 <p class="text-right font-bold text-grid4">
                   Email <br>
-                  <span class="text-grid5"> {{email}} </span>
+                  <a class="text-grid5 cursor-pointer" :href="`mailto:${email}`"> {{email}} </a>
                 </p>
               </div>
               <div class="h-20 w-20 bg-grid1 rounded-full flex items-center">
@@ -25,7 +25,7 @@
               <div class="text-lg mr-4">
                 <p class="text-right font-bold text-grid4">
                   Phone <br>
-                  <span class="text-grid5"> {{mobileNumber}} </span>
+                  <a :href="`tel:${mobileNumber}`" class="text-grid5 cursor-pointer"> {{mobileNumber}} </a>
                 </p>
               </div>
               <div class="h-20 w-20 bg-grid1 rounded-full flex items-center">
