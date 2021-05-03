@@ -98,7 +98,7 @@ export default {
       menu: [
         {
           label: 'HOME',
-          to: '',
+          to: 'home',
           children: [],
           show: false
         },
@@ -119,7 +119,7 @@ export default {
         },
         {
           label: 'SERVICE',
-          to: '',
+          to: 'services',
           show: false,
           children: []
         },
