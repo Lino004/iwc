@@ -2,8 +2,8 @@
   <section class="w-full">
     <div class="p-10  ">
       <form action="" class="flex flex-row w-full justify-around">
-        <div class="input-search w-1/4">
-          <label for="search" class="font-bold">SEARCH</label> <br />
+        <div class="input-search w-1/3">
+          <label for="search py-auto" class="font-bold">SEARCH</label> <br />
           <i class="icon">
             <img src="@/assets/images/about/search.png" alt="" />
           </i>
@@ -54,7 +54,7 @@ export default {}
   position: absolute;
 }
 .icon {
-  padding: 29px 15px;
+  padding: 36px 15px;
   min-width: 40px;
 }
 .search-input {
@@ -62,7 +62,7 @@ export default {}
   border-style: none;
   border-width: 1px;
   padding-left: 60px;
-  /* height: 50px; */
+  height: 65px;
   /* margin: 10px; */
   /* width: 25%; */
 }
@@ -84,6 +84,7 @@ export default {}
 .select-input {
   border-radius: 10px;
   border: 1px solid black;
+  height: 65px;
 }
 .select-input:hover,
 .select-input:focus {

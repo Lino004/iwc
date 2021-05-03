@@ -5,6 +5,8 @@
 
     <about-thirst :title="title" :src="src" />
     <about-search></about-search>
+    <about-accredities></about-accredities>
+
     <app-footer></app-footer>
   </div>
 </template>
@@ -17,6 +19,7 @@ import AppMenu from '@/components/public/general/AppMenu.vue'
 
 import bg from '@/assets/images/about/asianDentist.png'
 import AboutSearch from '../../../components/public/about/AboutSearch.vue'
+import AboutAccredities from '../../../components/public/about/AboutAccredities.vue'
 
 export default {
   // eslint-disable-next-line vue/no-unused-components
@@ -25,7 +28,8 @@ export default {
     AppMenu,
     AppFooter,
     AboutThirst,
-    AboutSearch
+    AboutSearch,
+    AboutAccredities
   },
   data () {
     return {

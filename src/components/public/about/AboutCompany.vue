@@ -3,7 +3,6 @@
       <div>
         <div class="w-auto relative">
           <h3
-            id="company"
             class="font-bold text-primary font-serif text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px"
           >
             Company Profile
@@ -50,6 +49,9 @@ export default {
 <style lang="css" scoped>
 #bg2 {
   background: url("../../../assets/images/about/LikeTooth.png") no-repeat;
-  background-position: 20px 172px;
+  /* background-position: 20px 172px; */
+  /* background-position-y: 180px;
+  background-position-x: 20px; */
+  background-size: 540px;
 }
 </style>

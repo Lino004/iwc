@@ -30,6 +30,10 @@ module.exports = {
       ...defaultTheme.fontSize,
       '42px': '2.625rem'
     },
+    backgroundPosition: {
+      ...defaultTheme.backgroundPosition,
+      '42px': '2.625rem'
+    },
     fill: theme => ({
       primary: '#152237',
       secondary: '#C29C4A'
