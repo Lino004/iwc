@@ -20,7 +20,8 @@ module.exports = {
       grid2: '#5A6A85',
       grid3: '#F9F8F6',
       grid4: '#ACB4C1',
-      grid5: '#D9DDE4'
+      grid5: '#D9DDE4',
+      grid6: '#707070'
     }),
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']
@@ -45,7 +46,8 @@ module.exports = {
       primary: '#152237',
       secondary: '#C29C4A',
       grid1: '#374152',
-      grid2: '#5A6A85'
+      grid2: '#5A6A85',
+      grid6: '#707070'
     }),
     screens: {
       sm: '640px',

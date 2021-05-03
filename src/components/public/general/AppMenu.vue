@@ -109,11 +109,11 @@ export default {
           children: [
             {
               label: 'COMPANY',
-              to: ''
+              to: 'about-company'
             },
             {
               label: 'ACCREDITED DENTISTS',
-              to: ''
+              to: 'about-accredited'
             }
           ]
         },

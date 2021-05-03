@@ -3,7 +3,7 @@
     <app-header></app-header>
     <app-menu></app-menu>
 
-    <about-us></about-us>
+    <about-thirst :title="title" :src="src" />
     <about-company></about-company>
 
     <about-three></about-three>
@@ -19,19 +19,27 @@ import AppHeader from '@/components/public/general/AppHeader'
 import AppMenu from '@/components/public/general/AppMenu'
 
 import AboutCompany from '@/components/public/about/AboutCompany'
-import AboutUs from '@/components/public/about/AboutUs.vue'
+import AboutThirst from '@/components/public/about/AboutThirst.vue'
 import AboutThree from '@/components/public/about/AboutThree.vue'
 import AboutTeam from '@/components/public/about/AboutTeam.vue'
+
+import bg from '@/assets/images/about/network.png'
 
 export default {
   components: {
     Footer,
     AppHeader,
     AppMenu,
+    AboutThirst,
     AboutCompany,
-    AboutUs,
     AboutThree,
     AboutTeam
+  },
+  data () {
+    return {
+      src: bg,
+      title: 'About Us'
+    }
   }
 }
 </script>

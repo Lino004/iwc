@@ -2,7 +2,7 @@
   <section class="h-auto relative">
       <img
         class="filter brightness-50"
-        src="@/assets/images/about/network.png"
+        :src="src"
         alt=""
         height="100%"
         width="100%"
@@ -11,14 +11,25 @@
         <h1
           class="text-white font-bold text-2xl pl-10 sm:text-3xl sm:pl-5 md:pl-11 md:text-4xl lg:pl-12 lg:text-5xl xl:text-6xl xl:pl-13"
         >
-          About Us
+          {{ title }}
         </h1>
       </div>
     </section>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    src: {
+      type: String,
+      required: true
+    }
+  }
+}
 </script>
 
 <style scoped>

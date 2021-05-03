@@ -14,5 +14,10 @@ export default [
     path: '/about-company',
     name: 'about-company',
     component: () => import('@/views/public/About/Company.vue')
+  },
+  {
+    path: '/about-accredited',
+    name: 'about-accredited',
+    component: () => import('@/views/public/About/Accredited.vue')
   }
 ]
