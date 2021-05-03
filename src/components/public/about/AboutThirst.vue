@@ -9,7 +9,7 @@
       />
       <div class="absolute top-0 w-full h-full flex items-center">
         <h1
-          class="text-white font-bold text-2xl pl-10 sm:text-3xl sm:pl-5 md:pl-11 md:text-4xl lg:pl-12 lg:text-5xl xl:text-6xl xl:pl-13"
+          class="text-white font-bold font-serif text-2xl sm:text-3xl md:text-4xl lg:text-7xl pl-10 sm:pl-5 md:pl-11 lg:pl-13 xl:pl-24"
         >
           {{ title }}
         </h1>
