@@ -1,5 +1,5 @@
 <template>
-  <section class="container py-10 mx-auto">
+  <section class="container py-24 mx-auto">
     <div class="w-3/4 mx-auto">
       <div class="flex flex-row justify-between">
         <h2
@@ -9,20 +9,63 @@
         </h2>
         <img src="@/assets/images/about/pdf-icon.png" alt="" />
       </div>
-      <hr
-        class=" mt-6 mx-auto border-2 border-grid2"
-      />
+      <hr class=" mt-6 mx-auto border-2 border-grid2" />
     </div>
-    <div>
-      <div class="shadow-xl rounded h-10">
 
+    <div class="w-4/5 py-10 mx-auto">
+      <div v-for="item in dentistList" :key="item.id">
+        <div class="shadow-box1 rounded-lg pl-24 py-16 my-14">
+          <h5 class="font-bold mb-5 font-serif text-primary text-2xl">
+            Dentist Clinic Name
+          </h5>
+          <p class="font-sans text-primary text-2xl">Dentist Name</p>
+          <p class="font-sans text-primary text-2xl">Address</p>
+          <p class="font-sans text-primary text-2xl">Contact Numbers</p>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      dentistList: [
+        {
+          id: 1,
+          clinic: '',
+          name: '',
+          address: '',
+          number: ''
+        },
+        {
+          id: 2,
+          clinic: '',
+          name: '',
+          address: '',
+          number: ''
+        },
+        {
+          id: 3,
+          clinic: '',
+          name: '',
+          address: '',
+          number: ''
+        },
+        {
+          id: 4,
+          clinic: '',
+          name: '',
+          address: '',
+          number: ''
+        }
+      ]
+    }
+  }
+}
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+
+</style>

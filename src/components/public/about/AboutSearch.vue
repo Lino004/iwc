@@ -1,6 +1,6 @@
 <template>
   <section class="w-full">
-    <div class="p-10  ">
+    <div class="px-10 py-16">
       <form action="" class="flex flex-row w-full justify-around">
         <div class="input-search w-1/3">
           <label for="search py-auto" class="font-bold">SEARCH</label> <br />
