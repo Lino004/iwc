@@ -1,18 +1,20 @@
 <template>
-  <section id="bg2" class="lg:container py-10 sm:py-16 lg:py-24 mx-auto">
-      <div>
-        <div class="w-auto relative">
-          <h3
-            class="font-bold text-primary font-serif text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px"
-          >
-            Company Profile
-          </h3>
-          <hr
-            class="w-1/2 sm:w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-2 border-grid2"
-          />
-        </div>
-
-        <div class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-14 sm:mt-20 lg:mt-28 xl:mt-40 leading-9 text-primary">
+  <section class="lg:container py-10 sm:py-16 lg:py-24 mx-auto">
+    <div>
+      <div class="w-auto relative">
+        <h3
+          class="font-bold text-primary font-serif text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px"
+        >
+          Company Profile
+        </h3>
+        <hr
+          class="w-1/2 sm:w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-2 border-grid2"
+        />
+      </div>
+      <div id="bg2">
+        <div
+          class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-14 sm:mt-20 lg:mt-28 xl:mt-40 leading-9 text-primary py-20"
+        >
           <p class="text-lg mb-12 font-sans">
             IWC Wellness and Preventive Consultancy Inc ., was established in
             2016 with a commitment to provide and deliver the best oral care
@@ -36,22 +38,21 @@
           </p>
         </div>
       </div>
-      <hr class="w-11/12 mt-24 mx-auto border-2 border-grid2" />
-    </section>
+    </div>
+    <hr class="w-11/12 mt-24 mx-auto border-2 border-grid2" />
+  </section>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style lang="css" scoped>
 #bg2 {
   background: url("../../../assets/images/about/LikeTooth.png") no-repeat;
-  /* background-position: 20px 172px; */
+  background-position: 6% 53%;
   /* background-position-y: 180px;
   background-position-x: 20px; */
-  background-size: 540px;
+  background-size: 37%;
 }
 </style>
