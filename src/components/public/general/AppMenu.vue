@@ -109,11 +109,11 @@ export default {
           children: [
             {
               label: 'COMPANY',
-              to: 'about-company'
+              to: 'about/company'
             },
             {
               label: 'ACCREDITED DENTISTS',
-              to: 'about-accredited'
+              to: 'about/accredited-dentists'
             }
           ]
         },
@@ -131,7 +131,7 @@ export default {
         },
         {
           label: 'CONTACT',
-          to: '',
+          to: 'contact',
           show: false,
           children: []
         }

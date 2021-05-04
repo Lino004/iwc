@@ -11,7 +11,7 @@
           class="w-1/2 sm:w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-solid border-2 border-gray-700"
         />
       </div>
-      <div class="w-1/2 mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
+      <div class="mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
         <p class="text-lg font-sans text-primary leading-9">
           IWC Wellness and Preventive Consultancy Inc ., was established in 2016
           with a commitment to provide and deliver the best oral care every
@@ -40,7 +40,7 @@
           class="w-1/2 sm:w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-grid2 border-2"
         />
       </div>
-      <div class="w-1/2 mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
+      <div class="mx-auto md:w-4/5 lg:w-3/5 xl:w-1/2 w-4/5 text-left">
         <p class="text-lg leading-9 text-primary font-sans">
           IWC Wellness and Preventive Consultancy Inc ., was established in 2016
           with a commitment to provide and deliver the best oral care every
