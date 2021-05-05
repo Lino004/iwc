@@ -2,6 +2,7 @@
   <section class="w-full">
     <div class="px-10 py-16">
       <form action="" class="flex lg:flex-row flex-col w-full justify-around">
+
         <div class="input-search lg:w-1/3 md:w-3/4 md:mx-auto">
           <label for="search py-auto" class="font-bold text-primary lg:text-lg">SEARCH</label> <br />
           <input
@@ -28,10 +29,7 @@
         </div>
 
         <div class="lg:w-1/4 md:w-3/4 md:mx-auto">
-          <label for="provinces" class="font-bold text-primary lg:text-lg"
-            >PROVINCE</label
-          >
-          <div class="select">
+          <label for="provinces" class="font-bold text-primary lg:text-lg">PROVINCE</label>
             <select
               name="provinces"
               id="provinces"
@@ -43,7 +41,6 @@
               <option value="province3">P3</option>
               <option value="province4">P4</option>
             </select>
-          </div>
         </div>
       </form>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto py-16">
+  <section class="">
     <div>
       <h3
         class="font-bold text-primary font-serif text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px"
@@ -11,7 +11,7 @@
       />
     </div>
 
-    <div class="w-4/5 py-20 mx-auto">
+    <div class="py-20 mx-auto">
       <div class="grid lg:grid-cols-2">
         <div class="">
           <img src="@/assets/images/contact/GoogleMapTA.png" alt="" class="" />
@@ -68,7 +68,6 @@
         </div>
       </div>
     </div>
-    <hr class="w-4/5 mx-auto border-2 border-grid2" />
   </section>
 </template>
 
