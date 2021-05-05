@@ -5,7 +5,8 @@
     <app-hero :title="title" :src="src"></app-hero>
 
     <about-search></about-search>
-    <about-accredities></about-accredities>
+
+      <about-accredities></about-accredities>
 
     <app-footer></app-footer>
   </div>
