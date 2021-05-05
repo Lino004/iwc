@@ -17,7 +17,7 @@
         <div>
           <div class="grid lg:grid-cols-2">
             <div>
-              <input class="" type="text" placeholder="Name" />
+              <input type="text" placeholder="Name" />
             </div>
             <div>
               <input type="email" placeholder="Contact email" />

@@ -1,11 +1,13 @@
 <template>
-  <div>
+  <div class="w-full mx-auto">
     <app-header></app-header>
     <app-menu></app-menu>
     <app-hero :title="title" :src="src"></app-hero>
 
-    <contact-info></contact-info>
-    <contact-form></contact-form>
+    <section class="container w-11/12 xl:w-8/12 mx-auto py-28">
+      <contact-info></contact-info>
+      <contact-form></contact-form>
+    </section>
   </div>
 </template>
 
@@ -26,10 +28,7 @@ export default {
       title: 'Contact Us'
     }
   }
-
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

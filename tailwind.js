@@ -12,6 +12,15 @@ module.exports = {
       grid3: '#F9F8F6',
       secondary: '#C29C4A'
     }),
+    borderRadius: {
+      none: '0',
+      sm: '0.125rem',
+      DEFAULT: '0.25rem',
+      md: '0.375rem',
+      lg: '0.5rem',
+      full: '9999px',
+      '15px': '0.938rem'
+    },
     textColor: theme => ({
       ...theme('colors'),
       primary: '#152237',
@@ -51,7 +60,8 @@ module.exports = {
       secondary: '#C29C4A',
       grid1: '#374152',
       grid2: '#5A6A85',
-      grid6: '#707070'
+      grid6: '#707070',
+      grid7: '#C4C8CD'
     }),
     screens: {
       sm: '640px',
@@ -71,7 +81,8 @@ module.exports = {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif]
       },
       height: {
-        header: '270px'
+        header: '270px',
+        '65px': '4.063rem'
       },
       padding: {
         '104px': '104px'
@@ -80,15 +91,15 @@ module.exports = {
         3: '3px',
         30: '1.875rem'
       },
-      gridTemplateColumns: {
-        // Simple 16 column grid
-        25: 'repeat(25, minmax(0, 1fr))'
+      outline: {
+        0: '0'
       }
     }
   },
   variants: {
     extend: {
-      stroke: ['hover']
+      stroke: ['hover'],
+      outline: ['hover']
     }
   },
   plugins: []

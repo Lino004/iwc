@@ -5,7 +5,7 @@
         <h2
           class="font-bold text-primary font-serif text-center text-2xl md:text-3x lg:text-42px"
         >
-          Accredited Dentist
+          Accredited Dentists
         </h2>
         <img src="@/assets/images/about/pdf-icon.png" alt="" />
       </div>
