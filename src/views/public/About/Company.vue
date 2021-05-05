@@ -4,9 +4,13 @@
     <app-menu></app-menu>
     <app-hero :title="title" :src="src"></app-hero>
 
-    <about-company></about-company>
-    <about-three></about-three>
-    <about-team></about-team>
+    <section class="container w-11/12 xl:w-8/12 mx-auto py-28">
+      <about-company></about-company>
+      <hr class="border-2 border-grid2" />
+      <about-three></about-three>
+      <hr class="border-2 border-grid2" />
+      <about-team></about-team>
+    </section>
 
     <app-footer></app-footer>
   </div>

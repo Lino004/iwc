@@ -1,45 +1,38 @@
 <template>
-  <section class="lg:container py-10 sm:py-16 lg:py-24 mx-auto">
+  <section>
     <div>
-      <div class="w-auto relative">
-        <h3
-          class="font-bold text-primary font-serif text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px"
-        >
-          Company Profile
-        </h3>
-        <hr
-          class="w-1/2 sm:w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-2 border-grid2"
-        />
-      </div>
-      <div id="bg2">
-        <div
-          class="md:w-4/5 lg:w-1/2 w-4/5 text-left mx-auto mt-14 sm:mt-20 lg:mt-28 xl:mt-40 leading-9 text-primary py-20"
-        >
-          <p class="text-lg mb-12 font-sans">
-            IWC Wellness and Preventive Consultancy Inc ., was established in
-            2016 with a commitment to provide and deliver the best oral care
-            every Filipino deserves. It was created to provide a link to various
-            dental professionals and an easy access to affordable dental health
-            plans fit for everyone’s unique needs.
-          </p>
-          <p class="text-lg mb-12 font-sans">
-            The company is managed by a group of dedicated professionals and
-            powered by an upright system that makes the link between its members
-            and partners fast and easy, making every client-dentist transaction
-            exceptionally convenient.
-          </p>
-          <p class="text-lg mb-12 font-sans">
-            The idea of having someone handle the marketing aspects of dental
-            services was taking off in the dental industry. Dentists wanted to
-            focus on patients and not on everyday aspects of promoting their
-            business. IWC Wellness took it as a cue and since then, has
-            partnered with various dental professionals all over the country to
-            establish a national dental network.
-          </p>
-        </div>
+      <h3 class="font-bold text-primary font-serif text-center text-2xl md:text-3xl lg:text-42px">
+        Company Profile
+      </h3>
+      <hr class="w-1/2 md:w-2/3 mt-6 mx-auto border-2 border-grid2"/>
+    </div>
+    <div id="bg2" class="bg-auto-100 md:bg-auto">
+      <div
+        class="w-4/5 lg:w-3/4 text-left mx-auto leading-9 text-primary py-10 lg:py-24 my-8"
+      >
+        <p class="text-lg mb-12 font-sans">
+          IWC Wellness and Preventive Consultancy Inc ., was established in
+          2016 with a commitment to provide and deliver the best oral care
+          every Filipino deserves. It was created to provide a link to various
+          dental professionals and an easy access to affordable dental health
+          plans fit for everyone’s unique needs.
+        </p>
+        <p class="text-lg mb-12 font-sans">
+          The company is managed by a group of dedicated professionals and
+          powered by an upright system that makes the link between its members
+          and partners fast and easy, making every client-dentist transaction
+          exceptionally convenient.
+        </p>
+        <p class="text-lg mb-12 font-sans">
+          The idea of having someone handle the marketing aspects of dental
+          services was taking off in the dental industry. Dentists wanted to
+          focus on patients and not on everyday aspects of promoting their
+          business. IWC Wellness took it as a cue and since then, has
+          partnered with various dental professionals all over the country to
+          establish a national dental network.
+        </p>
       </div>
     </div>
-    <hr class="w-11/12 mt-24 mx-auto border-2 border-grid2" />
   </section>
 </template>
 
@@ -51,8 +44,6 @@ export default {}
 #bg2 {
   background: url("../../../assets/images/about/LikeTooth.png") no-repeat;
   background-position: 6% 53%;
-  /* background-position-y: 180px;
-  background-position-x: 20px; */
-  background-size: 37%;
+  /* background-size: auto 100%; */
 }
 </style>
