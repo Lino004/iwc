@@ -60,6 +60,12 @@ module.exports = {
       xl: '1330px',
       '2xl': '1536px'
     },
+    backgroundSize: {
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      'auto-100': '4rem'
+    },
     extend: {
       fontFamily: {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif]
@@ -71,7 +77,8 @@ module.exports = {
         '104px': '104px'
       },
       borderWidth: {
-        3: '3px'
+        3: '3px',
+        30: '1.875rem'
       },
       gridTemplateColumns: {
         // Simple 16 column grid

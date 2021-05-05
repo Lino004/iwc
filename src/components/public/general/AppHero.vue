@@ -1,11 +1,8 @@
 <template>
   <section class="h-auto relative">
       <img
-        class="filter brightness-50"
+        class="filter brightness-50 h-96 md:h-auto object-cover"
         :src="src"
-        alt=""
-        height="100%"
-        width="100%"
       />
       <div class="absolute top-0 w-full h-full flex items-center">
         <h1
