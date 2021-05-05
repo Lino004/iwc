@@ -68,6 +68,7 @@
         </div>
       </div>
     </div>
+    <hr class="w-4/5 mx-auto border-2 border-grid2" />
   </section>
 </template>
 

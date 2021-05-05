@@ -5,6 +5,7 @@
     <app-hero :title="title" :src="src"></app-hero>
 
     <contact-info></contact-info>
+    <contact-form></contact-form>
   </div>
 </template>
 
@@ -14,10 +15,11 @@ import AppHero from '@/components/public/general/AppHero.vue'
 import AppMenu from '@/components/public/general/AppMenu.vue'
 
 import bg from '@/assets/images/contact/coffee-card.png'
-import ContactInfo from '../../components/public/contact/ContactInfo.vue'
+import ContactInfo from '@/components/public/contact/ContactInfo.vue'
+import ContactForm from '@/components/public/contact/ContactForm.vue'
 
 export default {
-  components: { AppHeader, AppMenu, AppHero, ContactInfo },
+  components: { AppHeader, AppMenu, AppHero, ContactInfo, ContactForm },
   data () {
     return {
       src: bg,
