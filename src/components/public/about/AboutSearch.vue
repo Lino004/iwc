@@ -7,8 +7,10 @@
           <label for="search py-auto" class="font-bold text-primary lg:text-lg">SEARCH</label> <br />
           <input
             type="text"
-            name=""
             id="search"
+            v-model="valueSearch"
+            @keyup="actionkeyUp"
+            @keydown="actionkeyDown"
             class="w-full my-5 pl-16 px-5 h-65px appearance-none rounded-15px border-none bg-grid3 focus:outline-0 hover:outline-0 text-primary font-sans sm:text-lg search-input"
           />
         </div>
@@ -19,12 +21,16 @@
             name="regions"
             id="regions"
             class="w-full my-5 px-5 h-65px appearance-none rounded-15px border border-grid7 focus:outline-0 hover:outline-0 text-primary font-sans sm:text-lg select-input"
+            v-model="valueRegion"
+            @change="$emit('event-region', valueRegion)"
           >
             <option value="">Region name</option>
-            <option value="region1">R1</option>
-            <option value="region2">R2</option>
-            <option value="region3">R3</option>
-            <option value="region4">R4</option>
+            <option
+              v-for="(region, i) in regions"
+              :key="`region${i}`"
+              :value="region.code">
+              {{region.name}}
+            </option>
           </select>
         </div>
 
@@ -34,12 +40,16 @@
               name="provinces"
               id="provinces"
               class="w-full my-5 px-5 h-65px appearance-none rounded-15px border border-grid7 focus:outline-0 hover:outline-0 text-primary font-sans sm:text-lg select-input"
+              v-model="valueProvince"
+              @change="$emit('event-province', valueProvince)"
             >
               <option value="">Province</option>
-              <option value="province1">P1</option>
-              <option value="province2">P2</option>
-              <option value="province3">P3</option>
-              <option value="province4">P4</option>
+              <option
+                v-for="(province, i) in provinces"
+                :key="`province${i}`"
+                :value="province.code">
+                {{province.name}}
+              </option>
             </select>
         </div>
       </form>
@@ -48,7 +58,48 @@
 </template>
 
 <script>
-export default { components: { } }
+import { getProvinces } from '@/api/public/provinces'
+import { getRegions } from '@/api/public/regions'
+
+export default {
+  components: {
+  },
+  data () {
+    return {
+      provinces: [],
+      regions: [],
+      valueProvince: '',
+      valueRegion: '',
+      valueSearch: '',
+      typingTimer: null,
+      doneTypingInterval: 2000
+    }
+  },
+  computed: {},
+  methods: {
+    async initData () {
+      try {
+        this.provinces = (await getProvinces()).data.data
+        this.regions = (await getRegions()).data.data
+      } catch (error) {
+        //
+      }
+    },
+    actionkeyUp () {
+      clearTimeout(this.typingTimer)
+      const that = this
+      this.typingTimer = setTimeout(() => {
+        that.$emit('event-search', that.valueSearch)
+      }, this.doneTypingInterval)
+    },
+    actionkeyDown () {
+      clearTimeout(this.typingTimer)
+    }
+  },
+  async mounted () {
+    await this.initData()
+  }
+}
 </script>
 
 <style lang="css" scoped>

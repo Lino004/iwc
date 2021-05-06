@@ -20,7 +20,7 @@
         <div class="flex flex-col justify-around pl-7">
           <div class="flex flex-row justify-start items-center my-10 lg:my-0">
             <div class="w-20 pr-20">
-              <icon-map class="mx-auto"></icon-map>
+              <icon-map class="mx-auto stroke-primary"></icon-map>
             </div>
             <div class="text-primary text-sm sm:text-base md:text-lg lg:text-lg">
               <p>Upper Penthouse, Burgundy Corporate Center, Gil Puyat Avenue, Makati City </p>

@@ -16,7 +16,7 @@
               </div>
               <div class="h-20 w-20 bg-grid1 rounded-full flex items-center">
                 <IconEmail
-                  class="mx-auto"
+                  class="mx-auto stroke-grid5"
                   width="2.438rem"
                   height="1.938rem"/>
               </div>
@@ -30,7 +30,7 @@
               </div>
               <div class="h-20 w-20 bg-grid1 rounded-full flex items-center">
                 <IconPhone
-                  class="mx-auto"
+                  class="mx-auto stroke-grid5"
                   width="2.188rem"
                   height="2.188rem"/>
               </div>

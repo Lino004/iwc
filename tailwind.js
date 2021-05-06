@@ -44,11 +44,13 @@ module.exports = {
     },
     fill: theme => ({
       primary: '#152237',
-      secondary: '#C29C4A'
+      secondary: '#C29C4A',
+      grid5: '#D9DDE4'
     }),
     stroke: theme => ({
       primary: '#152237',
-      secondary: '#C29C4A'
+      secondary: '#C29C4A',
+      grid5: '#D9DDE4'
     }),
     boxShadow: {
       box1: '0px 3px 6px #00000029'
