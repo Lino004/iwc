@@ -98,6 +98,9 @@ module.exports = {
       },
       outline: {
         0: '0'
+      },
+      backgroundPosition: {
+        '6%-53%': '6%-53%'
       }
     }
   },

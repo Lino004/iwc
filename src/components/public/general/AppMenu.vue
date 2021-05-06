@@ -63,7 +63,8 @@
             :key="i"
             :to="{ name: item.to }"
             tag="a"
-            class="">
+            class=""
+            @click.native="showModalMenu = false">
             <span class="hover:text-secondary text-lg font-bold">{{ item.label }}</span>
           </router-link>
 
@@ -75,7 +76,8 @@
               :key="index + 'child'"
               :to="{ name: child.to }"
               tag="a"
-              class="hover:text-secondary truncate text-lg">
+              class="hover:text-secondary truncate text-lg"
+              @click.native="showModalMenu = false">
               {{ child.label }}
             </router-link>
           </template>

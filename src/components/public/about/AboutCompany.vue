@@ -44,6 +44,5 @@ export default {}
 #bg2 {
   background: url("../../../assets/images/about/LikeTooth.png") no-repeat;
   background-position: 6% 53%;
-  /* background-size: auto 100%; */
 }
 </style>
