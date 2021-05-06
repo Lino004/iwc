@@ -1,8 +1,8 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="30.621"
-    height="30.621"
+    :width="width"
+    :height="height"
     viewBox="0 0 30.621 30.621"
   >
     <g
@@ -15,7 +15,7 @@
         data-name="Tracé 7"
         d="M28.5,16.5a12,12,0,1,1-12-12A12,12,0,0,1,28.5,16.5Z"
         fill="none"
-        stroke="#8f96a3"
+        stroke=""
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="3"
@@ -25,7 +25,7 @@
         data-name="Tracé 8"
         d="M31.5,31.5l-6.525-6.525"
         fill="none"
-        stroke="#8f96a3"
+        stroke=""
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="3"
@@ -35,7 +35,16 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    height: {
+      type: String,
+      default: '2.392'
+    },
+    width: {
+      type: String,
+      default: '2.388rem'
+    }
+  }
+}
 </script>
-
-<style scoped></style>

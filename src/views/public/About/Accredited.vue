@@ -2,8 +2,7 @@
   <div class="w-full">
     <app-hero :title="title" :src="src"></app-hero>
     <about-search
-      @event-province="actionProvince"
-      @event-region="actionRegion"
+      @event-specialization="actionSpecialization"
       @event-search="actionSearch"/>
     <about-accredities
       :dentists="dentists"/>
@@ -27,22 +26,33 @@ export default {
     return {
       src: bg,
       title: 'Accredited Dentists',
-      dentists: []
+      dentists: [],
+      specialization: '',
+      search: ''
     }
   },
   methods: {
-    actionProvince (val) {
+    actionSpecialization (val) {
       console.log(val)
-    },
-    actionRegion (val) {
-      console.log(val)
+      this.specialization = val
+      this.actionGetDentistList()
     },
     actionSearch (val) {
       console.log(val)
+      this.search = val
+      this.actionGetDentistList()
     },
     async actionGetDentistList () {
       try {
-        this.dentists = (await getDentists()).data.data
+        this.dentists = (await getDentists(
+          null,
+          null,
+          null,
+          null,
+          this.search,
+          null,
+          this.specialization
+        )).data.data
       } catch (error) {
         //
       }
@@ -53,5 +63,3 @@ export default {
   }
 }
 </script>
-
-<style lang="" scoped></style>

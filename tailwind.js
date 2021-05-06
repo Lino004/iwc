@@ -1,20 +1,31 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+const primary = '#152237'
+const secondary = '#C29C4A'
+const grid1 = '#374152'
+const grid2 = '#5A6A85'
+const grid3 = '#F9F8F6'
+const grid4 = '#ACB4C1'
+const grid5 = '#D9DDE4'
+const grid6 = '#707070'
+const grid8 = '#8f96a3'
+const grid7 = '#C4C8CD'
+
 module.exports = {
   purge: [],
   darkMode: false,
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      primary: '#152237',
-      grid1: '#374152',
-      grid2: '#5A6A85',
-      grid3: '#F9F8F6',
-      secondary: '#C29C4A'
+      primary,
+      secondary,
+      grid1,
+      grid2,
+      grid3
     }),
     placeholderColor: theme => ({
       ...theme('colors'),
-      primary: '#152237'
+      primary
     }),
     borderRadius: {
       ...defaultTheme.borderRadius,
@@ -22,14 +33,14 @@ module.exports = {
     },
     textColor: theme => ({
       ...theme('colors'),
-      primary: '#152237',
-      secondary: '#C29C4A',
-      grid1: '#374152',
-      grid2: '#5A6A85',
-      grid3: '#F9F8F6',
-      grid4: '#ACB4C1',
-      grid5: '#D9DDE4',
-      grid6: '#707070'
+      primary,
+      secondary,
+      grid1,
+      grid2,
+      grid3,
+      grid4,
+      grid5,
+      grid6
     }),
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']
@@ -43,26 +54,27 @@ module.exports = {
       '42px': '2.625rem'
     },
     fill: theme => ({
-      primary: '#152237',
-      secondary: '#C29C4A',
-      grid5: '#D9DDE4'
+      primary,
+      secondary,
+      grid5
     }),
     stroke: theme => ({
-      primary: '#152237',
-      secondary: '#C29C4A',
-      grid5: '#D9DDE4'
+      primary,
+      secondary,
+      grid5,
+      grid8
     }),
     boxShadow: {
       box1: '0px 3px 6px #00000029'
     },
     borderColor: theme => ({
       ...theme('colors'),
-      primary: '#152237',
-      secondary: '#C29C4A',
-      grid1: '#374152',
-      grid2: '#5A6A85',
-      grid6: '#707070',
-      grid7: '#C4C8CD'
+      primary,
+      secondary,
+      grid1,
+      grid2,
+      grid6,
+      grid7
     }),
     screens: {
       sm: '640px',

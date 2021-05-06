@@ -3,6 +3,7 @@ import IconPhone from '@/components/icons/IconPhone'
 import IconCart from '@/components/icons/IconCart'
 import IconMap from '@/components/icons/IconMap'
 import IconMobile from '@/components/icons/IconMobile'
+import IconSearch from '@/components/icons/IconSearch'
 import IconFacebook from '@/components/icons/IconFacebook'
 
 import Modal from '@/components/public/general/modal'
@@ -15,6 +16,7 @@ export default {
     IconCart,
     IconMap,
     IconMobile,
+    IconSearch,
     IconFacebook,
     Modal,
     VueRecaptcha

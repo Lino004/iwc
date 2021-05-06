@@ -1,4 +1,7 @@
-button, a, button:focus, a:focus {
+button,
+a,
+button:focus,
+a:focus {
   outline: none;
 }
 
@@ -6,14 +9,17 @@ button, a, button:focus, a:focus {
   background: url('../images/home/image1.png') no-repeat;
   background-size: cover;
 }
+
 .bg-imageTwo {
   background: url('../images/home/image2.png') no-repeat;
   background-size: cover;
 }
+
 .bg-imageThree {
   background: url('../images/home/image3.png') no-repeat;
   background-size: cover;
 }
+
 .bg-imageFour {
   background: url('../images/home/image4.png') no-repeat;
   background-size: cover;

@@ -9,25 +9,32 @@
       </div>
       <hr class="mt-6 mx-auto border-2 border-grid2" />
     </div>
-    <div
-      v-for="item in dentists"
-      :key="item.id"
-      class="cursor-pointer"
-      @click="currentDentist = item">
-      <div class="shadow-box1 rounded-lg pl-16 md:pl-28 py-14 mt-20 md:mt-28">
-        <h5 class="font-bold mb-5 font-serif text-primary text-lg md:text-xl lg:text-2xl">
-          Dentist Clinic Name
-        </h5>
-        <p class="font-sans text-primary text-lg md:text-xl lg:text-2xl">
-          {{ `${item.name.last} ${item.name.first}` }}
-        </p>
-        <p class="font-sans text-primary text-lg md:text-xl lg:text-2xl">
-          {{ `${item.contact.email[0]}` }}
-        </p>
-        <p class="font-sans text-primary text-lg md:text-xl lg:text-2xl">
-          {{ `${item.contact.number[0]}` }}
-        </p>
+    <div v-if="dentists.length">
+      <div
+        v-for="item in dentists"
+        :key="item.id"
+        class="cursor-pointer"
+        @click="currentDentist = item">
+        <div class="shadow-box1 rounded-lg pl-16 md:pl-28 py-14 mt-20 md:mt-28">
+          <h5 class="font-bold mb-5 font-serif text-primary text-lg md:text-xl lg:text-2xl">
+            Dentist Clinic Name
+          </h5>
+          <p class="font-sans text-primary text-lg md:text-xl lg:text-2xl">
+            {{ `${item.name.last} ${item.name.first}` }}
+          </p>
+          <p class="font-sans text-primary text-lg md:text-xl lg:text-2xl">
+            {{ `${item.contact.email[0]}` }}
+          </p>
+          <p class="font-sans text-primary text-lg md:text-xl lg:text-2xl">
+            {{ `${item.contact.number[0]}` }}
+          </p>
+        </div>
       </div>
+    </div>
+    <div class="shadow-box1 rounded-lg pl-16 md:pl-28 py-14 mt-20 md:mt-28" v-else>
+      <h5 class="font-bold mb-5 font-serif text-primary text-lg md:text-xl lg:text-2xl">
+        No data
+      </h5>
     </div>
     <modal v-if="currentDentist">
       <about-card-dentist
@@ -55,5 +62,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css" scoped></style>

@@ -11,7 +11,7 @@ import store from './store'
 import mixins from './services/mixin'
 
 import '@/assets/css/tailwind.css'
-import '@/assets/css/general.css'
+import '@/assets/css/general.scss'
 
 Vue.config.productionTip = false
 
