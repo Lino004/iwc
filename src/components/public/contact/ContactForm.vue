@@ -13,7 +13,7 @@
         />
       </div>
 
-      <form novalidate='true' @submit="checkForm" class="grid grid-rows-1 gap-y-10 pb-24">
+      <form novalidate='true' @submit.prevent="checkForm" class="grid grid-rows-1 gap-y-10 pb-24">
         <div class="grid lg:grid-cols-2 w-10/12 mx-auto gap-x-28">
           <div>
             <input
@@ -22,7 +22,7 @@
               type="text"
               placeholder="Name"
               required
-              class="w-full my-5 h-14 appearance-none input focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
+              class="input-contact"
             />
           </div>
 
@@ -33,7 +33,7 @@
               type="email"
               placeholder="Contact email"
               required
-              class="w-full my-5 h-14 appearance-none input focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
+              class="input-contact"
             />
           </div>
         </div>
@@ -45,18 +45,28 @@
             type="text"
             placeholder="Subject"
             required
-            class="w-full my-5 h-14 appearance-none input focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
+            class="input-contact"
           />
         </div>
 
         <div class="grid lg:grid-col-1 w-10/12 mx-auto">
           <textarea
             id="message"
+            v-model="message"
             placeholder="Your Message"
             rows="10"
             required
-            class="w-full my-5 appearance-none input  focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
+            class="input-contact"
           ></textarea>
+        </div>
+
+        <div class="flex justify-center">
+          <vue-recaptcha
+            ref="recaptcha"
+            @verify="onVerify"
+            @expired="onExpired"
+            :sitekey="sitekey">
+          </vue-recaptcha>
         </div>
 
         <div class="grid lg:grid-col-1 w-auto mx-auto">
@@ -66,7 +76,9 @@
               <li :key="error" v-for="error in errors">{{ error }}</li>
             </ul>
           </p>
-          <!-- {{ confirmationText }} -->
+          <p v-if="isSended">
+            Thank you! Your message has been sent successfully.
+          </p>
         </div>
 
         <div class="grid lg:grid-col-1 w-auto mx-auto">
@@ -81,6 +93,8 @@
 </template>
 
 <script>
+import { sendContact } from '@/api/public/contact'
+
 export default {
   data: () => {
     return {
@@ -88,48 +102,73 @@ export default {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      isSended: false,
+      captchaToken: '',
+      sitekey: '6Ldp_YgaAAAAAMoXM8KRuQQUNCt1vnP52GKVkjZM'
     }
   },
   methods: {
-    checkForm: function (e) {
+    validEmail (email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      return re.test(email)
+    },
+    validateForm () {
       this.errors = []
-
       if (!this.name) {
         this.errors.push('Name is required.')
       }
-
-      if (!this.email) {
-        this.errors.push('Email is required.')
-      } else if (!this.validEmail(this.email)) {
+      if (!this.validEmail(this.email)) {
         this.errors.push('Valid email required.')
       }
-
       if (!this.subject) {
         this.errors.push('Subject is required.')
       }
-
       if (!this.message) {
         this.errors.push('Message is required.')
       }
-
-      if (!this.errors.length) {
-        return true
+      if (!this.captchaToken) {
+        this.errors.push('ReCAPTCHA validation required.')
       }
-
-      e.preventDefault()
     },
-    validEmail: function (email) {
-      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      return re.test(email)
+    async checkForm () {
+      this.validateForm()
+      if (this.errors.length) return
+      try {
+        await sendContact({
+          type: 1,
+          name: this.name,
+          email: this.email,
+          subject: this.subject,
+          message: this.message,
+          captchaToken: this.captchaToken
+        })
+      } catch (error) {
+        //
+      }
+    },
+    onSubmit: function () {
+      this.$refs.invisibleRecaptcha.execute()
+    },
+    onVerify: function (response) {
+      console.log('Verify: ' + response)
+    },
+    onExpired: function () {
+      console.log('Expired')
+    },
+    resetRecaptcha () {
+      this.$refs.recaptcha.reset()
     }
   }
 }
 </script>
 
 <style scoped>
-.input {
-  border-top: none;
-  border-bottom: 3px solid #c4c8cd;
+.input-contact {
+  @apply
+    w-full my-5 appearance-none border-b-3 border-grid7
+    focus:outline-0 focus:border-secondary focus:placeholder-transparent
+    hover:outline-0
+    text-primary font-sans text-lg placeholder-primary;
 }
 </style>
