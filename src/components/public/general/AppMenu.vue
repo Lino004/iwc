@@ -98,7 +98,7 @@ export default {
       menu: [
         {
           label: 'HOME',
-          to: '',
+          to: 'home',
           children: [],
           show: false
         },
@@ -109,11 +109,11 @@ export default {
           children: [
             {
               label: 'COMPANY',
-              to: ''
+              to: 'about/company'
             },
             {
               label: 'ACCREDITED DENTISTS',
-              to: ''
+              to: 'about/accredited-dentists'
             }
           ]
         },
@@ -131,7 +131,7 @@ export default {
         },
         {
           label: 'CONTACT',
-          to: '',
+          to: 'contact',
           show: false,
           children: []
         }

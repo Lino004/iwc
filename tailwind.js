@@ -1,8 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [
-  ],
+  purge: [],
   darkMode: false,
   theme: {
     backgroundColor: theme => ({
@@ -13,6 +12,14 @@ module.exports = {
       grid3: '#F9F8F6',
       secondary: '#C29C4A'
     }),
+    placeholderColor: theme => ({
+      ...theme('colors'),
+      primary: '#152237'
+    }),
+    borderRadius: {
+      ...defaultTheme.borderRadius,
+      '15px': '0.938rem'
+    },
     textColor: theme => ({
       ...theme('colors'),
       primary: '#152237',
@@ -21,7 +28,8 @@ module.exports = {
       grid2: '#5A6A85',
       grid3: '#F9F8F6',
       grid4: '#ACB4C1',
-      grid5: '#D9DDE4'
+      grid5: '#D9DDE4',
+      grid6: '#707070'
     }),
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']
@@ -30,13 +38,19 @@ module.exports = {
       ...defaultTheme.fontSize,
       '42px': '2.625rem'
     },
+    backgroundPosition: {
+      ...defaultTheme.backgroundPosition,
+      '42px': '2.625rem'
+    },
     fill: theme => ({
       primary: '#152237',
-      secondary: '#C29C4A'
+      secondary: '#C29C4A',
+      grid5: '#D9DDE4'
     }),
     stroke: theme => ({
       primary: '#152237',
-      secondary: '#C29C4A'
+      secondary: '#C29C4A',
+      grid5: '#D9DDE4'
     }),
     boxShadow: {
       box1: '0px 3px 6px #00000029'
@@ -45,7 +59,10 @@ module.exports = {
       ...theme('colors'),
       primary: '#152237',
       secondary: '#C29C4A',
-      grid1: '#374152'
+      grid1: '#374152',
+      grid2: '#5A6A85',
+      grid6: '#707070',
+      grid7: '#C4C8CD'
     }),
     screens: {
       sm: '640px',
@@ -54,24 +71,36 @@ module.exports = {
       xl: '1330px',
       '2xl': '1536px'
     },
+    backgroundSize: {
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      'auto-100': '4rem'
+    },
     extend: {
       fontFamily: {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif]
       },
       height: {
-        header: '270px'
+        header: '270px',
+        '65px': '4.063rem'
       },
       padding: {
         '104px': '104px'
       },
       borderWidth: {
-        3: '3px'
+        3: '3px',
+        30: '1.875rem'
+      },
+      outline: {
+        0: '0'
       }
     }
   },
   variants: {
     extend: {
-      stroke: ['hover']
+      stroke: ['hover'],
+      outline: ['hover']
     }
   },
   plugins: []

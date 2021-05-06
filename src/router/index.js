@@ -1,8 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import routes from './public/routes'
+import publicRoutes from './public'
+import { PAGE_DEFAULT } from './routerConf'
 
 Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '*',
+    redirect: PAGE_DEFAULT
+  },
+  {
+    path: '/',
+    component: () => import('@/views/public/index.vue'),
+    children: publicRoutes
+  }
+]
 
 const router = new VueRouter({
   mode: 'history',

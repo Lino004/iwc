@@ -6,11 +6,7 @@
 
 <script>
 export default {
-  name: 'App',
-  metaInfo: {
-    title: 'IWC Wellness Inc',
-    titleTemplate: '%s - IWC Wellness Inc'
-  }
+  name: 'App'
 }
 </script>
 
