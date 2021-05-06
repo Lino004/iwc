@@ -1,18 +1,12 @@
 <template>
   <div>
-    <app-header></app-header>
-    <app-menu></app-menu>
-    <page-header  :title="title" :src="src"/>
+    <app-hero :title="title" :src="src"></app-hero>
     <content-services></content-services>
-    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import AppHeader from '@/components/public/general/AppHeader'
-import AppMenu from '@/components/public/general/AppMenu'
-import AppFooter from '@/components/public/general/AppFooter'
-import PageHeader from '@/components/public/general/PageHeader.vue'
+import AppHero from '@/components/public/general/AppHero.vue'
 import img from '@/assets/images/services/dental-tools-and-equipment.png'
 import ContentServices from '@/components/public/services/ContentServices.vue'
 
@@ -22,10 +16,7 @@ export default {
     title: 'Services'
   },
   components: {
-    AppHeader,
-    AppMenu,
-    AppFooter,
-    PageHeader,
+    AppHero,
     ContentServices
   },
   data () {
@@ -36,7 +27,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

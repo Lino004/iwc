@@ -143,5 +143,7 @@ export default {
 </script>
 
 <style>
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
