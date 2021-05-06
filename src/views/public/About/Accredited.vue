@@ -1,21 +1,12 @@
 <template>
-  <div class="w-full mx-auto">
-    <app-header></app-header>
-    <app-menu></app-menu>
+  <div class="w-full">
     <app-hero :title="title" :src="src"></app-hero>
-
     <about-search></about-search>
-
-      <about-accredities></about-accredities>
-
-    <app-footer></app-footer>
+    <about-accredities></about-accredities>
   </div>
 </template>
 
 <script>
-import AppFooter from '@/components/public/general/AppFooter.vue'
-import AppHeader from '@/components/public/general/AppHeader.vue'
-import AppMenu from '@/components/public/general/AppMenu.vue'
 import AppHero from '@/components/public/general/AppHero.vue'
 
 import bg from '@/assets/images/about/asianDentist.png'
@@ -25,10 +16,7 @@ import AboutAccredities from '@/components/public/about/AboutAccredities.vue'
 export default {
   // eslint-disable-next-line vue/no-unused-components
   components: {
-    AppHeader,
-    AppMenu,
     AppHero,
-    AppFooter,
     AboutSearch,
     AboutAccredities
   },
