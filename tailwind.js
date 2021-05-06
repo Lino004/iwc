@@ -88,6 +88,10 @@ module.exports = {
       padding: {
         '104px': '104px'
       },
+      margin: {
+        '30px': '30.5px',
+        '10px': '10px'
+      },
       borderWidth: {
         3: '3px',
         30: '1.875rem'
