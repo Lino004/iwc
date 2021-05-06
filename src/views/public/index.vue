@@ -8,9 +8,12 @@
 </template>
 
 <script>
+import { createNamespacedHelpers } from 'vuex'
 import AppHeader from '@/components/public/general/AppHeader'
 import AppMenu from '@/components/public/general/AppMenu'
 import AppFooter from '@/components/public/general/AppFooter'
+
+const General = createNamespacedHelpers('publicGeneral')
 
 export default {
   metaInfo: {
@@ -21,6 +24,14 @@ export default {
     AppHeader,
     AppMenu,
     AppFooter
+  },
+  methods: {
+    ...General.mapActions({
+      actionGetSiteInfo: 'getSiteInfo'
+    })
+  },
+  async mounted () {
+    await this.actionGetSiteInfo()
   }
 }
 </script>

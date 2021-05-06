@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <app-hero :title="title" :src="src"></app-hero>
-    <section class="container mx-auto py-28 w-8/12">
+    <section class="container py-28  mx-auto w-11/12 lg:w-8/12">
       <contact-info></contact-info>
       <hr class="my-14 mx-auto border-2 border-grid2" />
       <contact-form></contact-form>

@@ -4,12 +4,12 @@
     <div class="shadow-box1">
       <div class="py-20">
         <h3
-          class="font-bold text-primary font-serif text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px"
+          class="font-bold text-primary font-serif text-center text-3xl md:text-3xl lg:text-42px"
         >
           Contact Form
         </h3>
         <hr
-          class="w-1/2 sm:w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-2 border-grid2"
+          class="w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-2 border-grid2"
         />
       </div>
 
@@ -22,7 +22,7 @@
               type="text"
               placeholder="Name"
               required
-              class="w-full my-5 h-14 appearance-none input  focus:outline-0 hover:outline-0 text-primary font-sans sm:text-lg placeholder-primary"
+              class="w-full my-5 h-14 appearance-none input focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
             />
           </div>
 
@@ -33,7 +33,7 @@
               type="email"
               placeholder="Contact email"
               required
-              class="w-full my-5 h-14 appearance-none input  focus:outline-0 hover:outline-0 text-primary font-sans sm:text-lg placeholder-primary"
+              class="w-full my-5 h-14 appearance-none input focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
             />
           </div>
         </div>
@@ -45,7 +45,7 @@
             type="text"
             placeholder="Subject"
             required
-            class="w-full my-5 h-14 appearance-none input focus:outline-0 hover:outline-0 text-primary placeholder-primary font-sans sm:text-lg"
+            class="w-full my-5 h-14 appearance-none input focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
           />
         </div>
 
@@ -55,7 +55,7 @@
             placeholder="Your Message"
             rows="10"
             required
-            class="w-full my-5 appearance-none input  focus:outline-0 hover:outline-0 text-primary placeholder-primary font-sans sm:text-lg"
+            class="w-full my-5 appearance-none input  focus:outline-0 hover:outline-0 text-primary font-sans text-lg placeholder-primary"
           ></textarea>
         </div>
 
@@ -66,7 +66,7 @@
               <li :key="error" v-for="error in errors">{{ error }}</li>
             </ul>
           </p>
-          {{ confirmationText }}
+          <!-- {{ confirmationText }} -->
         </div>
 
         <div class="grid lg:grid-col-1 w-auto mx-auto">

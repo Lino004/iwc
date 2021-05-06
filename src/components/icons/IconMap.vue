@@ -1,8 +1,8 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="28"
-    height="37.207"
+    :width="width"
+    :height="height"
     viewBox="0 0 28 37.207"
   >
     <path
@@ -18,7 +18,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    height: {
+      type: String,
+      default: '2.122rem'
+    },
+    width: {
+      type: String,
+      default: '2.679rem'
+    }
+  }
+}
 </script>
 
 <style scoped></style>

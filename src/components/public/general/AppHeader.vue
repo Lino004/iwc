@@ -43,27 +43,31 @@
 </template>
 
 <script>
-import { get } from '@/api/public/siteInfo'
+import { createNamespacedHelpers } from 'vuex'
+
+const General = createNamespacedHelpers('publicGeneral')
 
 export default {
   components: {
   },
   data () {
     return {
-      email: '',
-      mobileNumber: ''
+    }
+  },
+  computed: {
+    ...General.mapGetters({
+      siteInfo: 'siteInfo'
+    }),
+    email () {
+      if (!this.siteInfo) return ''
+      return this.siteInfo.emailAddresses.primary
+    },
+    mobileNumber () {
+      if (!this.siteInfo) return ''
+      return this.siteInfo.mobileNumbers.primary
     }
   },
   methods: {
-  },
-  async created () {
-    try {
-      const res = (await get()).data.data
-      this.email = res.emailAddresses.primary
-      this.mobileNumber = res.mobileNumbers.primary
-    } catch (error) {
-      //
-    }
   }
 }
 </script>
