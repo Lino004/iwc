@@ -98,7 +98,7 @@ export default {
       menu: [
         {
           label: 'HOME',
-          to: '/',
+          to: 'home',
           children: [],
           show: false
         },
