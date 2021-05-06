@@ -1,0 +1,41 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="30.621"
+    height="30.621"
+    viewBox="0 0 30.621 30.621"
+  >
+    <g
+      id="Icon_feather-search"
+      data-name="Icon feather-search"
+      transform="translate(-3 -3)"
+    >
+      <path
+        id="Tracé_7"
+        data-name="Tracé 7"
+        d="M28.5,16.5a12,12,0,1,1-12-12A12,12,0,0,1,28.5,16.5Z"
+        fill="none"
+        stroke="#8f96a3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="3"
+      />
+      <path
+        id="Tracé_8"
+        data-name="Tracé 8"
+        d="M31.5,31.5l-6.525-6.525"
+        fill="none"
+        stroke="#8f96a3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="3"
+      />
+    </g>
+  </svg>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped></style>
