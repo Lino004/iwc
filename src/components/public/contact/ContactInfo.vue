@@ -93,7 +93,7 @@
             <div
               class="text-secondary underline text-base md:text-lg lg:text-lg"
             >
-              <p>IWC Wellness and Preventive Consultancy Inc.</p>
+              <a href="">IWC Wellness and Preventive Consultancy Inc.</a>
             </div>
           </div>
         </div>

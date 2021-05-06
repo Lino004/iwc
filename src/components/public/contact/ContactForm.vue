@@ -166,7 +166,7 @@ export default {
 <style scoped>
 .input-contact {
   @apply
-    w-full my-5 appearance-none border-b-3 border-grid7
+    w-full my-5 pb-5 appearance-none border-b-3 border-grid7
     focus:outline-0 focus:border-secondary focus:placeholder-transparent
     hover:outline-0
     text-primary font-sans text-lg placeholder-primary;
