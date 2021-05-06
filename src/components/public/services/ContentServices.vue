@@ -8,7 +8,7 @@
           />
       </div>
       <div class="text-left font-serif mx-auto w-4/5 mt-11 lg:w-3/5 xl:w-2/5 lg:mt-36">
-        <p class="text-base lg:text-lg">
+        <p class="text-base lg:text-lg text-primary">
           Promotion of optimal and sustainable oral care services is made possible by our
           affiliation with various dental care providers. Our members are assured of being
           provided with the following services:
@@ -28,10 +28,5 @@ export default {
   components: {
     CardImage
   }
-
 }
 </script>
-
-<style>
-
-</style>
