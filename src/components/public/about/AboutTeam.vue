@@ -1,13 +1,13 @@
 <template>
   <div>
-    <section>
+    <section class="my-28">
       <div class="my-10">
         <h1 class="font-bold font-serif text-primary text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px">
-          The board of Directors
+          The Board of Directors
         </h1>
         <hr class="w-1/2 md:w-2/3 mt-6 mx-auto border-2 border-grid2"/>
       </div>
-      <div class="mx-auto w-4/5 lg:w-3/4 text-left">
+      <div class="mx-auto w-4/5 lg:w-3/4 text-left mb-16">
         <p class="text-lg font-sans text-primary leading-9">
           IWC Wellness and Preventive Consultancy Inc ., was established in 2016
           with a commitment to provide and deliver the best oral care every
@@ -16,16 +16,16 @@
         </p>
       </div>
       <div
-        class="flex w-11/12 md:w-auto flex-wrap-reverse items-center justify-center mx-auto gap-x-28 gap-y-14 my-10"
+        class="flex w-auto lg:w-2/3 flex-wrap-reverse items-center justify-center mx-auto gap-x-28 gap-y-14 my-10"
       >
         <div v-for="item in team" :key="item.id">
           <img :src="item.src" :alt="item.name" />
-          <p class="text-center font-sans text-primary text-lg leading-9 mt-4">{{ item.name }}</p>
+          <p class="text-center text-primary text-lg leading-9 mt-4 font-serif">{{ item.name }}</p>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="">
       <div class="my-10">
         <h1 class="font-bold font-serif text-primary text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px">
           The Management
@@ -41,11 +41,11 @@
         </p>
       </div>
       <div
-        class="flex w-11/12 md:w-auto flex-wrap-reverse items-center justify-center mx-auto gap-x-28 gap-y-14 my-10"
+        class="flex w-auto lg:w-2/3 flex-wrap-reverse items-center justify-center mx-auto gap-x-28 gap-y-14 my-10"
       >
         <div v-for="item in management" :key="item.id">
           <img :src="item.src" :alt="item.name" />
-          <p class="text-center text-primary font-sans text-lg leading-9 mt-4">{{ item.name }}</p>
+          <p class="text-center text-primary text-lg leading-9 mt-4 font-serif">{{ item.name }}</p>
         </div>
       </div>
     </section>
@@ -77,7 +77,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

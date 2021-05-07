@@ -4,11 +4,16 @@
       <h3 class="font-bold text-primary font-serif text-center text-2xl md:text-3xl lg:text-42px">
         Company Profile
       </h3>
-      <hr class="w-1/2 md:w-2/3 mt-6 mx-auto border-2 border-grid2"/>
+      <hr class="w-1/2 md:w-2/5 mt-6 mx-auto border-2 border-grid2"/>
     </div>
-    <div id="bg2" class="bg-auto-100 md:bg-auto">
+    <div class="relative">
+      <img
+        src="@/assets/images/about/LikeTooth.png"
+        alt=""
+        class=""
+      />
       <div
-        class="w-4/5 lg:w-3/4 text-left mx-auto leading-9 text-primary py-10 lg:py-24 my-8"
+        class="absolute absolute-center w-4/5 lg:w-3/5 text-left mx-auto leading-9 text-primary py-10 lg:py-24"
       >
         <p class="text-lg mb-12 font-sans">
           IWC Wellness and Preventive Consultancy Inc ., was established in
@@ -41,8 +46,9 @@ export default {}
 </script>
 
 <style lang="css" scoped>
-#bg2 {
-  background: url("../../../assets/images/about/LikeTooth.png") no-repeat;
-  background-position: 6% 53%;
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 </style>
