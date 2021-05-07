@@ -1,7 +1,7 @@
 <template>
   <div class="w-full sticky top-0 z-10 px-8 xl:px-104px -my-14">
     <div class="bg-white rounded-2xl flex justify-between px-6 xl:px-10 shadow-box1">
-      <div class="hidden lg:flex items-center space-x-8 xl:space-x-11 text-base xl:text-lg font-bold text-primary">
+      <div class="hidden lg:flex items-center space-x-8 xl:space-x-11 text-base xl:text-lg font-bold">
         <div
           v-for="(item, i) in menu"
           :key="i"
@@ -10,7 +10,12 @@
             :to="{ name: item.to }"
             tag="a"
             class="relative">
-            <span class="hover:text-secondary">{{ item.label }}</span>
+            <span
+              class="hover:text-secondary"
+              :class="{
+                'text-secondary': checkIsCurrentMenu(item),
+                'text-primary': checkIsCurrentMenu(item)
+              }">{{ item.label }}</span>
           </router-link>
           <div class="animated fadeIn dropdown-content absolute hidden" v-if="item.children.length">
             <div class="bg-white rounded-xl p-5 mt-14 space-y-2 flex flex-col">
@@ -19,7 +24,11 @@
                 :key="index + 'child'"
                 :to="{ name: child.to }"
                 tag="a"
-                class="hover:text-secondary truncate">
+                class="hover:text-secondary truncate"
+                :class="{
+                  'text-secondary': child.to === $route.name,
+                  'text-primary': child.to !== $route.name
+                }">
                 {{ child.label }}
               </router-link>
             </div>
@@ -57,7 +66,7 @@
           <i class="mdi mdi-close"></i>
         </span>
       </button>
-      <div class="flex flex-col space-y-4 items-center text-lg pt-6 text-primary">
+      <div class="flex flex-col space-y-4 items-center text-lg pt-6">
         <template v-for="(item, i) in menu">
           <router-link
             :key="i"
@@ -65,7 +74,11 @@
             tag="a"
             class=""
             @click.native="showModalMenu = false">
-            <span class="hover:text-secondary text-lg font-bold">{{ item.label }}</span>
+            <span class="hover:text-secondary text-lg font-bold"
+            :class="{
+              'text-secondary': item.to === $route.name,
+              'text-primary': item.to !== $route.name
+            }">{{ item.label }}</span>
           </router-link>
 
           <template
@@ -77,6 +90,10 @@
               :to="{ name: child.to }"
               tag="a"
               class="hover:text-secondary truncate text-lg"
+              :class="{
+                'text-secondary': child.to === $route.name,
+                'text-primary': child.to !== $route.name
+              }"
               @click.native="showModalMenu = false">
               {{ child.label }}
             </router-link>
@@ -139,6 +156,16 @@ export default {
         }
       ],
       showModalMenu: false
+    }
+  },
+  methods: {
+    checkIsCurrentMenu (menu) {
+      const isCurrentParent = menu.to === this.$route.name
+      let isCurrentChild = false
+      if (menu.children.length) {
+        isCurrentChild = menu.children.map(el => el.to).includes(this.$route.name)
+      }
+      return isCurrentParent || isCurrentChild
     }
   }
 }
