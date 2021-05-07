@@ -5,7 +5,7 @@
         <h1 class="font-bold font-serif text-primary text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px">
           The Board of Directors
         </h1>
-        <hr class="w-1/2 md:w-2/3 mt-6 mx-auto border-2 border-grid2"/>
+        <hr class="border-2 border-grid2 w-1/2 md:w-2/3 mt-6 mx-auto"/>
       </div>
       <div class="mx-auto w-4/5 lg:w-3/4 text-left mb-16">
         <p class="text-lg font-sans text-primary leading-9">
@@ -30,7 +30,7 @@
         <h1 class="font-bold font-serif text-primary text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px">
           The Management
         </h1>
-        <hr class="w-1/2 md:w-2/3 mt-6 mx-auto border-2 border-grid2"/>
+        <hr class="border-2 border-grid2 w-1/2 md:w-2/3 mt-6 mx-auto"/>
       </div>
       <div class="mx-auto w-4/5 lg:w-3/4 text-left">
         <p class="text-lg leading-9 text-primary font-sans">

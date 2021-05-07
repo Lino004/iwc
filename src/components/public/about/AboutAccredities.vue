@@ -7,7 +7,7 @@
         </h2>
         <img src="@/assets/images/about/pdf-icon.png" alt="" />
       </div>
-      <hr class="mt-6 mx-auto border-2 border-grid2" />
+      <hr class="border-2 border-grid2 mt-6 mx-auto" />
     </div>
     <div v-if="dentists.length">
       <div

@@ -21,6 +21,7 @@
               v-model="valueSearch"
               @keyup="actionkeyUp"
               @keydown="actionkeyDown"
+              @keydown.enter.prevent="actionkeyEntre"
               class="input-about search-input border-none bg-grid3 rounded-r-15px"
             />
           </div>
@@ -85,7 +86,7 @@ export default {
       // valueRegion: '',
       valueSearch: '',
       typingTimer: null,
-      doneTypingInterval: 2000
+      doneTypingInterval: 1000
     }
   },
   computed: {},
@@ -107,6 +108,10 @@ export default {
     },
     actionkeyDown () {
       clearTimeout(this.typingTimer)
+    },
+    actionkeyEntre () {
+      clearTimeout(this.typingTimer)
+      this.$emit('event-search', this.valueSearch)
     }
   },
   async mounted () {

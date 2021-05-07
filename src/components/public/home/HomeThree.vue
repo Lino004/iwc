@@ -5,7 +5,7 @@
         <h3 class="text-3xl lg:text-42px text-primary leading-tight font-serif font-bold  w-5/6 lg:w-4/5">
           Promoting Oral Health Thru Solid Partnership
         </h3>
-        <hr class="border-2 border-secondary my-9  w-5/6 lg:w-4/5">
+        <hr class="border-2 border-secondary my-9 w-5/6 lg:w-4/5">
         <p class="text-lg lg:text-2xl text-grid2 font-serif font-bold mb-9">
           Are you a licensed dental care practitioner? Broaden your network today!
         </p>
@@ -41,7 +41,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

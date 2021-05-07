@@ -4,7 +4,7 @@
       <h3 class="font-bold text-primary font-serif text-center text-2xl md:text-3xl lg:text-42px">
         Company Profile
       </h3>
-      <hr class="w-1/2 md:w-2/5 mt-6 mx-auto border-2 border-grid2"/>
+      <hr class="border-2 border-grid2 w-1/2 md:w-2/5 mt-6 mx-auto"/>
     </div>
     <div class="relative">
       <img

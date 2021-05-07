@@ -6,9 +6,7 @@
       >
         Contact Us
       </h3>
-      <hr
-        class="w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto border-2 border-grid2"
-      />
+      <hr class="border-2 border-grid2 w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto"/>
     </div>
 
     <div class="py-20 mx-auto">
