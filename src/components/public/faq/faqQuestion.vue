@@ -1,38 +1,46 @@
 <template>
   <div class="w-full shadow-box1 rounded-15px">
-    <button
-      v-if="showSection === false"
-      type="button"
-      v-on:click="toggle"
-      class="py-10 pl-20 w-full text-left text-primary font-serif font-bold text-2xl"
-    >
-      My gums are bleeding!
-    </button>
-    <button
-      v-else
-      type="button"
-      v-on:click="toggle"
-      class="bg-primary py-10 pl-20 w-full text-left text-white font-serif font-bold text-2xl rounded-t-15px"
-    >
-      My gums are bleeding!
-    </button>
+    <div v-if="showSection === false" class="">
+      <button
+        type="button"
+        v-on:click="toggle"
+        class="py-10 pl-20 w-full text-left text-primary font-serif font-bold text-2xl flex justify-between"
+      >
+        {{ question }}
+        <div class="pr-14">
+          <icon-plus width="1.5rem" height="1.5rem" class="" />
+        </div>
+      </button>
+    </div>
 
-    <div v-show="showSection" class="px-36 py-14 w-full ">
+    <div v-else>
+      <button
+        type="button"
+        v-on:click="toggle"
+        class="bg-primary py-10 pl-20 w-full text-left text-white font-serif font-bold text-2xl rounded-t-15px flex justify-between"
+      >
+        {{ question }}
+        <div class="pr-14 pt-2">
+          <icon-moins width="1.3rem" height="1.3rem" class="" />
+        </div>
+      </button>
+      <div></div>
+    </div>
+
+    <div v-show="showSection" class="px-10 md:px-36 py-14 w-full ">
       <p class="text-primary font-sans text-lg">
-        Gums bleed when they are irritated and inflamed which is not considered
-        normal. This is due to plaque (a soft film of bacteria) being left on
-        the teeth which causes inflammation called gingivitis and if not
-        addressed can develop into gum disease. Over time, if not cleaned off
-        through daily brushing and interdental cleaning, the plaque can turn
-        into a hard deposit called tartar or calculus which will require
-        professional scaling by your dentist or hygienist to remove it.
+        {{ message }}
       </p>
     </div>
   </div>
 </template>
 
 <script>
+import IconMoins from '../../icons/IconMoins.vue'
+import IconPlus from '../../icons/IconPlus.vue'
 export default {
+  // eslint-disable-next-line vue/no-unused-components
+  components: { IconPlus, IconMoins },
   methods: {
     toggle () {
       this.showSection = !this.showSection
@@ -40,7 +48,17 @@ export default {
   },
   data () {
     return {
-      showSection: true
+      showSection: false
+    }
+  },
+  props: {
+    question: {
+      type: String,
+      required: true
+    },
+    message: {
+      type: String,
+      required: true
     }
   }
 }
