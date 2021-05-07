@@ -12,7 +12,7 @@ const grid8 = '#8f96a3'
 const grid7 = '#C4C8CD'
 
 module.exports = {
-  purge: [],
+  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
     backgroundColor: theme => ({
