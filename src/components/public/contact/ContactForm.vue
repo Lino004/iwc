@@ -15,7 +15,7 @@
 
       <form novalidate='true' @submit.prevent="checkForm" class="grid grid-rows-1 gap-y-10 pb-24">
         <div class="grid lg:grid-cols-2 w-10/12 mx-auto gap-x-28">
-          <div>
+          <div class="form-group">
             <input
               id="name"
               v-model="name"
@@ -24,9 +24,10 @@
               required
               class="input-contact"
             />
+            <div class="line-b-input"></div>
           </div>
 
-          <div>
+          <div class="form-group">
             <input
               id="email"
               v-model="email"
@@ -35,10 +36,11 @@
               required
               class="input-contact"
             />
+            <div class="line-b-input"></div>
           </div>
         </div>
 
-        <div class="grid lg:grid-col-1 w-10/12 mx-auto">
+        <div class="grid lg:grid-col-1 w-10/12 mx-auto form-group">
           <input
             id="subject"
             v-model="subject"
@@ -47,9 +49,10 @@
             required
             class="input-contact"
           />
+          <div class="line-b-input"></div>
         </div>
 
-        <div class="grid lg:grid-col-1 w-10/12 mx-auto">
+        <div class="grid lg:grid-col-1 w-10/12 mx-auto form-group">
           <textarea
             id="message"
             v-model="message"
@@ -58,9 +61,10 @@
             required
             class="input-contact"
           ></textarea>
+          <div class="line-b-input"></div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center" v-if="sitekey">
           <vue-recaptcha
             ref="recaptcha"
             @verify="onVerify"
@@ -105,7 +109,7 @@ export default {
       message: '',
       isSended: false,
       captchaToken: '',
-      sitekey: '6Ldp_YgaAAAAAMoXM8KRuQQUNCt1vnP52GKVkjZM'
+      sitekey: ''
     }
   },
   methods: {
@@ -143,22 +147,34 @@ export default {
           message: this.message,
           captchaToken: this.captchaToken
         })
+        this.isSended = true
+        this.name = ''
+        this.email = ''
+        this.subject = ''
+        this.message = ''
+        this.captchaToken = ''
+        this.resetRecaptcha()
+        const that = this
+        setTimeout(() => { that.isSended = false }, 4000)
       } catch (error) {
         //
       }
     },
-    onSubmit: function () {
+    onSubmit () {
       this.$refs.invisibleRecaptcha.execute()
     },
-    onVerify: function (response) {
-      console.log('Verify: ' + response)
+    onVerify (response) {
+      this.captchaToken = response
     },
-    onExpired: function () {
-      console.log('Expired')
+    onExpired () {
+      this.captchaToken = ''
     },
     resetRecaptcha () {
       this.$refs.recaptcha.reset()
     }
+  },
+  mounted () {
+    this.sitekey = process.env.VUE_APP_KEY_RECAPTCHA
   }
 }
 </script>
@@ -166,9 +182,30 @@ export default {
 <style scoped>
 .input-contact {
   @apply
-    w-full my-5 pb-5 appearance-none border-b-3 border-grid7
-    focus:outline-0 focus:border-secondary focus:placeholder-transparent
+    w-full pb-5 appearance-none border-b-3 border-grid7
+    focus:outline-0 focus:placeholder-transparent
     hover:outline-0
     text-primary font-sans text-lg placeholder-primary;
+}
+
+.form-group {
+  position: relative;
+}
+
+.line-b-input {
+  height: 3px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  transition: 0.3s width ease-in-out;
+}
+
+.form-group input.input-contact:focus + .line-b-input,
+.form-group textarea:focus + .line-b-input {
+  width: 100%;
+
+  @apply bg-secondary;
 }
 </style>
