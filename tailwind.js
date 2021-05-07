@@ -65,7 +65,8 @@ module.exports = {
       grid8
     }),
     boxShadow: {
-      box1: '0px 3px 6px #00000029'
+      box1: '0px 3px 6px #00000029',
+      box2: '0px 3px 3px #00000029'
     },
     borderColor: theme => ({
       ...theme('colors'),

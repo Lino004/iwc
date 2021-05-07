@@ -18,7 +18,7 @@
               }">{{ item.label }}</span>
           </router-link>
           <div class="animated fadeIn dropdown-content absolute hidden" v-if="item.children.length">
-            <div class="bg-white rounded-xl p-5 mt-14 space-y-2 flex flex-col">
+            <div class="bg-white shadow-box2 rounded-xl p-5 mt-14 space-y-2 flex flex-col">
               <router-link
                 v-for="(child, index) in item.children"
                 :key="index + 'child'"
