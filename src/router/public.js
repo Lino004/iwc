@@ -1,3 +1,4 @@
+import informationsRoute from './information'
 export default [
   {
     path: '',
@@ -23,5 +24,10 @@ export default [
     path: '/services',
     name: 'services',
     component: () => import('@/views/public/Services.vue')
+  },
+  {
+    path: '/informations',
+    component: () => import('@/views/public/Informations/index.vue'),
+    children: informationsRoute
   }
 ]
