@@ -18,7 +18,7 @@
 
 <script>
 import faqQuestion from './faqQuestion.vue'
-import questions from './questions'
+import questions from '../../../configurations/FaqConfig'
 export default {
   components: { faqQuestion },
   data () {
