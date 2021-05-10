@@ -42,9 +42,9 @@
           </p>
         </div>
       </div>
-      <div>
+      <!-- <div>
         <info-drawer></info-drawer>
-      </div>
+      </div> -->
       </div>
 
     </section>
@@ -52,8 +52,8 @@
 </template>
 
 <script>
-import InfoDrawer from '../../../components/public/informations/InfoDrawer.vue'
-export default { components: { InfoDrawer } }
+// import InfoDrawer from '../../../components/public/informations/InfoDrawer.vue'
+// export default { components: { InfoDrawer } }
 </script>
 
 <style lang="css" scoped></style>
