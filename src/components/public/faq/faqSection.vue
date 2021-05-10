@@ -18,12 +18,12 @@
 
 <script>
 import faqQuestion from './faqQuestion.vue'
-import questions from '../../../configurations/FaqConfig'
+import { Questions } from '@/configurations/FaqConfig'
 export default {
   components: { faqQuestion },
   data () {
     return {
-      questions: questions
+      questions: Questions
     }
   }
 }

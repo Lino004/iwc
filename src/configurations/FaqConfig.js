@@ -1,4 +1,4 @@
-export default [
+export const Questions = [
   {
     question: 'My gums are bleeding!',
     message:
