@@ -7,8 +7,8 @@
 
 <script>
 import bg from '@/assets/images/faq/notepad.png'
-import AppHero from '../../components/public/general/AppHero.vue'
-import FaqSection from '../../components/public/faq/faqSection.vue'
+import AppHero from '@/components/public/general/AppHero.vue'
+import FaqSection from '@/components/public/faq/faqSection.vue'
 
 export default {
   components: { AppHero, FaqSection },
