@@ -6,8 +6,5 @@
 
 <script>
 
-export default {
-  // components: { AppHeader, AppMenu, AppFooter }
-
-}
+export default {}
 </script>

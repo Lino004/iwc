@@ -1,4 +1,3 @@
-import informationsRoute from './information'
 export default [
   {
     path: '',
@@ -28,6 +27,22 @@ export default [
   {
     path: '/informations',
     component: () => import('@/views/public/Informations/index.vue'),
-    children: informationsRoute
+    children: [
+      {
+        path: '/',
+        name: 'terms',
+        component: () => import('@/views/public/Informations/Terms.vue')
+      },
+      {
+        path: '/informations/privacy',
+        name: 'privacy',
+        component: () => import('@/views/public/Informations/Privacy.vue')
+      },
+      {
+        path: '/informations/dataSharing',
+        name: 'dataSharing',
+        component: () => import('@/views/public/Informations/DataSharing.vue')
+      }
+    ]
   }
 ]

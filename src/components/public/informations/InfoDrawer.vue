@@ -1,17 +1,43 @@
 <template>
-  <div class="flex flex-col shadow-box1 rounded-15px w-96 pt-12">
-    <h6 class="pl-7 pb-10">MORE INFORMATIONS</h6>
+  <div class="flex flex-col shadow-box1 rounded-15px pt-12">
+    <h6 class="pl-9 pb-3 font-sans font-bold text-primary text-lg">MORE INFORMATIONS</h6>
 
-    <router-link class="focus:text-secondary" to="/terms">
-      <button class="text-left text-primary text-lg border-l-8 border-primary py-7 pl-7">Terms of Use</button>
-    </router-link>
-    <!-- <button class="text-left text-primary text-lg focus:border-l-8 border-primary py-7 pl-7" type="">Privacy Policy</button> -->
-    <button class="text-left text-primary text-lg hover:border-l-8 border-primary py-7 pl-7">Data Sharing Policy</button>
+    <div v-for="( item, i ) in menu" :key="i">
+      <router-link :to="{ name: item.to }">
+        <button
+          class="text-left text-primary text-lg font-sans py-7 w-full"
+          :class="{
+            'border-primary border-l-8 pl-7 bg-grid3 font-bold': item.to === $route.name,
+            'text-primary pl-9 hover:bg-grid3': item.to !== $route.name
+          }"
+        >
+          {{ item.label }}
+        </button>
+      </router-link>
+    </div>
+
   </div>
 </template>
 
 <script>
 export default {
-
+  data () {
+    return {
+      menu: [
+        {
+          label: 'Terms of use',
+          to: 'terms'
+        },
+        {
+          label: 'Privacy Policy',
+          to: 'privacy'
+        },
+        {
+          label: 'Data Sharing Policy',
+          to: 'dataSharing'
+        }
+      ]
+    }
+  }
 }
 </script>
