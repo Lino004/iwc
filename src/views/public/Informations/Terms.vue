@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <!-- <div class="w-full">
     <section class="container py-28  mx-auto w-11/12 lg:w-8/12">
       <div>
         <h3
@@ -10,8 +10,8 @@
         <hr class="border-2 border-grid7 my-10 mx-auto" />
       </div>
 
-      <div class="flex justify-between">
-        <div class="text-primary text-lg font-sans w-7/12">
+      <div class="flex justify-between"> -->
+        <div>
           <p class="">Last updated: 01 January 2021</p>
           <div class="my-7">
             <p>
@@ -42,17 +42,17 @@
             </p>
           </div>
         </div>
-        <div class="w-4/12">
+        <!-- <div class="w-4/12">
           <info-drawer></info-drawer>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div>
     </section>
-  </div>
+  </div> -->
 </template>
 
 <script>
-import InfoDrawer from '../../../components/public/informations/InfoDrawer.vue'
-export default { components: { InfoDrawer } }
+// import InfoDrawer from '../../../components/public/informations/InfoDrawer.vue'
+export default { /* components: { InfoDrawer } */ }
 </script>
 
 <style lang="css" scoped></style>

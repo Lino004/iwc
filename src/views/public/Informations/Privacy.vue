@@ -1,17 +1,6 @@
 <template>
-  <div class="w-full">
-    <section class="container py-28  mx-auto w-11/12 lg:w-8/12">
-      <div>
-        <h3
-          class="font-bold text-primary font-serif text-2xl sm:text-3xl md:text-3xl lg:text-42px"
-        >
-          Privacy Policy
-        </h3>
-        <hr class="border-2 border-grid7 my-10 mx-auto" />
-      </div>
 
-      <div class="flex justify-between">
-        <div class="text-primary text-lg font-sans w-7/12">
+        <div class="">
           <p class="">Last updated: 01 January 2021</p>
           <div class="my-7">
             <p>
@@ -42,17 +31,11 @@
             </p>
           </div>
         </div>
-        <div class="w-4/12">
-          <info-drawer></info-drawer>
-        </div>
-      </div>
-    </section>
-  </div>
+
 </template>
 
 <script>
-import InfoDrawer from '../../../components/public/informations/InfoDrawer.vue'
-export default { components: { InfoDrawer } }
+
 </script>
 
 <style lang="css" scoped></style>

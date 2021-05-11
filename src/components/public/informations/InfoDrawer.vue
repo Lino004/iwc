@@ -20,23 +20,11 @@
 </template>
 
 <script>
+import menu from '@/configurations/InfoConfig'
 export default {
   data () {
     return {
-      menu: [
-        {
-          label: 'Terms of use',
-          to: 'terms'
-        },
-        {
-          label: 'Privacy Policy',
-          to: 'privacy'
-        },
-        {
-          label: 'Data Sharing Policy',
-          to: 'dataSharing'
-        }
-      ]
+      menu: menu
     }
   }
 }
