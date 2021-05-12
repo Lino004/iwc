@@ -28,5 +28,21 @@ export default [
     path: '/faq',
     name: 'faq',
     component: () => import('@/views/public/faq.vue')
+  },
+  {
+    path: '/cart',
+    component: () => import('@/views/public/Cart/index.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'dentalPackage',
+        component: () => import('@/views/public/Cart/DentalPackage.vue')
+      },
+      {
+        path: '/cart/checkout',
+        name: 'checkout',
+        component: () => import('@/views/public/Cart/Checkout.vue')
+      }
+    ]
   }
 ]
