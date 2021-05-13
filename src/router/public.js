@@ -25,6 +25,27 @@ export default [
     component: () => import('@/views/public/Services.vue')
   },
   {
+    path: '/informations',
+    component: () => import('@/views/public/Informations/index.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'terms',
+        component: () => import('@/views/public/Informations/Terms.vue')
+      },
+      {
+        path: '/informations/privacy',
+        name: 'privacy',
+        component: () => import('@/views/public/Informations/Privacy.vue')
+      },
+      {
+        path: '/informations/dataSharing',
+        name: 'dataSharing',
+        component: () => import('@/views/public/Informations/DataSharing.vue')
+      }
+    ]
+  },
+  {
     path: '/faq',
     name: 'faq',
     component: () => import('@/views/public/faq.vue')
