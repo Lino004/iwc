@@ -3,14 +3,14 @@
     <section class="container py-28  mx-auto w-11/12 lg:w-8/12">
       <div>
         <h3
-          class="font-bold text-primary font-serif text-2xl sm:text-3xl md:text-3xl lg:text-42px"
+          class="font-bold text-primary font-serif text-2xl sm:text-3xl lg:text-42px"
         >
           {{ title }}
         </h3>
         <hr class="border-2 border-grid7 my-10 mx-auto" />
 
         <div
-          class="flex flex-col md:flex-row justify-around lg:hidden flex-wrap font-sans text-lg text-primary mb-10"
+          class="md:flex flex-col md:flex-row justify-around hidden lg:hidden flex-wrap font-sans text-lg text-primary mb-10"
         >
           <h6 class="font-bold text-center">MORE INFORMATIONS</h6>
           <router-link
