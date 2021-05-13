@@ -5,7 +5,7 @@
       :src="src"
     />
     <div class="absolute top-0 w-full h-full flex items-center">
-      <h1 class="text-white font-bold font-serif text-3xl lg:text-7xl pl-10 xl:pl-24">
+      <h1 class="text-white font-bold font-serif text-3xl lg:text-7xl pl-10 xl:pl-24 w-7/12">
         {{ title }}
       </h1>
     </div>

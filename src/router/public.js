@@ -44,5 +44,10 @@ export default [
         component: () => import('@/views/public/Informations/DataSharing.vue')
       }
     ]
+  },
+  {
+    path: '/faq',
+    name: 'faq',
+    component: () => import('@/views/public/faq.vue')
   }
 ]
