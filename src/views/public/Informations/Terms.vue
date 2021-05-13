@@ -1,17 +1,6 @@
 <template>
-  <!-- <div class="w-full">
-    <section class="container py-28  mx-auto w-11/12 lg:w-8/12">
-      <div>
-        <h3
-          class="font-bold text-primary font-serif text-2xl sm:text-3xl md:text-3xl lg:text-42px"
-        >
-          Terms of Use
-        </h3>
-        <hr class="border-2 border-grid7 my-10 mx-auto" />
-      </div>
 
-      <div class="flex justify-between"> -->
-        <div>
+  <div>
           <p class="">Last updated: 01 January 2021</p>
           <div class="my-7">
             <p>
@@ -41,18 +30,12 @@
               nec, dapibus libero.
             </p>
           </div>
-        </div>
-        <!-- <div class="w-4/12">
-          <info-drawer></info-drawer>
-        </div> -->
-      <!-- </div>
-    </section>
-  </div> -->
+  </div>
+
 </template>
 
 <script>
-// import InfoDrawer from '../../../components/public/informations/InfoDrawer.vue'
-export default { /* components: { InfoDrawer } */ }
+export default {}
 </script>
 
 <style lang="css" scoped></style>
