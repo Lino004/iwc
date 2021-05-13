@@ -29,7 +29,7 @@ export default [
     component: () => import('@/views/public/Informations/index.vue'),
     children: [
       {
-        path: '/',
+        path: '',
         name: 'terms',
         component: () => import('@/views/public/Informations/Terms.vue')
       },
