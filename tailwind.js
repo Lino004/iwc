@@ -120,7 +120,8 @@ module.exports = {
   variants: {
     extend: {
       stroke: ['hover'],
-      outline: ['hover']
+      outline: ['hover'],
+      borderWidth: ['hover']
     }
   },
   plugins: []
