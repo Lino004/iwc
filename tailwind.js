@@ -47,7 +47,8 @@ module.exports = {
     },
     fontSize: {
       ...defaultTheme.fontSize,
-      '42px': '2.625rem'
+      '42px': '2.625rem',
+      '34px': '2.125rem'
     },
     backgroundPosition: {
       ...defaultTheme.backgroundPosition,
@@ -96,7 +97,11 @@ module.exports = {
       },
       height: {
         header: '270px',
-        '65px': '4.063rem'
+        '65px': '4.063rem',
+        '620px': '620px'
+      },
+      width: {
+        '400px': '400px'
       },
       padding: {
         '104px': '104px'
