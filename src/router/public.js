@@ -42,6 +42,16 @@ export default [
         path: '/cart/checkout',
         name: 'checkout',
         component: () => import('@/views/public/Cart/Checkout.vue')
+      },
+      {
+        path: '/cart/order-confirmation',
+        name: 'order-confirmation',
+        component: () => import('@/views/public/Cart/OrderConfirmation.vue')
+      },
+      {
+        path: '/cart/payment-instruction',
+        name: 'payment-instruction',
+        component: () => import('@/views/public/Cart/PaymentInstruction.vue')
       }
     ]
   }

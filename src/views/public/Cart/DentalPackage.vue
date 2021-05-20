@@ -1,15 +1,13 @@
 <template>
   <section class="py-20 w-11/12 lg:w-3/4 mx-auto">
-    <div>
-      <h3 class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14">
-        My Dental Package
-      </h3>
-    </div>
+    <h3 class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14">
+      My Dental Package
+    </h3>
 
     <div class="py-10 font-sans text-lg">
       <div class="flex border-t-3 border-grid7 font-bold">
         <div class=" block1 py-7"></div>
-        <div class=" block2 py-7">PRODUCT DETAILS</div>
+        <div class=" w-9/12 py-7">PRODUCT DETAILS</div>
         <div class="text-center py-7 block3">PRICE</div>
       </div>
 
@@ -24,19 +22,19 @@
           </button>
           </div>
         </div>
-        <div class=" block2 py-8">
+        <div class=" w-9/12 py-8">
           <p class="font-bold pb-3">{{ item.title + ' ' + i }}</p>
           <p>{{ item.name }}</p>
         </div>
         <div class="text-center py-8 block3">{{ item.price }}</div>
       </div>
       <modal v-if="currentPack" class="">
-        <about-pack @close="currentDentist = null"></about-pack>
+        <about-pack  @close="currentPack = null"></about-pack>
       </modal>
 
       <div class="flex border-t-3 border-grid7 ">
         <div class=" block1 py-9"></div>
-        <div class=" block2 py-9 font-bold text-2xl">
+        <div class=" w-9/12 py-9 font-bold text-2xl">
           <p class="pb-5">Subtotal</p>
           <p class="text-secondary">Total</p>
         </div>
@@ -59,9 +57,9 @@
 
 <script>
 import pack from './dentalConfig'
-import IconPencil from '../../../components/icons/IconPencil.vue'
-import IconTrash from '../../../components/icons/IconTrash.vue'
-import AboutPack from '../../../components/public/Cart/AboutPack.vue'
+import IconPencil from '@/components/icons/IconPencil.vue'
+import IconTrash from '@/components/icons/IconTrash.vue'
+import AboutPack from '@/components/public/Cart/AboutPack.vue'
 export default {
   components: { IconTrash, IconPencil, AboutPack },
   data () {
@@ -77,8 +75,6 @@ export default {
 .block1 {
   width: 15%;
 }
-.block2 {
-  width: 75%;}
 .block3 {
   width: 20%;
 }

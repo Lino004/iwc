@@ -15,7 +15,7 @@
       APPLICANT DETAILS
     </div>
 
-    <form class="">
+    <form class="py-16">
       <div class="grid">
         <input
           type="text"
@@ -26,14 +26,14 @@
         />
       </div>
 
-      <div class="grid grid-cols-2 gap-x-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
         <div>
           <input
-            type="text"
+            type="date"
             id="birthday"
             v-model="birthday"
             placeholder="Birthday"
-            class="input-about"
+            class="input-about cursor-pointer"
           />
         </div>
         <div>
@@ -67,7 +67,7 @@
         />
       </div>
 
-      <div class="grid grid-cols-2 gap-x-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
         <div>
           <select name="district" id="district" class="input-about select-input" v-model="district">
             <option value="">District/Barangay</option>
@@ -84,7 +84,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-x-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
         <div>
           <select name="province" id="province" class="input-about select-input" v-model="province">
             <option value="">Province</option>
@@ -103,7 +103,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-x-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
         <div>
           <input
             type="text"
@@ -122,8 +122,10 @@
             class="input-about"
           />
         </div>
+      </div>
 
-        <button class="bg-grid1 hover:bg-secondary text-white px-9 py-3 rounded-15px mx-auto">
+      <div class="grid pt-20">
+        <button class="bg-grid1 hover:bg-secondary text-white px-16 py-3 rounded-15px mx-auto">
           <router-link to='/cart'>
             EDIT
           </router-link>
@@ -163,5 +165,20 @@ export default {
 .input-about {
   @apply my-5 h-65px appearance-none py-5 pl-7 border-none bg-grid3 rounded-15px w-full
     focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+background-image: url("../../../assets/images/cart/calendar.svg");
+background-repeat: no-repeat;
+padding-right: calc(1em + 10px);
+z-index: 0;
+}
+
+input[type="date"]::before{
+   content: attr(placeholder)" : ";
+   white-space: pre;
+}
+input[type="date"]:focus::before {
+   content:""!important;
 }
 </style>

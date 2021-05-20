@@ -4,7 +4,7 @@
       BILLING INFORMATION
     </div>
     <div class="py-16">
-      <form action="" class="flex flex-wrap justify-between items-center">
+      <form action="" class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-x-32">
         <input
           type="text"
           id="firstName"
@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 .input-about {
-  @apply my-5 h-65px appearance-none py-5 pl-7 w-9/12 mx-auto md:w-4/9 md:mx-0
+  @apply my-5 h-65px appearance-none py-5 pl-7 w-9/12 mx-auto md:w-full
     focus:outline-0 hover:outline-0 text-primary font-sans text-lg
 }
 </style>

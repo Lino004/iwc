@@ -4,7 +4,7 @@
       SHIPPING INFORMATION
     </div>
     <div class="py-16">
-      <form action="" class="flex flex-wrap justify-between items-center">
+      <form action="" class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-x-32">
         <input
           type="text"
           id="firstName"
@@ -45,7 +45,7 @@
           class="input-about"
         />
 
-        <div class="w-9/12 mx-auto md:w-4/9 md:mx-0 gap-x-4 flex items-center">
+        <div class="w-9/12 mx-auto md:w-full gap-x-4 flex items-center">
           <input type="checkbox" id="check" v-model="check" />
           <label for="check">Same as billing address</label>
         </div>
@@ -73,7 +73,8 @@ export default {
 
 <style lang="scss" scoped>
 .input-about {
-  @apply my-5 h-65px appearance-none py-5 pl-7 w-9/12 mx-auto md:w-4/9 md:mx-0
+  @apply my-5 h-65px appearance-none py-5 pl-7
+    w-9/12 mx-auto md:w-full
     border-none bg-grid3 rounded-15px
     focus:outline-0 hover:outline-0;
 }
