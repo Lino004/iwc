@@ -21,16 +21,8 @@ import AccountInformation from '@/components/public/Cart/AccountInformation.vue'
 import BillingInformation from '@/components/public/Cart/BillingInformation.vue'
 import PaymentMethod from '@/components/public/Cart/PaymentMethod.vue'
 import ShippingInformation from '@/components/public/Cart/ShippingInformation.vue'
-import AmountInformation from '../../../components/public/Cart/AmountInformation.vue'
+import AmountInformation from '@/components/public/Cart/AmountInformation.vue'
 export default {
-  components: { AccountInformation, AmountInformation, BillingInformation, ShippingInformation, PaymentMethod },
-  data () {
-    return {
-
-      valueEmail: '',
-      firstName: '',
-      lastName: ''
-    }
-  }
+  components: { AccountInformation, AmountInformation, BillingInformation, ShippingInformation, PaymentMethod }
 }
 </script>

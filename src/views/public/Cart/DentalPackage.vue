@@ -15,14 +15,14 @@
         <div class="block1 py-8">
           <div class="flex flex-col lg:flex-row justify-around gap-5 w-3/5">
             <button>
-            <icon-trash width='2rem' height="2rem" class="" />
+            <icon-trash width='2rem' height="2rem" />
           </button>
-          <button class="" @click="currentPack = item">
+          <button @click="currentPack = item">
             <icon-pencil width='1.7rem' height="2rem" class="" />
           </button>
           </div>
         </div>
-        <div class=" w-9/12 py-8">
+        <div class="w-9/12 py-8">
           <p class="font-bold pb-3">{{ item.title + ' ' + i }}</p>
           <p>{{ item.name }}</p>
         </div>
@@ -33,8 +33,8 @@
       </modal>
 
       <div class="flex border-t-3 border-grid7 ">
-        <div class=" block1 py-9"></div>
-        <div class=" w-9/12 py-9 font-bold text-2xl">
+        <div class="block1 py-9"></div>
+        <div class="w-9/12 py-9 font-bold text-2xl">
           <p class="pb-5">Subtotal</p>
           <p class="text-secondary">Total</p>
         </div>
@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import pack from './dentalConfig'
+import pack from '@/configurations/DentalConfig'
 import IconPencil from '@/components/icons/IconPencil.vue'
 import IconTrash from '@/components/icons/IconTrash.vue'
 import AboutPack from '@/components/public/Cart/AboutPack.vue'

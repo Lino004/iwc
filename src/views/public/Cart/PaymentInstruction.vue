@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import IconCheck from '../../../components/icons/IconCheck.vue'
+import IconCheck from '@/components/icons/IconCheck.vue'
 export default { components: { IconCheck } }
 </script>
 

@@ -15,8 +15,9 @@
         <p class="leading-9 text-primary font-sans text-lg">
           Your order (#000001) has been successfully submitted and is now
           processing for delivery. A temporary password for logging in this
-          website has been sent to your email, <span class="text-secondary font-bold">boyet.fernandez@gmail.com</span>. Thank
-          you.
+          website has been sent to your email,
+          <span class="text-secondary font-bold">boyet.fernandez@gmail.com</span
+          >. Thank you.
         </p>
         <button
           class="bg-grid1 hover:bg-secondary text-white px-9 py-3 rounded-15px ml-auto my-11"
@@ -31,7 +32,7 @@
 </template>
 
 <script>
-import IconCheck from '../../../components/icons/IconCheck.vue'
+import IconCheck from '@/components/icons/IconCheck.vue'
 export default { components: { IconCheck } }
 </script>
 
