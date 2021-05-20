@@ -31,7 +31,7 @@
         <div class="text-center py-8 block3">{{ item.price }}</div>
       </div>
       <modal v-if="currentPack" class="">
-        <about-pack @close="currentDentist = null"></about-pack>
+        <about-pack @close="currentPack = null"></about-pack>
       </modal>
 
       <div class="flex border-t-3 border-grid7 ">
@@ -77,8 +77,11 @@ export default {
 .block1 {
   width: 15%;
 }
+
 .block2 {
-  width: 75%;}
+  width: 75%;
+}
+
 .block3 {
   width: 20%;
 }

@@ -28,3 +28,13 @@ a:focus {
 hr {
   border-radius: 3px;
 }
+
+.is-overflow-y-active {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+.is-overflow-y-active::-webkit-scrollbar {
+  display: none;
+}

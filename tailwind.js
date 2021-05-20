@@ -98,6 +98,12 @@ module.exports = {
       height: {
         header: '270px',
         '65px': '4.063rem'
+        // modal: 'calc(100vh - 10px)'
+      },
+      maxHeight: {
+        header: '270px',
+        '65px': '4.063rem',
+        modal: 'calc(100vh - 10px)'
       },
       width: {
         '4/9': '45%',
