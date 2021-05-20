@@ -9,7 +9,7 @@
       <hr class="border-3 border-grid7 my-7 mx-auto" />
     </div>
 
-    <div class="text-center w-7/12 mx-auto">
+    <div class="text-center w-11/12 md:w-3/4 lg:w-4/6 mx-auto">
       <div>
         <icon-check class="mx-auto mb-8 mt-16"></icon-check>
         <p class="leading-9 text-primary font-sans text-lg">

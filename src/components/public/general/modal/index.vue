@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 bg-black bg-opacity-75 w-full h-full overflow-auto left-0 z-50 overscroll-contain">
+    class="fixed top-0 bg-black bg-opacity-75 w-full h-full overflow-auto left-0 z-50 overscroll-contain hideScroll">
     <div class="align-middle flex">
       <slot></slot>
     </div>
@@ -13,6 +13,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
 </style>
