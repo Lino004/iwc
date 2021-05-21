@@ -13,5 +13,10 @@ export default [
     path: '/password-reset-token',
     name: 'password-reset-token',
     component: () => import('@/views/client/PasswordResetT.vue')
+  },
+  {
+    path: '/password-reset',
+    name: 'password-reset',
+    component: () => import('@/views/client/PasswordReset.vue')
   }
 ]
