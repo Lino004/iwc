@@ -4,5 +4,8 @@ export default {
   lastName: '',
   phone: '',
   address: '',
-  check: false
+  check: false,
+  cardNumber: '',
+  expDate: '',
+  cvc: ''
 }
