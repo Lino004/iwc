@@ -1,8 +1,6 @@
 <template>
   <section class="py-20 w-11/12 lg:w-3/4 mx-auto">
-    <h3 class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14">
-      My Dental Package
-    </h3>
+    <h3 class="section-title">My Dental Package</h3>
 
     <div class="py-10 font-sans text-lg">
       <div class="flex border-t-3 border-grid7 font-bold">
@@ -75,6 +73,7 @@ export default {
 .block1 {
   width: 15%;
 }
+
 .block3 {
   width: 20%;
 }

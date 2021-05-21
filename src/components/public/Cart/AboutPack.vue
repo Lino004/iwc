@@ -28,7 +28,7 @@
 
       <div class="col-span-2 md:col-span-1">
         <input
-          type="text"
+          type="date"
           id="birthday"
           v-model="birthday"
           placeholder="Birthday"
@@ -67,7 +67,7 @@
       </div>
 
      <div class="col-span-2 md:col-span-1">
-        <select name="district" id="district" class="input-about select-input" v-model="district">
+        <select name="district" id="district" class="input-about select-chevron" v-model="district">
           <option value="">District/Barangay</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -75,7 +75,7 @@
       </div>
 
        <div class="col-span-2 md:col-span-1">
-        <select name="city" id="city" class="input-about select-input" v-model="city">
+        <select name="city" id="city" class="input-about select-chevron" v-model="city">
           <option value="">City</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -83,7 +83,7 @@
       </div>
 
       <div class="col-span-2 md:col-span-1">
-        <select name="province" id="province" class="input-about select-input" v-model="province">
+        <select name="province" id="province" class="input-about select-chevron" v-model="province">
           <option value="">Province</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -150,31 +150,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.select-input {
-  background-image: url("../../../assets/images/about/chevron.svg");
-  background-position: calc(100% - 30px) calc(1em + 10px);
-  background-repeat: no-repeat;
-}
-.input-about {
-  @apply my-5 h-65px appearance-none py-5 pl-7 border-none bg-grid3 rounded-15px w-full
-    focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
-}
-
-input[type=date]::-webkit-calendar-picker-indicator {
-background-image: url("../../../assets/images/cart/calendar.svg");
-background-repeat: no-repeat;
-padding-right: calc(1em + 10px);
-z-index: 0;
-}
-
-input[type="date"]::before{
-   content: attr(placeholder)" : ";
-   white-space: pre;
-}
-input[type="date"]:focus::before {
-   content:""!important;
-}
-
-</style>

@@ -1,11 +1,7 @@
 <template>
   <section class="py-20 w-11/12 lg:w-8/12 mx-auto">
     <div>
-      <h3
-        class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14"
-      >
-        Payment Instructions
-      </h3>
+      <h3 class="section-title">Payment Instructions</h3>
       <hr class="border-3 border-grid7 my-7 mx-auto" />
     </div>
 
@@ -34,5 +30,3 @@
 import IconCheck from '@/components/icons/IconCheck.vue'
 export default { components: { IconCheck } }
 </script>
-
-<style lang="scss" scoped></style>

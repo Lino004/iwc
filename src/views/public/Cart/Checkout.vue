@@ -2,9 +2,7 @@
 <!-- en cours de développement-->
   <section class='py-20 w-11/12 lg:w-8/12 mx-auto'>
     <div>
-      <h3 class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14">
-        Checkout
-      </h3>
+      <h3 class="section-title">Checkout</h3>
     </div>
     <div class="py-7">
       <account-information></account-information>

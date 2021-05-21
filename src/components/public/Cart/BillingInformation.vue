@@ -10,7 +10,7 @@
           id="firstName"
           v-model="firstName"
           placeholder="First Name"
-          class="input-about border-none bg-grid3 rounded-15px"
+          class="input-about"
         />
 
         <input
@@ -18,7 +18,7 @@
           id="lastName"
           v-model="lastName"
           placeholder="Last Name"
-          class="input-about border-none bg-grid3 rounded-15px"
+          class="input-about"
         />
 
         <input
@@ -26,7 +26,7 @@
           id="email"
           v-model="valueEmail"
           placeholder="Email Address"
-          class="input-about border-none bg-grid3 rounded-15px"
+          class="input-about"
         />
 
         <input
@@ -34,7 +34,7 @@
           id="phone"
           v-model="phone"
           placeholder="Contact Number"
-          class="input-about border-none bg-grid3 rounded-15px"
+          class="input-about"
         />
 
         <input
@@ -42,7 +42,7 @@
           id="address"
           v-model="address"
           placeholder="Address"
-          class="input-about border-none bg-grid3 rounded-15px"
+          class="input-about"
         />
       </form>
     </div>
@@ -64,10 +64,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.input-about {
-  @apply my-5 h-65px appearance-none py-5 pl-7 w-9/12 mx-auto md:w-full
-    focus:outline-0 hover:outline-0 text-primary font-sans text-lg
-}
-</style>

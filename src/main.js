@@ -12,6 +12,7 @@ import mixins from './services/mixin'
 
 import '@/assets/css/tailwind.css'
 import '@/assets/css/general.scss'
+import './assets/css/input.scss'
 
 Vue.config.productionTip = false
 
