@@ -26,8 +26,8 @@
         </div>
         <div class="text-center py-8 block3">{{ item.price }}</div>
       </div>
-      <modal v-if="currentPack" class="">
-        <about-pack  @close="currentPack = null"></about-pack>
+      <modal v-if="currentPack" @close="currentPack = null">
+        <about-pack></about-pack>
       </modal>
 
       <div class="flex border-t-3 border-grid7 ">

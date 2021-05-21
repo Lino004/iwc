@@ -99,6 +99,9 @@ module.exports = {
         header: '270px',
         '65px': '4.063rem'
       },
+      maxHeight: {
+        modal: 'calc(100vh - 10px)'
+      },
       width: {
         '4/9': '45%',
         95: '98%'

@@ -171,18 +171,3 @@ export default {
   }
 }
 </script>
-,
-
-<style scoped>
-.lineGrid {
-  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 grid-flow-row gap-6 py-16;
-}
-
-.gridElement {
-  @apply rounded-15px bg-grid3 py-5;
-}
-
-.innerElement {
-  @apply font-bold font-sans text-lg text-grid6 text-center flex flex-col items-center justify-end h-full;
-}
-</style>

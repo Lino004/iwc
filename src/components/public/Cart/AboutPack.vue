@@ -1,11 +1,5 @@
 <template>
-  <div class="w-4/5 lg:w-3/5 mx-4 md:mx-auto bg-white rounded-2xl px-10 lg:px-14 relative text-primary my-20 min-h-screen">
-    <a
-      class="absolute top-5 lg:top-10 right-5 lg:right-10 cursor-pointer"
-      @click="$emit('close')"
-    >
-      <i class="mdi mdi-close text-2xl"></i>
-    </a>
+  <div class="text-primary">
 
     <h3 class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14 pl-10 mb-11">
       Pinoy Dental Pack

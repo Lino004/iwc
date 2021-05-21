@@ -1,8 +1,5 @@
 <template>
-  <div class="md:w-2/3 mx-4 md:mx-auto bg-white rounded-2xl p-8 lg:p-14 relative text-primary">
-    <a class="absolute top-5 lg:top-10 right-5 lg:right-10 cursor-pointer" @click="$emit('close')">
-      <i class="mdi mdi-close text-2xl"></i>
-    </a>
+  <div class="p-8 lg:p-14 text-primary">
     <div>
       <h5 class="font-bold mb-5 font-serif text-primary text-xl lg:text-3xl">
         {{clinic ? clinic.name : 'no result'}}
@@ -76,7 +73,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
