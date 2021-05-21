@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import publicRoutes from './public'
+import clientRoutes from './client'
 import { PAGE_DEFAULT } from './routerConf'
 
 Vue.use(VueRouter)
@@ -14,6 +15,11 @@ const routes = [
     path: '/',
     component: () => import('@/views/public/index.vue'),
     children: publicRoutes
+  },
+  {
+    path: '/',
+    component: () => import('@/views/public/index.vue'),
+    children: clientRoutes
   }
 ]
 
