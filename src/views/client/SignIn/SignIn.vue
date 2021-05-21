@@ -26,7 +26,7 @@
             </button>
           </div>
         </form>
-        <div>
+        <div class="pt-6">
           <router-link to="/password-reset-token" class="underline text-secondary">Password Reset</router-link>
         </div>
       </div>
@@ -45,11 +45,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.input-about {
-  @apply h-65px appearance-none py-5 pl-7 w-9/12 mx-auto md:w-full
-    border-none bg-grid3 rounded-15px
-    focus:outline-0 hover:outline-0;
-}
-</style>

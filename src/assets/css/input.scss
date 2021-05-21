@@ -1,0 +1,10 @@
+.input-about {
+  @apply h-65px appearance-none py-5 pl-7 border-none bg-grid3 rounded-15px w-full
+    focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
+}
+
+.select-chevron {
+  background-image: url("../images/about/chevron.svg");
+  background-position: calc(100% - 30px) calc(1em + 10px);
+  background-repeat: no-repeat;
+}

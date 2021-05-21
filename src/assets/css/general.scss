@@ -28,3 +28,7 @@ a:focus {
 hr {
   border-radius: 3px;
 }
+
+.section-title {
+  @apply font-bold text-primary font-serif text-2xl sm:text-3xl md:text-3xl lg:text-42px;
+}
