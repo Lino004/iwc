@@ -16,7 +16,7 @@
           >. Thank you.
         </p>
         <button
-          class="bg-grid1 hover:bg-secondary text-white px-9 py-3 rounded-15px ml-auto my-11"
+          class="bg-grid1 hover:bg-secondary text-white px-9 py-3 rounded-15px ml-auto my-11 font-bold"
         >
           <router-link to="/cart/payment-instruction">
             CONTINUE
