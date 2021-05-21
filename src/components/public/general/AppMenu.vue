@@ -49,13 +49,6 @@
           class="hover:text-secondary text-primary font-bold">
           SIGN IN
         </router-link>
-
-        <modal v-if="currentDentist">
-          <about-card-dentist
-            @close="currentDentist = null"
-          />
-       </modal>
-
         <button class="hover:bg-secondary
         bg-grid1 rounded-2xl font-bold
         text-white px-6 xl:px-9 py-2 hidden lg:block">
