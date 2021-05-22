@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    profil client
   </div>
 </template>
 
