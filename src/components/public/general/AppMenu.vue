@@ -53,10 +53,12 @@
         text-white px-6 xl:px-9 py-2 hidden lg:block">
           APPLY FOR ACCREDITATION
         </button>
-        <IconCart
-          class="stroke-primary hover:stroke-secondary"
-          width="2.5rem"
-          height="2.375rem"/>
+        <router-link to="/cart">
+          <IconCart
+              class="stroke-primary hover:stroke-secondary"
+              width="2.5rem"
+              height="2.375rem"/>
+        </router-link>
       </div>
     </div>
     <div class="fixed h-screen w-screen bg-white text-white top-0 left-0" v-if="showModalMenu">
@@ -149,7 +151,7 @@ export default {
         },
         {
           label: 'PRODUCT',
-          to: '',
+          to: 'products',
           show: false,
           children: []
         },

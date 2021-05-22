@@ -13,6 +13,8 @@ import mixins from './services/mixin'
 import '@/assets/css/tailwind.css'
 import '@/assets/css/general.scss'
 import '@/assets/css/input.scss'
+import '@/assets/css/paymentMethod.scss'
+import '@/assets/css/modal.scss'
 
 Vue.config.productionTip = false
 

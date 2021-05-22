@@ -176,34 +176,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.input-contact {
-  @apply
-    w-full pb-5 appearance-none border-b-3 border-grid7
-    focus:outline-0 focus:placeholder-transparent
-    hover:outline-0
-    text-primary font-sans text-lg placeholder-primary;
-}
-
-.form-group {
-  position: relative;
-}
-
-.line-b-input {
-  height: 3px;
-  width: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: inline-block;
-  transition: 0.3s width ease-in-out;
-}
-
-.form-group input.input-contact:focus + .line-b-input,
-.form-group textarea:focus + .line-b-input {
-  width: 100%;
-
-  @apply bg-secondary;
-}
-</style>

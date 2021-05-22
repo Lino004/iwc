@@ -32,3 +32,16 @@ hr {
 .section-title {
   @apply font-bold text-primary font-serif text-2xl sm:text-3xl md:text-3xl lg:text-42px;
 }
+
+.iwc-btn-action {
+  @apply hover:bg-secondary w-full bg-grid1 rounded-2xl font-bold text-white py-2;
+
+  &.w-auto {
+    width: auto;
+  }
+}
+
+.list-style-check::before {
+  content: "✓";
+  margin-right: 10px;
+}
