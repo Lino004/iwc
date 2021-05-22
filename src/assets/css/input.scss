@@ -1,3 +1,8 @@
+.input-about {
+  @apply h-65px appearance-none py-5 pl-7 border-none bg-grid3 rounded-15px w-full
+    focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
+}
+
 input[type=date]::-webkit-calendar-picker-indicator {
   background-image: url("../images/cart/calendar.svg");
   background-repeat: no-repeat;
@@ -12,11 +17,6 @@ input[type="date"]::before {
 
 input[type="date"]:focus::before {
   content: "" !important;
-}
-
-.input-about {
-  @apply my-5 h-65px appearance-none py-5 pl-7 border-none bg-grid3 rounded-15px w-full
-    focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
 }
 
 .select-chevron {

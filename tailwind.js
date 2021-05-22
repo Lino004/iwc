@@ -10,6 +10,7 @@ const grid5 = '#D9DDE4'
 const grid6 = '#707070'
 const grid8 = '#8f96a3'
 const grid7 = '#C4C8CD'
+const grid9 = '#D2D5D9'
 
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -41,7 +42,8 @@ module.exports = {
       grid4,
       grid5,
       grid6,
-      grid7
+      grid7,
+      grid9
     }),
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']

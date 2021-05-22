@@ -1,11 +1,11 @@
 <template>
-  <div id="app" class="h-screen">
-    <router-view/>
+  <div>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+
 }
 </script>

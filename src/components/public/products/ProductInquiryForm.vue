@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="py-20">
+    <div class="pb-20">
       <h3 class="font-bold text-primary font-serif text-center text-3xl md:text-3xl lg:text-42px">
         Inquiry Form
       </h3>

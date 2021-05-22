@@ -43,12 +43,11 @@
         </button>
       </div>
       <div class="flex items-center text-base xl:text-lg space-x-8">
-        <router-link
-          :to="{ name: '' }"
-          tag="a"
-          class="hover:text-secondary text-primary font-bold">
+        <a
+          class="hover:text-secondary text-primary font-bold cursor-pointer"
+          @click="showModalSigIn = true">
           SIGN IN
-        </router-link>
+        </a>
         <button class="hover:bg-secondary
         bg-grid1 rounded-2xl font-bold
         text-white px-6 xl:px-9 py-2 hidden lg:block">
@@ -109,11 +108,17 @@
         </button>
       </div>
     </div>
+    <modal v-if="showModalSigIn" @close="showModalSigIn = false">
+      <login/>
+    </modal>
   </div>
 </template>
 
 <script>
+import Login from '@/components/public/general/modal/Login/index.vue'
+
 export default {
+  components: { Login },
   data () {
     return {
       menu: [
@@ -157,7 +162,8 @@ export default {
           children: []
         }
       ],
-      showModalMenu: false
+      showModalMenu: false,
+      showModalSigIn: false
     }
   },
   methods: {
