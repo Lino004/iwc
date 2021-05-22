@@ -107,16 +107,16 @@
       </div>
     </div>
     <modal v-if="showModalSigIn">
-      <sign-in @close="showModalSigIn = false"/>
+      <login @close="showModalSigIn = false"/>
     </modal>
   </div>
 </template>
 
 <script>
-import SignIn from '@/components/public/general/modal/SignIn'
+import Login from '@/components/public/general/modal/Login/index.vue'
 
 export default {
-  components: { SignIn },
+  components: { Login },
   data () {
     return {
       menu: [

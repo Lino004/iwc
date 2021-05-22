@@ -17,8 +17,8 @@ const routes = [
     children: publicRoutes
   },
   {
-    path: '/',
-    component: () => import('@/views/public/index.vue'),
+    path: '/client',
+    component: () => import('@/views/client/index.vue'),
     children: clientRoutes
   }
 ]

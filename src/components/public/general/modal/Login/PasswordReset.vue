@@ -1,20 +1,5 @@
 <template>
-  <modal>
-    <div
-      class=" md:w-2/3 lg:w-1/2 xl:w-5/12 mx-4 md:mx-auto bg-white rounded-2xl p-10 lg:py-16 lg:px-24 relative text-primary"
-    >
-      <router-link
-        to="/"
-        tag="a"
-        class="absolute top-5 lg:top-10 right-10 lg:right-20 cursor-pointer"
-      >
-        <i class="mdi mdi-close text-2xl"></i>
-      </router-link>
-
-      <div class="w-auto flex divide-x-2 font-bold font-sans text-lg pb-6">
-        <p class="pr-2 text-secondary">Member</p>
-        <p class="pl-2 text-grid9">Dentist</p>
-      </div>
+  <div>
 
       <h3 class="section-title">Password Reset</h3>
 
@@ -48,25 +33,23 @@
             <button
               class="bg-grid1 hover:bg-secondary text-white rounded-15px py-3 w-full font-bold"
             >
-              <router-link to="/signIn">RESET PASSWORD</router-link>
+              RESET PASSWORD
             </button>
           </div>
         </form>
 
         <div class="py-6">
-          <router-link
-            to="/password-reset-token"
+          <button @click="toggleToPassRT"
             class="underline text-secondary"
-            >I don't have a reset token.</router-link
+            >I don't have a reset token.</button
           >
         </div>
 
         <div>
-          <router-link to="/signIn" class="text-primary">← <span class="underline">Back to login</span></router-link>
+          <button @click="toggleToSignIn" class="text-primary">← <span class="underline">Back to login</span></button>
         </div>
       </div>
-    </div>
-  </modal>
+  </div>
 </template>
 
 <script>
@@ -77,6 +60,14 @@ export default {
       resetToken: '',
       newPassword: '',
       confirmPassword: ''
+    }
+  },
+  props: {
+    toggleToSignIn: {
+      type: Function
+    },
+    toggleToPassRT: {
+      type: Function
     }
   }
 }
