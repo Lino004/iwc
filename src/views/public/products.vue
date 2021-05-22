@@ -1,14 +1,18 @@
 <template>
   <div>
     <app-hero :title="title" :src="src"></app-hero>
-    <product-content></product-content>
+    <product-title-section title="Individual Oral Care Plans"></product-title-section>
+    <product-card-section></product-card-section>
+    <product-title-section title="Group Dental Care Packages"></product-title-section>
+    <product-card-section inquiry-form></product-card-section>
   </div>
 </template>
 
 <script>
 import AppHero from '@/components/public/general/AppHero.vue'
 import img from '@/assets/images/home/image3.png'
-import ProductContent from '@/components/public/products/ProductContent.vue'
+import ProductTitleSection from '@/components/public/products/ProductTitleSection.vue'
+import ProductCardSection from '@/components/public/products/ProductCardSection'
 
 export default {
   name: 'Services',
@@ -17,7 +21,8 @@ export default {
   },
   components: {
     AppHero,
-    ProductContent
+    ProductTitleSection,
+    ProductCardSection
   },
   data () {
     return {
