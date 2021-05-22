@@ -36,10 +36,9 @@
         No data
       </h5>
     </div>
-    <modal v-if="currentDentist">
+    <modal v-if="currentDentist" @close="currentDentist = null">
       <about-card-dentist
         :data="currentDentist"
-        @close="currentDentist = null"
       />
     </modal>
   </section>
