@@ -21,10 +21,3 @@ export default {
   name: 'ProductCard'
 }
 </script>
-
-<style>
-.list-style-check::before {
-  content: "✓";
-  margin-right: 10px;
-}
-</style>

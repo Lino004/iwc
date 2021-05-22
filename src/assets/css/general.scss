@@ -32,3 +32,8 @@ hr {
 .section-title {
   @apply font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14;
 }
+
+.list-style-check::before {
+  content: "✓";
+  margin-right: 10px;
+}
