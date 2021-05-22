@@ -51,6 +51,11 @@ export default [
     component: () => import('@/views/public/faq.vue')
   },
   {
+    path: '/products',
+    name: 'products',
+    component: () => import('@/views/public/products.vue')
+  },
+  {
     path: '/cart',
     component: () => import('@/views/public/Cart/index.vue'),
     children: [

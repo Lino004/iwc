@@ -48,7 +48,8 @@ module.exports = {
     },
     fontSize: {
       ...defaultTheme.fontSize,
-      '42px': '2.625rem'
+      '42px': '2.625rem',
+      '34px': '2.125rem'
     },
     backgroundPosition: {
       ...defaultTheme.backgroundPosition,
@@ -97,14 +98,16 @@ module.exports = {
       },
       height: {
         header: '270px',
-        '65px': '4.063rem'
+        '65px': '4.063rem',
+        '620px': '620px'
+      },
+      width: {
+        '400px': '400px',
+        '4/9': '45%',
+        '98%': '98%'
       },
       maxHeight: {
         modal: 'calc(100vh - 10px)'
-      },
-      width: {
-        '4/9': '45%',
-        95: '98%'
       },
       padding: {
         '104px': '104px'
@@ -115,6 +118,7 @@ module.exports = {
       },
       borderWidth: {
         3: '3px',
+        26: '1.625rem',
         30: '1.875rem'
       },
       outline: {

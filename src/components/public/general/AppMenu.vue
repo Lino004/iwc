@@ -146,7 +146,7 @@ export default {
         },
         {
           label: 'PRODUCT',
-          to: '',
+          to: 'products',
           show: false,
           children: []
         },
