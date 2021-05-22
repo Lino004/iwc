@@ -1,9 +1,5 @@
 <template>
-  <div class=" md:w-2/3 lg:w-1/2 xl:w-5/12 mx-4 md:mx-auto bg-white rounded-2xl p-10 lg:py-16 lg:px-24 relative text-primary">
-    <a @click="$emit('close')" class="absolute top-5 lg:top-10 right-10 lg:right-20 cursor-pointer">
-      <i class="mdi mdi-close text-2xl"></i>
-    </a>
-
+  <div class="">
     <div class="w-auto flex divide-x-2 divide-primary font-bold font-sans text-lg pb-6">
       <a
         class="pr-2 cursor-pointer"

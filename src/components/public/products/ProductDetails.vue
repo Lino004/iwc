@@ -32,7 +32,7 @@
         No reimbursement of any sort shall be honored for any claims availed in non-accredited dental providers.
       </p>
     </div>
-    <div class="mb-10 text-center">
+    <div class="text-center">
       <button
         class="iwc-btn-action w-auto px-4"
         @click="$emit('enroll')">

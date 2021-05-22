@@ -1,7 +1,7 @@
 <template>
   <div class="text-primary">
 
-    <h3 class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pt-14 pl-10 mb-11">
+    <h3 class="font-bold text-primary font-serif text-2xl md:text-3xl lg:text-42px pl-10 mb-11">
       Pinoy Dental Pack
     </h3>
 

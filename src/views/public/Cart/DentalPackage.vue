@@ -1,6 +1,6 @@
 <template>
   <section class="py-20 w-11/12 lg:w-3/4 mx-auto">
-    <h3 class="section-title mb-10">My Dental Package</h3>
+    <h3 class="section-title my-10">My Dental Package</h3>
 
     <table class="w-full">
       <thead>

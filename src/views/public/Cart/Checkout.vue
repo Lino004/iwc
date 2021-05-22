@@ -1,5 +1,4 @@
 <template>
-<!-- en cours de développement-->
   <section class='py-20 w-11/12 lg:w-8/12 mx-auto'>
     <div>
       <h3 class="section-title">Checkout</h3>

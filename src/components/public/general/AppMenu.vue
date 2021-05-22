@@ -108,8 +108,8 @@
         </button>
       </div>
     </div>
-    <modal v-if="showModalSigIn">
-      <login @close="showModalSigIn = false"/>
+    <modal v-if="showModalSigIn" @close="showModalSigIn = false">
+      <login/>
     </modal>
   </div>
 </template>
