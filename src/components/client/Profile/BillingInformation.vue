@@ -9,7 +9,7 @@
       BILLING INFORMATION
     </div>
     <div class="py-16">
-      <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <form action="" class="grid md:grid-rows-1 gap-10">
         <div>
           <input
             type="text"
