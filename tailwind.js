@@ -100,6 +100,9 @@ module.exports = {
         header: '270px',
         '65px': '4.063rem'
       },
+      width: {
+        '1/7': '70%'
+      },
       padding: {
         '104px': '104px'
       },

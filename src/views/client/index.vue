@@ -29,10 +29,10 @@
       </div>
 
       <div class="flex justify-between">
-        <div class="w-4/12 hidden lg:block">
+        <div class="lg:w-3/12 hidden lg:block">
           <navigation></navigation>
         </div>
-        <div class="text-primary text-lg font-sans w-full lg:w-7/12">
+        <div class="text-primary text-lg font-sans w-full lg:w-1/7">
           <router-view />
         </div>
       </div>

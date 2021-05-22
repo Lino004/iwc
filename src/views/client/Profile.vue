@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import BillingInformation from '../../components/client/Profile/BillingInformation.vue'
-import ShippingInformation from '../../components/client/Profile/ShippingInformation.vue'
+import BillingInformation from '@/components/client/Profile/BillingInformation.vue'
+import ShippingInformation from '@/components/client/Profile/ShippingInformation.vue'
 export default {
   components: { BillingInformation, ShippingInformation }
 
