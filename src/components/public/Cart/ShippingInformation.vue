@@ -4,7 +4,7 @@
       SHIPPING INFORMATION
     </div>
     <div class="py-16">
-      <form action="" class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-x-32">
+      <form action="" class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-x-20 gap-y-5">
         <input
           type="text"
           id="firstName"

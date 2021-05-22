@@ -23,8 +23,12 @@
 <script>
 export default {
   props: {
-    customClass: String,
-    borderTop: Boolean
+    customClass: {
+      type: String
+    },
+    borderTop: {
+      type: Boolean
+    }
   }
 }
 </script>

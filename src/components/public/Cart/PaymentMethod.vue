@@ -61,7 +61,7 @@
 
     <div v-show="showInfo" class="pb-20">
       <form action="">
-        <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-x-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-x-20 gap-y-5">
           <input
             type="text"
             id="firstName"

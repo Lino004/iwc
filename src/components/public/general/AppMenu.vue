@@ -103,12 +103,12 @@
         <button
           class="hover:bg-secondary
                  bg-grid1 rounded-2xl font-bold
-                 text-white px-9 py-2 text-lg">
+                 text-white px-9 py-2 text-lg ">
           APPLY FOR ACCREDITATION
         </button>
       </div>
     </div>
-    <modal v-if="showModalSigIn" @close="showModalSigIn = false">
+    <modal v-if="showModalSigIn" @close="showModalSigIn = false" customClass='w-11/12 md:w-8/12 lg:w-1/2 xl:w-5/12' >
       <login/>
     </modal>
   </div>
