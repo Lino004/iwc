@@ -1,0 +1,18 @@
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.is-overflow {
+  overflow: hidden;
+}
+
+.is-overflow-y-active {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  overscroll-behavior: contain;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

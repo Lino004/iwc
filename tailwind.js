@@ -40,7 +40,8 @@ module.exports = {
       grid3,
       grid4,
       grid5,
-      grid6
+      grid6,
+      grid7
     }),
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']
@@ -102,6 +103,13 @@ module.exports = {
       },
       width: {
         '400px': '400px'
+      },
+      maxHeight: {
+        modal: 'calc(100vh - 10px)'
+      },
+      width: {
+        '4/9': '45%',
+        95: '98%'
       },
       padding: {
         '104px': '104px'
