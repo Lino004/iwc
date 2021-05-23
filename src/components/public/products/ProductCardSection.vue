@@ -15,7 +15,10 @@
       </div>
       <div class="flex-1">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-secondary rounded-15px shadow-box1" v-for="(product, i) in filtre" :key="`${i}data`">
+          <div
+            class="bg-secondary rounded-15px shadow-box1 cursor-pointer"
+            v-for="(product, i) in filtre" :key="`${i}data`"
+            @click="showModalDetail = true">
             <div class="p-12 text-white" v-html="product.data">
             </div>
           </div>
@@ -85,7 +88,7 @@
     <modal
       v-if="showModalDetail"
       @close="showModalDetail = false"
-      custom-class="w-1/2">
+      custom-class="w-4/5 md:w-1/2">
       <product-details @enroll="enroll"></product-details>
     </modal>
     <modal
