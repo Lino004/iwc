@@ -24,5 +24,10 @@ export default {
     IconChevronCircleLeft,
     Modal,
     VueRecaptcha
+  },
+  methods: {
+    formatPrice (number) {
+      return new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'PHP', maximumSignificantDigits: 3 }).format(number)
+    }
   }
 }
