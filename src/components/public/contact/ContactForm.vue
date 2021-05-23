@@ -3,11 +3,7 @@
     <div class="h-6 bg-primary"></div>
     <div class="shadow-box1">
       <div class="py-20">
-        <h3
-          class="font-bold text-primary font-serif text-center text-3xl md:text-3xl lg:text-42px"
-        >
-          Contact Form
-        </h3>
+        <h3 class="section-title text-center">Contact Form</h3>
         <hr class="border-2 border-grid2 w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto"/>
       </div>
 

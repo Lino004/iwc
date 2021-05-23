@@ -1,11 +1,7 @@
 <template>
   <div class="font-sans text-lg">
-    <div
-      class="text-primary font-bold border-t-3 border-b-3 border-grid7 py-6 pl-20"
-      :class="{ 'text-secondary': showInfo }"
-    >
-      PAYMENT METHOD
-    </div>
+
+    <subtitle subtitle="PAYMENT METHOD" :class="{ 'text-secondary': showInfo }"></subtitle>
 
     <div class="lineGrid">
       <div class="gridElement">
@@ -134,13 +130,13 @@
 </template>
 
 <script>
-import config from '@/configurations/CheckoutConfig'
 // import IconBank from '../../icons/IconBank.vue'
 import IconCash from '../../icons/IconCash.vue'
 import IconCreditCard from '../../icons/IconCreditCard.vue'
 import IconGcash from '../../icons/IconGcash.vue'
 import IconPaymongo from '../../icons/IconPaymongo.vue'
 import IconPaypal from '../../icons/IconPaypal.vue'
+import Subtitle from '@/components/reusables/Subtitle.vue'
 
 export default {
   components: {
@@ -149,7 +145,8 @@ export default {
     IconCreditCard,
     IconPaypal,
     IconGcash,
-    IconPaymongo
+    IconPaymongo,
+    Subtitle
   },
   methods: {
     toggle () {
@@ -159,14 +156,14 @@ export default {
   data () {
     return {
       showInfo: false,
-      valueEmail: config.valueEmail,
-      firstName: config.firstName,
-      lastName: config.lastName,
-      phone: config.phone,
-      address: config.address,
-      cardNumber: config.cardNumber,
-      expDate: config.expDate,
-      cvc: config.cvc
+      valueEmail: '',
+      firstName: '',
+      lastName: '',
+      phone: '',
+      address: '',
+      cardNumber: '',
+      expDate: '',
+      cvc: ''
     }
   }
 }

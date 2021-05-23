@@ -1,8 +1,6 @@
 <template>
   <div class="text-primary font-sans text-lg">
-    <div class="text-primary font-bold border-t-3 border-b-3 border-grid7 py-6 pl-20">
-      SHIPPING INFORMATION
-    </div>
+    <subtitle subtitle="SHIPPING INFORMATION"></subtitle>
     <div class="py-16">
       <form action="" class="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-x-20 gap-y-5">
         <input
@@ -55,17 +53,18 @@
 </template>
 
 <script>
-import config from '@/configurations/CheckoutConfig'
+import Subtitle from '@/components/reusables/Subtitle.vue'
 
 export default {
+  components: { Subtitle },
   data () {
     return {
-      valueEmail: config.valueEmail,
-      firstName: config.firstName,
-      lastName: config.lastName,
-      phone: config.phone,
-      address: config.address,
-      check: config.check
+      valueEmail: '',
+      firstName: '',
+      lastName: '',
+      phone: '',
+      address: '',
+      check: ''
     }
   }
 }

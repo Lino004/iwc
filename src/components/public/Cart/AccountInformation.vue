@@ -1,8 +1,6 @@
 <template>
   <div class="font-sans text-lg">
-    <div class="text-primary font-bold border-t-3 border-b-3 border-grid7 py-6 pl-20">
-      ACCOUNT INFORMATION
-    </div>
+    <subtitle subtitle="ACCOUNT INFORMATION"></subtitle>
 
     <div class="py-16">
       <form action="" class="flex flex-col md:flex-row flex-wrap justify-start gap-8 items-center">
@@ -10,9 +8,9 @@
           <input
           type="email"
           id="email"
-          v-model="valueEmail"
+          v-model="email"
           placeholder="Email Address"
-          class="input-about border-none bg-grid3 rounded-15px"
+          class="input-about"
         />
         </div>
 
@@ -25,12 +23,13 @@
 </template>
 
 <script>
-import config from '@/configurations/CheckoutConfig'
+import Subtitle from '../../reusables/Subtitle.vue'
 
 export default {
+  components: { Subtitle },
   data () {
     return {
-      valueEmail: config.valueEmail
+      email: ''
     }
   }
 }

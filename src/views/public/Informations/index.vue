@@ -2,11 +2,7 @@
   <div class="w-full">
     <section class="container py-28  mx-auto w-11/12 lg:w-8/12">
       <div>
-        <h3
-          class="font-bold text-primary font-serif text-2xl sm:text-3xl lg:text-42px"
-        >
-          {{ title }}
-        </h3>
+        <h3 class="section-title">{{ title }}</h3>
         <hr class="border-2 border-grid7 my-10 mx-auto" />
 
         <div
@@ -29,7 +25,7 @@
           <router-view />
         </div>
         <div class="w-4/12 hidden lg:block">
-          <info-drawer></info-drawer>
+          <app-drawer title="MORE INFORMATIONS" :element="menu"></app-drawer>
         </div>
       </div>
     </section>
@@ -37,10 +33,10 @@
 </template>
 
 <script>
-import InfoDrawer from '@/components/public/informations/InfoDrawer.vue'
 import menu from '@/configurations/InfoConfig'
+import AppDrawer from '@/components/reusables/AppDrawer.vue'
 export default {
-  components: { InfoDrawer },
+  components: { AppDrawer },
   data () {
     return {
       menu: menu
