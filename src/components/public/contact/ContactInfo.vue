@@ -1,11 +1,7 @@
 <template>
   <section class="">
     <div>
-      <h3
-        class="font-bold text-primary font-serif text-center text-2xl sm:text-3xl md:text-3xl lg:text-42px"
-      >
-        Contact Us
-      </h3>
+      <h3 class="section-title text-center">Contact Us</h3>
       <hr class="border-2 border-grid2 w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto"/>
     </div>
 

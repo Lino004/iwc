@@ -2,9 +2,7 @@
   <section class="container w-11/12 xl:w-8/12 mx-auto py-28">
     <div class="w-11/12 mx-auto">
       <div class="flex flex-row justify-between">
-        <h2 class="font-bold text-primary font-serif text-center text-2xl md:text-3x lg:text-42px">
-          Accredited Dentists
-        </h2>
+        <h3 class="section-title text-center">Accredited Dentists</h3>
         <img src="@/assets/images/about/pdf-icon.png" alt="" />
       </div>
       <hr class="border-2 border-grid2 mt-6 mx-auto" />
@@ -36,10 +34,9 @@
         No data
       </h5>
     </div>
-    <modal v-if="currentDentist">
+    <modal v-if="currentDentist" @close="currentDentist = null">
       <about-card-dentist
         :data="currentDentist"
-        @close="currentDentist = null"
       />
     </modal>
   </section>

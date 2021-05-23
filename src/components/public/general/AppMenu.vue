@@ -53,10 +53,12 @@
         text-white px-6 xl:px-9 py-2 hidden lg:block">
           APPLY FOR ACCREDITATION
         </button>
-        <IconCart
-          class="stroke-primary hover:stroke-secondary"
-          width="2.5rem"
-          height="2.375rem"/>
+        <router-link to="/cart">
+          <IconCart
+              class="stroke-primary hover:stroke-secondary"
+              width="2.5rem"
+              height="2.375rem"/>
+        </router-link>
       </div>
     </div>
     <div class="fixed h-screen w-screen bg-white text-white top-0 left-0" v-if="showModalMenu">
@@ -101,13 +103,13 @@
         <button
           class="hover:bg-secondary
                  bg-grid1 rounded-2xl font-bold
-                 text-white px-9 py-2 text-lg">
+                 text-white px-9 py-2 text-lg ">
           APPLY FOR ACCREDITATION
         </button>
       </div>
     </div>
-    <modal v-if="showModalSigIn">
-      <login @close="showModalSigIn = false"/>
+    <modal v-if="showModalSigIn" @close="showModalSigIn = false" customClass='w-11/12 md:w-8/12 lg:w-1/2 xl:w-5/12' >
+      <login/>
     </modal>
   </div>
 </template>
@@ -149,7 +151,7 @@ export default {
         },
         {
           label: 'PRODUCT',
-          to: '',
+          to: 'products',
           show: false,
           children: []
         },

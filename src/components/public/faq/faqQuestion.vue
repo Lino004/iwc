@@ -38,8 +38,8 @@
 <script>
 import IconMoins from '../../icons/IconMoins.vue'
 import IconPlus from '../../icons/IconPlus.vue'
+
 export default {
-  // eslint-disable-next-line vue/no-unused-components
   components: { IconPlus, IconMoins },
   methods: {
     toggle () {

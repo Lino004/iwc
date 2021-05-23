@@ -3,11 +3,7 @@
     <div class="h-6 bg-primary"></div>
     <div class="shadow-box1">
       <div class="py-20">
-        <h3
-          class="font-bold text-primary font-serif text-center text-3xl md:text-3xl lg:text-42px"
-        >
-          Contact Form
-        </h3>
+        <h3 class="section-title text-center">Contact Form</h3>
         <hr class="border-2 border-grid2 w-1/2 md:w-2/5 lg:w-2/5 xl:w-1/3 mt-6 mx-auto"/>
       </div>
 
@@ -176,34 +172,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.input-contact {
-  @apply
-    w-full pb-5 appearance-none border-b-3 border-grid7
-    focus:outline-0 focus:placeholder-transparent
-    hover:outline-0
-    text-primary font-sans text-lg placeholder-primary;
-}
-
-.form-group {
-  position: relative;
-}
-
-.line-b-input {
-  height: 3px;
-  width: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: inline-block;
-  transition: 0.3s width ease-in-out;
-}
-
-.form-group input.input-contact:focus + .line-b-input,
-.form-group textarea:focus + .line-b-input {
-  width: 100%;
-
-  @apply bg-secondary;
-}
-</style>
