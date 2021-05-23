@@ -1,9 +1,9 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-2">
     <div v-for="(service, i) in listesServices" :key="i" class="lg:pr-12">
-        <img class="rounded-xl lg:rounded-2xl shadow-box1 opacity-100"
+      <img class="rounded-xl lg:rounded-2xl shadow-box1 opacity-100"
         :src="service.img"
-        />
+      />
       <div class="mt-6 lg:mt-9 text-center text-primary">
         <p class="text-lg lg:text-2xl font-serif max-w-2xl">
           {{service.title}}
@@ -27,7 +27,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
