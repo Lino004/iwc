@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col shadow-box1 rounded-15px pt-12">
-    <h6 class="pl-9 pb-3 font-sans font-bold text-primary text-lg">MORE INFORMATIONS</h6>
+    <h6 class="pl-9 pb-3 font-sans font-bold text-primary text-lg">{{ title }}</h6>
 
-    <div v-for="( item, i ) in menu" :key="i">
+    <div v-for="( item, i ) in element" :key="i">
       <router-link :to="{ name: item.to }">
         <button
           class="text-left text-primary text-lg font-sans py-7 w-full"
@@ -20,12 +20,10 @@
 </template>
 
 <script>
-import menu from '@/configurations/InfoConfig'
 export default {
-  data () {
-    return {
-      menu: menu
-    }
+  props: {
+    title: String,
+    element: Object
   }
 }
 </script>

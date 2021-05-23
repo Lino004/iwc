@@ -22,7 +22,7 @@
               @keyup="actionkeyUp"
               @keydown="actionkeyDown"
               @keydown.enter.prevent="actionkeyEntre"
-              class="input-about search-input border-none bg-grid3 rounded-r-15px"
+              class="input-about search-input rounded-l-none"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@
           <select
             name="specializations"
             id="specializations"
-            class="input-about select-input border border-grid7 rounded-15px px-5"
+            class="input-about select-chevron"
             v-model="valueSpecialization"
             @change="$emit('event-specialization', valueSpecialization)"
           >
@@ -119,16 +119,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.select-input {
-  background-image: url("../../../assets/images/about/chevron.svg");
-  background-position: calc(100% - 30px) calc(1em + 10px);
-  background-repeat: no-repeat;
-}
-
-.input-about {
-  @apply w-full my-5 h-65px appearance-none
-    focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
-}
-</style>
