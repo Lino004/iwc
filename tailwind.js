@@ -43,6 +43,7 @@ module.exports = {
       grid5,
       grid6,
       grid7,
+      grid8,
       grid9
     }),
     fontFamily: {
@@ -106,13 +107,11 @@ module.exports = {
       width: {
         '400px': '400px',
         '4/9': '45%',
-        '98%': '98%'
+        '98%': '98%',
+        '1/7': '70%'
       },
       maxHeight: {
         modal: 'calc(100vh - 10px)'
-      },
-      width: {
-        '1/7': '70%'
       },
       padding: {
         '104px': '104px'

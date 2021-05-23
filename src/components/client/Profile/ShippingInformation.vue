@@ -1,15 +1,15 @@
 <template>
   <div class="font-sans text-lg">
-    <div
-      class="text-primary font-bold border-t-3 border-b-3 border-grid7 py-6 pl-20"
-      :class="{
-        'text-secondary': onInput
-      }"
-    >
-      SHIPPING INFORMATION
-    </div>
+    <subtitle subtitle="SHIPPING INFORMATION" :class="{ 'text-secondary': onInput }"></subtitle>
     <div class="py-16">
-      <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div v-if="!edit" class="grid grid-cols-1 md:grid-rows-3 md:grid-flow-col gap-10">
+        <p><span class="font-bold">Name:</span> Boyet Fernandez</p>
+        <p><span class="font-bold">Email:</span> boyet.fernandez@gmail.com</p>
+        <p><span class="font-bold">Address:</span> Happy Road 1234</p>
+        <p><span class="font-bold">Contact Number:</span> 123-456-7890</p>
+      </div>
+
+      <form action="" class="grid md:grid-rows-1 gap-10" v-else>
         <div>
           <input
             type="text"
@@ -70,21 +70,20 @@
           />
         </div>
       </form>
-      <hr class="border-2 border-grid7 mx-auto my-20" />
-      <div class="flex justify-end">
-        <button
-          class="hover:bg-secondary
-                 bg-grid1 rounded-2xl font-bold
-                 text-white px-9 py-2 text-lg">
-          SAVE CHANGES
-        </button>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Subtitle from '../../reusables/Subtitle.vue'
+
 export default {
+  components: { Subtitle },
+  props: {
+    edit: {
+      type: Boolean
+    }
+  },
   data () {
     return {
       firstName: '',
