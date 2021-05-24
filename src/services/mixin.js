@@ -10,13 +10,14 @@ import IconChevronDown from '@/components/icons/IconChevronDown'
 import IconChevronUp from '@/components/icons/IconChevronUp'
 import IconChevronCircleLeft from '@/components/icons/IconChevronCircleLeft'
 import IconCheck from '@/components/icons/IconCheck'
-
 import IconDashboard from '@/components/icons/IconDashboard'
 import IconSales from '@/components/icons/IconSales'
 import IconAccreditations from '@/components/icons/IconAccreditations'
 import IconClients from '@/components/icons/IconClients'
 import IconReports from '@/components/icons/IconReports'
 import IconAccount from '@/components/icons/IconAccount'
+import IconUser from '@/components/icons/IconUser'
+import IconTimelapse from '@/components/icons/IconTimelapse'
 
 import Modal from '@/components/public/general/modal'
 import Subtitle from '@/components/reusables/Subtitle'
@@ -43,6 +44,8 @@ export default {
     IconAccount,
     IconChevronDown,
     IconChevronUp,
+    IconUser,
+    IconTimelapse,
     Modal,
     Subtitle,
     IsApply,
