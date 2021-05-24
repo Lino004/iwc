@@ -1,12 +1,18 @@
 <template>
-  <div>
+  <div class="bg-grid3">
+    <div class="min-h-272 lg:min-h-188 p-10 flex space-x-10">
+      <AppMenu/>
+      <div class="flex-1">
+        <router-view/>
+      </div>
+    </div>
     <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import AppFooter from '@/components/public/general/AppFooter'
-import menu from '../../configurations/DentistNav'
+import AppMenu from '@/components/admin/AppMenu'
 
 export default {
   metaInfo: {
@@ -14,11 +20,11 @@ export default {
     titleTemplate: '%s - IWC Wellness Inc'
   },
   components: {
-    AppFooter
+    AppFooter,
+    AppMenu
   },
   data () {
     return {
-      menu: menu
     }
   },
   computed: {
