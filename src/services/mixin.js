@@ -7,8 +7,11 @@ import IconSearch from '@/components/icons/IconSearch'
 import IconFacebook from '@/components/icons/IconFacebook'
 import IconChevronCircleRight from '@/components/icons/IconChevronCircleRight'
 import IconChevronCircleLeft from '@/components/icons/IconChevronCircleLeft'
+import IconCheck from '@/components/icons/IconCheck'
 
 import Modal from '@/components/public/general/modal'
+import Subtitle from '@/components/reusables/Subtitle'
+import IsApply from '@/components/reusables/IsApply'
 import VueRecaptcha from 'vue-recaptcha'
 
 export default {
@@ -22,7 +25,10 @@ export default {
     IconFacebook,
     IconChevronCircleRight,
     IconChevronCircleLeft,
+    IconCheck,
     Modal,
+    Subtitle,
+    IsApply,
     VueRecaptcha
   },
   methods: {

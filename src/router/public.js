@@ -80,5 +80,10 @@ export default [
         component: () => import('@/views/public/Cart/PaymentInstruction.vue')
       }
     ]
+  },
+  {
+    path: '/apply-for-accreditation',
+    name: 'apply-for-accreditation',
+    component: () => import('@/views/public/ApplyForAccreditation.vue')
   }
 ]

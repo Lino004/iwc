@@ -48,11 +48,14 @@
           @click="showModalSigIn = true">
           SIGN IN
         </a>
-        <button class="hover:bg-secondary
+        <router-link
+          tag="button"
+          :to="{ name: 'apply-for-accreditation' }"
+          class="hover:bg-secondary
         bg-grid1 rounded-2xl font-bold
         text-white px-6 xl:px-9 py-2 hidden lg:block">
           APPLY FOR ACCREDITATION
-        </button>
+        </router-link>
         <router-link to="/cart">
           <IconCart
               class="stroke-primary hover:stroke-secondary"
@@ -100,12 +103,14 @@
             </router-link>
           </template>
         </template>
-        <button
+        <router-link
+          tag="button"
+          :to="{ name: 'apply-for-accreditation' }"
           class="hover:bg-secondary
                  bg-grid1 rounded-2xl font-bold
                  text-white px-9 py-2 text-lg ">
           APPLY FOR ACCREDITATION
-        </button>
+        </router-link>
       </div>
     </div>
     <modal v-if="showModalSigIn" @close="showModalSigIn = false" customClass='w-11/12 md:w-8/12 lg:w-1/2 xl:w-5/12' >
