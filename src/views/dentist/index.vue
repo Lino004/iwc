@@ -67,11 +67,11 @@ export default {
       menu: menu
     }
   },
-  // computed: {
-  //   title () {
-  //     return this.menu.find(el => el.to === this.$route.name).label
-  //   }
-  // },
+  computed: {
+    title () {
+      return this.menu.find(el => el.to === this.$route.name).label
+    }
+  },
   methods: {
     ...General.mapActions({
       actionGetSiteInfo: 'getSiteInfo'

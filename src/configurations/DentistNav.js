@@ -9,6 +9,6 @@ export default [
   },
   {
     label: 'Settings',
-    to: 'settings'
+    to: 'dentist-settings'
   }
 ]

@@ -21,7 +21,7 @@ export default [
   },
   {
     path: '/dentist/settings',
-    name: 'settings',
+    name: 'dentist-settings',
     component: () => import('@/views/dentist/Settings.vue')
   }
 ]
