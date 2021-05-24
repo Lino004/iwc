@@ -8,7 +8,7 @@
 
     <div class="my-10">
       <label for="search" class="inline-block pb-5 font-bold">SEARCH</label>
-      <input type="text" class="input-about" v-model="search">
+      <input type="text" class="input-about input-search" v-model="search">
     </div>
 
     <div>

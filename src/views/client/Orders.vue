@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div class="flex justify-around flex-wrap">
+      <div class="flex justify-around flex-wrap gap-x-3">
         <button class="bg-grid3 rounded-15px py-2 px-4 text-primary font-bold">All</button>
         <button class="text-grid8">Pending</button>
         <button class="text-grid8">Processing</button>
@@ -13,7 +13,7 @@
 
       <div class="my-10">
         <label for="search" class="inline-block pb-5 font-bold">SEARCH</label>
-        <input type="text" class="input-about" v-model="search">
+        <input type="text" class="input-about input-search" v-model="search">
       </div>
 
       <div>

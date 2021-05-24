@@ -22,7 +22,7 @@
     </div>
 
     <div v-if="signIn">
-      <sign-in :toggleToPassRT="toggleToPassRT"></sign-in>
+      <sign-in :toggleToPassRT="toggleToPassRT" :member="isMember"></sign-in>
     </div>
 
     <div v-if="passwordResetT">

@@ -30,6 +30,13 @@ input[type="date"]:focus::before {
   background-repeat: no-repeat;
 }
 
+.input-search {
+  background-image: url("../images/cart/search.svg");
+  background-position: calc(1em + 10px) calc(100% - 15px);
+  background-repeat: no-repeat;
+  padding-left: 5rem;
+}
+
 .input-contact {
   @apply
     w-full pb-5 appearance-none border-b-3 border-grid7
