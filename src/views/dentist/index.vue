@@ -47,7 +47,7 @@ import { createNamespacedHelpers } from 'vuex'
 import AppHeader from '@/components/public/general/AppHeader'
 import AppMenu from '@/components/public/general/AppMenu'
 import AppFooter from '@/components/public/general/AppFooter'
-import menu from '../../configurations/DentalConfig'
+import menu from '../../configurations/DentistNav'
 import AppDrawer from '../../components/reusables/AppDrawer.vue'
 
 const General = createNamespacedHelpers('publicGeneral')

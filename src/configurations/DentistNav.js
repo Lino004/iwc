@@ -1,7 +1,7 @@
 export default [
   {
     label: 'Profile',
-    to: 'profile'
+    to: 'dentist-profile'
   },
   {
     label: 'Procedures',

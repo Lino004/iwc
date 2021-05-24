@@ -2,11 +2,11 @@ export default [
   {
     path: '',
     name: 'dentist',
-    redirect: 'profile'
+    redirect: 'dentist-profile'
   },
   {
     path: '/dentist/profile',
-    name: 'profile',
+    name: 'dentist-profile',
     component: () => import('@/views/dentist/DentistProfile.vue')
   },
   {
