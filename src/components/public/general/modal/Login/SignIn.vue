@@ -7,9 +7,11 @@
           <input type="text" placeholder="Email or Username" v-model="email" class="input-about">
           <input type="password" placeholder="Password" v-model="password" class="input-about">
           <div>
-            <button class="bg-grid1 hover:bg-secondary text-white rounded-15px py-3 w-full font-bold">
-              <router-link to="/client/profile">SIGN IN</router-link>
-            </button>
+            <router-link to="/client/profile">
+              <button class="bg-grid1 hover:bg-secondary text-white rounded-15px py-3 w-full font-bold">
+                SIGN IN
+              </button>
+            </router-link>
           </div>
         </form>
         <div class="pt-6">
