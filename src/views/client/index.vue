@@ -14,7 +14,7 @@
         </div>
 
         <div
-          class="md:flex flex-col md:flex-row justify-around hidden lg:hidden flex-wrap font-sans text-lg text-primary mb-10"
+          class="flex flex-col gap-y-3 md:flex-row justify-around lg:hidden flex-wrap font-sans text-lg text-primary mb-10"
         >
           <h6 class="font-bold text-center">NAVIGATION</h6>
           <router-link
