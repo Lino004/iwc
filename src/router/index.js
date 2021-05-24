@@ -26,6 +26,11 @@ const routes = [
     path: '/dentist',
     component: () => import('@/views/dentist/index.vue'),
     children: dentistRoutes
+  },
+  {
+    path: '/admin-signin',
+    name: 'admin-signin',
+    component: () => import('@/views/admin/AdminSignin.vue')
   }
 ]
 
