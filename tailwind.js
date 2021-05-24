@@ -95,6 +95,11 @@ module.exports = {
       contain: 'contain',
       'auto-100': '4rem'
     },
+    gradientColorStops: theme => ({
+      ...theme('colors'),
+      primary,
+      grid1
+    }),
     extend: {
       fontFamily: {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif]
