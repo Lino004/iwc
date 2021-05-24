@@ -5,7 +5,7 @@
         <img class="mx-auto" src="@/assets/images/logo.svg" alt="">
       </figure>
       <h3 class="section-title my-10">Admin Sign In</h3>
-      <form class="space-y-10">
+      <form @submit.prevent="" class="space-y-10">
         <input
           type="email"
           id="EmailAdress"

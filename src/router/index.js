@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import publicRoutes from './public'
 import clientRoutes from './client'
 import dentistRoutes from './dentist'
+import adminRoutes from './admin'
 import { PAGE_DEFAULT } from './routerConf'
 
 Vue.use(VueRouter)
@@ -31,6 +32,11 @@ const routes = [
     path: '/admin-signin',
     name: 'admin-signin',
     component: () => import('@/views/admin/AdminSignin.vue')
+  },
+  {
+    path: '/admin',
+    component: () => import('@/views/admin/index.vue'),
+    children: adminRoutes
   }
 ]
 

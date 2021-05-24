@@ -61,7 +61,8 @@ module.exports = {
     fill: theme => ({
       primary,
       secondary,
-      grid5
+      grid5,
+      grid7
     }),
     stroke: theme => ({
       primary,
@@ -117,6 +118,10 @@ module.exports = {
       },
       maxHeight: {
         modal: 'calc(100vh - 10px)'
+      },
+      minHeight: {
+        188: 'calc(100vh - 188px)',
+        272: 'calc(100vh - 272px)'
       },
       padding: {
         '104px': '104px'
