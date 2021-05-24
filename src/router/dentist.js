@@ -1,0 +1,17 @@
+export default [
+  {
+    path: '',
+    name: 'dentist',
+    redirect: 'profile'
+  },
+  {
+    path: '/dentist/profile',
+    name: 'profile',
+    component: () => import('@/views/dentist/DentistProfile.vue')
+  },
+  {
+    path: '/dentist/apply-for-accreditation',
+    name: 'apply-for-accreditation',
+    component: () => import('@/views/dentist/ApplyAccreditation.vue')
+  }
+]

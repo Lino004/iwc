@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import publicRoutes from './public'
 import clientRoutes from './client'
+import dentistRoutes from './dentist'
 import { PAGE_DEFAULT } from './routerConf'
 
 Vue.use(VueRouter)
@@ -20,6 +21,11 @@ const routes = [
     path: '/client',
     component: () => import('@/views/client/index.vue'),
     children: clientRoutes
+  },
+  {
+    path: '/dentist',
+    component: () => import('@/views/dentist/index.vue'),
+    children: dentistRoutes
   }
 ]
 
