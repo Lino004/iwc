@@ -139,8 +139,7 @@ export default {
       showModalInquiryForm: false,
       showModalSuccess: false,
       products: dataProducts,
-      currentIndex: 0,
-      breakpoints
+      currentIndex: 0
     }
   },
   computed: {
