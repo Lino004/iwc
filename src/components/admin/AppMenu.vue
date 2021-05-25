@@ -5,8 +5,8 @@
       <div
         class="border-l-8 px-5 py-4"
         :class="{
-          'border-primary bg-grid3': item.to === $route.name,
-          'border-white': item.to !== $route.name
+          'border-primary bg-grid3': currentMenu(item),
+          'border-white': !currentMenu(item)
         }"
         v-for="(item, i) in menu" :key="i">
         <router-link
@@ -19,27 +19,27 @@
               width="1.5rem"
               height="1.5rem"
               :class="{
-                'fill-primary': item.to === $route.name,
-                'fill-grid7': item.to !== $route.name
+                'fill-primary': currentMenu(item),
+                'fill-grid7': !currentMenu(item)
               }"
             />
           </div>
           <div
             class="flex-1 text-primary text-lg font-bold"
             :class="{
-              'text-primary': item.to === $route.name,
-              'text-grid7': item.to !== $route.name
+              'text-primary': currentMenu(item),
+              'text-grid7': !currentMenu(item)
             }">
             {{item.label}}
           </div>
           <div v-if="item.chidren">
             <IconChevronDown
-              v-if="item.to === $route.name"
+              v-if="currentMenu(item)"
               width="1.5rem"
               height="1.5rem"
               :class="{
-                'fill-primary': item.to === $route.name,
-                'fill-grid7': item.to !== $route.name
+                'fill-primary': currentMenu(item),
+                'fill-grid7': !currentMenu(item)
               }"
             />
             <IconChevronUp
@@ -47,14 +47,14 @@
               width="1.5rem"
               height="1.5rem"
               :class="{
-                'fill-primary': item.to === $route.name,
-                'fill-grid7': item.to !== $route.name
+                'fill-primary': currentMenu(item),
+                'fill-grid7': !currentMenu(item)
               }"
             />
           </div>
         </router-link>
         <div
-          v-if="item.chidren && item.to === $route.name"
+          v-if="item.chidren && item.chidren.map(child => child.to).includes($route.name)"
           class="space-y-2 mt-4">
           <router-link
             tag="div"
@@ -90,8 +90,8 @@ export default {
     }
   },
   methods: {
-    showChildren (item) {
-
+    currentMenu (item) {
+      return (item.to === this.$route.name) || (item.chidren && item.chidren.map(child => child.to).includes(this.$route.name))
     }
   }
 }

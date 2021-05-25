@@ -6,8 +6,19 @@ export default [
   },
   {
     path: 'admin-sales',
-    name: 'admin-sales',
-    component: () => import('@/views/admin/Sales.vue')
+    component: () => import('@/views/admin/sales/index.vue'),
+    children: [
+      {
+        path: 'products',
+        name: 'admin-sales-products',
+        component: () => import('@/views/admin/sales/Products.vue')
+      },
+      {
+        path: 'client-orders',
+        name: 'admin-sales-client-orders',
+        component: () => import('@/views/admin/sales/ClientOrders.vue')
+      }
+    ]
   },
   {
     path: 'admin-accreditations',

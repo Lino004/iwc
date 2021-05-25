@@ -1,6 +1,27 @@
 .input-about {
   @apply h-65px appearance-none py-5 pl-7 border-none bg-grid3 rounded-15px w-full
     focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
+
+  &.rounded-l-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &.pl-0 {
+    padding-left: 0;
+  }
+}
+
+.input-admin {
+  @apply h-65px appearance-none p-5 border border-grid7 bg-grid3 rounded-15px w-full
+    focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
+
+  &.search {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0;
+  }
 }
 
 .input-select {

@@ -41,7 +41,7 @@
 
           <div class="text-right">
             <button
-              class="iwc-btn-action w-auto px-8"
+              class="iwc-btn-action bg-grid1 w-auto px-8"
               @click="actionApply">
               APPLY
             </button>

@@ -1,3 +1,5 @@
+import VueRecaptcha from 'vue-recaptcha'
+
 import IconEmail from '@/components/icons/IconEmail'
 import IconPhone from '@/components/icons/IconPhone'
 import IconCart from '@/components/icons/IconCart'
@@ -22,7 +24,9 @@ import IconTimelapse from '@/components/icons/IconTimelapse'
 import Modal from '@/components/public/general/modal'
 import Subtitle from '@/components/reusables/Subtitle'
 import IsApply from '@/components/reusables/IsApply'
-import VueRecaptcha from 'vue-recaptcha'
+import TableAdmin from '@/components/reusables/TableAdmin'
+
+import CustomSelect from '@/components/reusables/input/CustomSelect'
 
 export default {
   components: {
@@ -46,9 +50,14 @@ export default {
     IconChevronUp,
     IconUser,
     IconTimelapse,
+
     Modal,
     Subtitle,
     IsApply,
+    TableAdmin,
+
+    CustomSelect,
+
     VueRecaptcha
   },
   methods: {

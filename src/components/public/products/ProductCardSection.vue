@@ -54,21 +54,21 @@
             <div class="space-y-8">
               <div>
                 <button
-                  class="iwc-btn-action w-auto px-8"
+                  class="iwc-btn-action bg-grid1 w-auto px-8"
                   @click="showModalDetail = true">
                   VIEW DETAILS
                 </button>
               </div>
               <div v-if="inquiryForm">
                 <button
-                  class="iwc-btn-action w-auto px-8"
+                  class="iwc-btn-action bg-grid1 w-auto px-8"
                   @click="showModalInquiryForm = true">
                   INQUIRE
                 </button>
               </div>
               <div v-else>
                 <button
-                  class="iwc-btn-action w-auto px-8"
+                  class="iwc-btn-action bg-grid1 w-auto px-8"
                   @click="showModalEnroll = true">
                   ENROLL
                 </button>

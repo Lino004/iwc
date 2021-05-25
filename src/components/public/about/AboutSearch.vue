@@ -2,7 +2,7 @@
   <section class="w-full">
     <div class="px-10 py-16">
       <form action="" class="flex lg:flex-row flex-col w-full justify-around">
-        <div class="input-search lg:w-1/3 md:w-3/4 md:mx-auto">
+        <div class="lg:w-1/3 md:w-3/4 md:mx-auto">
           <label for="search py-auto" class="font-bold text-primary lg:text-lg"
             >SEARCH</label
           >
@@ -17,34 +17,14 @@
             </div>
             <input
               type="text"
-              id="search"
               v-model="valueSearch"
               @keyup="actionkeyUp"
               @keydown="actionkeyDown"
               @keydown.enter.prevent="actionkeyEntre"
-              class="input-about search-input rounded-l-none"
+              class="input-about rounded-l-none pl-0 pr-5"
             />
           </div>
         </div>
-
-        <!-- <div class="lg:w-1/4 md:w-3/4 md:mx-auto">
-          <label for="regions" class="font-bold text-primary lg:text-lg">REGION</label> <br />
-          <select
-            name="regions"
-            id="regions"
-            class="input-about select-input border border-grid7"
-            v-model="valueRegion"
-            @change="$emit('event-region', valueRegion)"
-          >
-            <option value="">Region name</option>
-            <option
-              v-for="(region, i) in regions"
-              :key="`region${i}`"
-              :value="region.code">
-              {{region.name}}
-            </option>
-          </select>
-        </div> -->
 
         <div class="lg:w-1/4 md:w-3/4 md:mx-auto">
           <label for="specializations" class="font-bold text-primary lg:text-lg"
@@ -74,16 +54,13 @@
 
 <script>
 import { getSpecializations } from '@/api/public/specializations'
-// import { getRegions } from '@/api/public/regions'
 
 export default {
   components: {},
   data () {
     return {
       specializations: [],
-      // regions: [],
       valueSpecialization: '',
-      // valueRegion: '',
       valueSearch: '',
       typingTimer: null,
       doneTypingInterval: 1000
@@ -94,7 +71,6 @@ export default {
     async initData () {
       try {
         this.specializations = (await getSpecializations()).data.data
-        // this.regions = (await getRegions()).data.data
       } catch (error) {
         //
       }

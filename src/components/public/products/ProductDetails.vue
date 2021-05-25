@@ -34,7 +34,7 @@
     </div>
     <div class="text-center">
       <button
-        class="iwc-btn-action w-auto px-4"
+        class="iwc-btn-action bg-grid1 w-auto px-4"
         @click="$emit('enroll')">
         ENROLL
       </button>
