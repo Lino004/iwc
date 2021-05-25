@@ -20,6 +20,7 @@ import IconReports from '@/components/icons/IconReports'
 import IconAccount from '@/components/icons/IconAccount'
 import IconUser from '@/components/icons/IconUser'
 import IconTimelapse from '@/components/icons/IconTimelapse'
+import IconPlus from '@/components/icons/IconPlus'
 
 import Modal from '@/components/public/general/modal'
 import Subtitle from '@/components/reusables/Subtitle'
@@ -27,6 +28,7 @@ import IsApply from '@/components/reusables/IsApply'
 import TableAdmin from '@/components/reusables/TableAdmin'
 
 import CustomSelect from '@/components/reusables/input/CustomSelect'
+import CustomTaginput from '@/components/reusables/input/CustomTaginput'
 
 // admin
 import ActionsTable from '@/components/admin/ActionsTable'
@@ -53,6 +55,7 @@ export default {
     IconChevronUp,
     IconUser,
     IconTimelapse,
+    IconPlus,
 
     Modal,
     Subtitle,
@@ -60,6 +63,7 @@ export default {
     TableAdmin,
 
     CustomSelect,
+    CustomTaginput,
 
     // admin
     ActionsTable,

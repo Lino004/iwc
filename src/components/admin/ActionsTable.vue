@@ -12,7 +12,7 @@
         </div>
         <input
           type="text"
-          class="input-admin search"
+          class="input-admin search bg-grid3"
         />
       </div>
     </div>

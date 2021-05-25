@@ -54,7 +54,7 @@
           </div>
         </router-link>
         <div
-          v-if="item.chidren && item.chidren.map(child => child.to).includes($route.name)"
+          v-if="item.chidren && currentMenu(item)"
           class="space-y-2 mt-4">
           <router-link
             tag="div"
@@ -91,7 +91,8 @@ export default {
   },
   methods: {
     currentMenu (item) {
-      return (item.to === this.$route.name) || (item.chidren && item.chidren.map(child => child.to).includes(this.$route.name))
+      const reg = new RegExp(item.reg)
+      return (item.to === this.$route.name) || (reg.test(this.$route.path))
     }
   }
 }
