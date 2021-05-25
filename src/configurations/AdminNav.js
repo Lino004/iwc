@@ -52,9 +52,26 @@ export default [
   },
   {
     label: 'Clients',
-    to: 'admin-clients',
+    to: 'admin-clients-groups',
     icon: 'IconClients',
-    chidren: []
+    chidren: [
+      {
+        label: 'Groups',
+        to: 'admin-clients-groups'
+      },
+      {
+        label: 'Members',
+        to: 'admin-clients-members'
+      },
+      {
+        label: 'Payors',
+        to: 'admin-clients-payors'
+      },
+      {
+        label: 'Bulk Payments',
+        to: 'admin-clients-bulk-payments'
+      }
+    ]
   },
   {
     label: 'Reports',

@@ -58,8 +58,29 @@ export default [
   },
   {
     path: 'admin-clients',
-    name: 'admin-clients',
-    component: () => import('@/views/admin/Clients.vue')
+    component: () => import('@/views/admin/clients/index.vue'),
+    children: [
+      {
+        path: 'groups',
+        name: 'admin-clients-groups',
+        component: () => import('@/views/admin/clients/Groups.vue')
+      },
+      {
+        path: 'members',
+        name: 'admin-clients-members',
+        component: () => import('@/views/admin/clients/Members.vue')
+      },
+      {
+        path: 'payors',
+        name: 'admin-clients-payors',
+        component: () => import('@/views/admin/clients/Payors.vue')
+      },
+      {
+        path: 'bulk-payments',
+        name: 'admin-clients-bulk-payments',
+        component: () => import('@/views/admin/clients/BulkPayments.vue')
+      }
+    ]
   },
   {
     path: 'admin-reports',
