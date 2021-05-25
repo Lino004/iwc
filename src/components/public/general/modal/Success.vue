@@ -12,7 +12,7 @@
       </div>
       <div class="my-10">
         <button
-          class="iwc-btn-action w-auto px-8"
+          class="iwc-btn-action bg-grid1 w-auto px-8"
           @click="$emit('continue')">
           CONTINUE
         </button>

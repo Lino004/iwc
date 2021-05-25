@@ -6,18 +6,18 @@ export default [
   },
   {
     label: 'Sales',
-    to: 'admin-sales',
+    to: 'admin-sales-products',
     icon: 'IconSales',
     chidren: [
-      /* {
+      {
         label: 'Products',
-        to: 'admin-products'
+        to: 'admin-sales-products'
       },
       {
         label: 'Client Orders',
-        to: 'admin-client-orders'
-      },
-      {
+        to: 'admin-sales-client-orders'
+      }
+      /* {
         label: 'Plans',
         to: 'admin-plans'
       } */

@@ -19,7 +19,7 @@
           class="input-about"
         />
         <button
-          class="iwc-btn-action">
+          class="iwc-btn-action bg-grid1">
           SIGN IN
         </button>
       </form>
