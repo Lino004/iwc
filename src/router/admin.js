@@ -17,6 +17,11 @@ export default [
         path: 'client-orders',
         name: 'admin-sales-client-orders',
         component: () => import('@/views/admin/sales/ClientOrders.vue')
+      },
+      {
+        path: 'plans',
+        name: 'admin-sales-plans',
+        component: () => import('@/views/admin/sales/Plans.vue')
       }
     ]
   },

@@ -16,11 +16,11 @@ export default [
       {
         label: 'Client Orders',
         to: 'admin-sales-client-orders'
-      }
-      /* {
+      },
+      {
         label: 'Plans',
-        to: 'admin-plans'
-      } */
+        to: 'admin-sales-plans'
+      }
     ]
   },
   {
