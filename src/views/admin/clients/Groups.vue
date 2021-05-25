@@ -5,19 +5,115 @@
     </h3>
 
     <div class="text-right space-x-4 my-10">
-      <button class="iwc-btn-action w-auto bg-secondary px-8"> ADD PRODUCT </button>
+      <button class="iwc-btn-action w-auto bg-secondary px-8"> ADD GROUP </button>
       <button class="iwc-btn-action bg-grid1 w-auto px-8"> ACTION </button>
+    </div>
+
+    <div class="justify-end space-x-5 flex">
+      <p class="underline">Upload...</p>
+      <p class="underline">Generate Reports</p>
     </div>
 
     <ActionsTable
       :data-filter="['All']"
       :data-sort-by="['Ascending']"
     />
+
+    <div>
+      <table-admin
+        :columns="columns"
+        :data="groups"
+        children
+        checkable
+      >
+      </table-admin>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
-
+  data () {
+    return {
+      filter: 0,
+      sortBy: 0,
+      columns: [
+        {
+          field: 'id',
+          label: 'ID',
+          class: 'text-left text-lg',
+          cellClass: 'text-lg font-bold'
+        },
+        {
+          field: 'groupeName',
+          label: 'Groupe Name',
+          class: 'text-left text-lg',
+          cellClass: 'text-lg font-bold'
+        },
+        {
+          field: 'company',
+          label: 'Company',
+          class: 'text-left text-lg',
+          cellClass: 'text-lg font-bold'
+        },
+        {
+          field: 'subCompany',
+          label: 'Sub-Company',
+          class: 'text-left text-lg',
+          cellClass: 'text-lg font-bold'
+        },
+        {
+          field: 'planType',
+          label: 'Plan Type',
+          class: 'text-left text-lg',
+          cellClass: 'text-lg font-bold'
+        }
+      ],
+      groups: [
+        {
+          id: '1',
+          groupeName: 'Boyet Group',
+          company: 'Boyet Co.',
+          subCompany: 'Sub-Boyet',
+          planType: 'Plan A (2 months remaining)'
+        },
+        {
+          id: '2',
+          groupeName: 'Boyet Group',
+          company: 'Boyet Co.',
+          subCompany: 'Sub-Boyet',
+          planType: 'Plan A (2 months remaining)'
+        },
+        {
+          id: '3',
+          groupeName: 'Boyet Group',
+          company: 'Boyet Co.',
+          subCompany: 'Sub-Boyet',
+          planType: 'Plan A (2 months remaining)'
+        },
+        {
+          id: '4',
+          groupeName: 'Boyet Group',
+          company: 'Boyet Co.',
+          subCompany: 'Sub-Boyet',
+          planType: 'Plan A (2 months remaining)'
+        },
+        {
+          id: '5',
+          groupeName: 'Boyet Group',
+          company: 'Boyet Co.',
+          subCompany: 'Sub-Boyet',
+          planType: 'Plan A (2 months remaining)'
+        },
+        {
+          id: '6',
+          groupeName: 'Boyet Group',
+          company: 'Boyet Co.',
+          subCompany: 'Sub-Boyet',
+          planType: 'Plan A (2 months remaining)'
+        }
+      ]
+    }
+  }
 }
 </script>
