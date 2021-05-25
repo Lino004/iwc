@@ -21,11 +21,7 @@
         <template v-for="(item, i) in data">
           <tr
             :key="`${i}item`"
-            class="border-t-2 border-grid7"
-            :class="{
-              'cursor-pointer': children
-            }"
-            @click="children ? $refs[`${i}item-child`][0].click() : ''">
+            class="border-t-2 border-grid7">
             <td v-if="checkable" class="py-5 px-3">
               <input type="checkbox" v-model="item.select">
             </td>
@@ -38,18 +34,20 @@
             </td>
             <td v-if="children" class="py-5 px-3">
               <input type="checkbox" class="hidden" :ref="`${i}item-child`" v-model="item.showChild">
-              <IconChevronDown
-                v-if="!item.showChild"
-                width="2rem"
-                height="2rem"
-                class="fill-grid7"
-              />
-              <IconChevronUp
-                v-else
-                width="2rem"
-                height="2rem"
-                class="fill-grid7"
-              />
+              <a @click.prevent="children ? $refs[`${i}item-child`][0].click() : ''">
+                <IconChevronDown
+                  v-if="!item.showChild"
+                  width="2rem"
+                  height="2rem"
+                  class="fill-grid7"
+                />
+                <IconChevronUp
+                  v-else
+                  width="2rem"
+                  height="2rem"
+                  class="fill-grid7"
+                />
+              </a>
             </td>
           </tr>
           <tr :key="`${i}item-child`" class="border-t-2 border-grid7" v-if="children && item.showChild">

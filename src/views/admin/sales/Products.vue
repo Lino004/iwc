@@ -7,40 +7,9 @@
       <button class="iwc-btn-action w-auto bg-secondary px-8"> ADD PRODUCT </button>
       <button class="iwc-btn-action bg-grid1 w-auto px-8"> ACTION </button>
     </div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="col-span-2">
-        <p class="text-primary text-lg font-bold pb-5"> SEARCH </p>
-        <div class="flex items-center">
-          <div class="h-65px rounded-l-15px border border-r-0 border-grid7 flex items-center px-4">
-            <IconSearch
-              class="mx-auto stroke-grid8"
-              width="2rem"
-              height="2rem"
-            />
-          </div>
-          <input
-            type="text"
-            class="input-admin search"
-          />
-        </div>
-      </div>
-      <div>
-        <p class="text-primary text-lg font-bold pb-5"> FILTER </p>
-        <CustomSelect
-          :options="['All']"
-          v-model="filter"
-          custom-class="border border-grid7"
-        />
-      </div>
-      <div>
-        <p class="text-primary text-lg font-bold pb-5"> SORT BY </p>
-        <CustomSelect
-          :options="['Ascending']"
-          v-model="sortBy"
-          custom-class="border border-grid7"
-        />
-      </div>
-    </div>
+    <ActionsTable
+      :data-filter="['All']"
+      :data-sort-by="['Ascending']"/>
     <div>
       <table-admin
         :columns="columns"

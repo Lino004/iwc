@@ -28,6 +28,9 @@ import TableAdmin from '@/components/reusables/TableAdmin'
 
 import CustomSelect from '@/components/reusables/input/CustomSelect'
 
+// admin
+import ActionsTable from '@/components/admin/ActionsTable'
+
 export default {
   components: {
     IconEmail,
@@ -57,6 +60,9 @@ export default {
     TableAdmin,
 
     CustomSelect,
+
+    // admin
+    ActionsTable,
 
     VueRecaptcha
   },
