@@ -27,8 +27,34 @@ export default [
   },
   {
     path: 'admin-accreditations',
-    name: 'admin-accreditations',
-    component: () => import('@/views/admin/Accreditations.vue')
+    component: () => import('@/views/admin/accreditations/index.vue'),
+    children: [
+      {
+        path: 'accreditation-applications',
+        name: 'admin-accreditations-accreditation-applications',
+        component: () => import('@/views/admin/accreditations/AccreditationApplications.vue')
+      },
+      {
+        path: 'procedures',
+        name: 'admin-accreditations-procedures',
+        component: () => import('@/views/admin/accreditations/Procedures.vue')
+      },
+      {
+        path: 'dental-clinics',
+        name: 'admin-accreditations-dental-clinics',
+        component: () => import('@/views/admin/accreditations/DentalClinics.vue')
+      },
+      {
+        path: 'dentists',
+        name: 'admin-accreditations-dentists',
+        component: () => import('@/views/admin/accreditations/Dentists.vue')
+      },
+      {
+        path: 'regions-provinces',
+        name: 'admin-accreditations-regions-provinces',
+        component: () => import('@/views/admin/accreditations/RegionsProvinces.vue')
+      }
+    ]
   },
   {
     path: 'admin-clients',

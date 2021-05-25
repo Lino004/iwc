@@ -25,9 +25,30 @@ export default [
   },
   {
     label: 'Accreditations',
-    to: 'admin-accreditations',
+    to: 'admin-accreditations-accreditation-applications',
     icon: 'IconAccreditations',
-    chidren: []
+    chidren: [
+      {
+        label: 'Accreditation Application',
+        to: 'admin-accreditations-accreditation-applications'
+      },
+      {
+        label: 'Procedures',
+        to: 'admin-accreditations-procedures'
+      },
+      {
+        label: 'Dental Clinics',
+        to: 'admin-accreditations-dental-clinics'
+      },
+      {
+        label: 'Dentists',
+        to: 'admin-accreditations-dentists'
+      },
+      {
+        label: 'Regions & Provinces',
+        to: 'admin-accreditations-regions-provinces'
+      }
+    ]
   },
   {
     label: 'Clients',
