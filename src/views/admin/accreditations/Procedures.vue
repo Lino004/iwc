@@ -17,7 +17,7 @@
     <div>
       <table-admin
         :columns="columns"
-        :data="clients"
+        :data="procedures"
         checkable
       >
       </table-admin>
@@ -58,7 +58,7 @@ export default {
           cellClass: 'text-lg font-bold'
         }
       ],
-      clients: [
+      procedures: [
         {
           id: '1',
           name: 'Temporary Filling',

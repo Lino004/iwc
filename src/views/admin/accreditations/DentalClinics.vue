@@ -23,7 +23,7 @@
       <div>
         <table-admin
           :columns="columns"
-          :data="products"
+          :data="dentalClinics"
           checkable
           children
           children-key="id">
@@ -88,7 +88,7 @@ export default {
           cellClass: 'text-lg font-bold'
         }
       ],
-      products: [
+      dentalClinics: [
         {
           id: '1',
           clinic: 'Boyet Clinic',
