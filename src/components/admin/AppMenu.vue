@@ -62,11 +62,13 @@
             v-for="(child, y) in item.chidren" :key="`${y}child`"
             :to="{ name: child.to }">
             <div class="mr-4">
-              <component
-                :is="item.icon"
+              <IconChevronRight
                 width="1.5rem"
                 height="1.5rem"
-                class="invisible"
+                class="fill-primary"
+                :class="{
+                  'invisible': child.to !== $route.name
+                }"
               />
             </div>
             <div
