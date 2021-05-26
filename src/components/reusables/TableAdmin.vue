@@ -18,10 +18,13 @@
         </tr>
       </thead>
       <tbody>
+        <template>
+          <slot name="add"></slot>
+        </template>
         <template v-for="(item, i) in data">
           <tr
             :key="`${i}item`"
-            class="border-t-2 border-grid7">
+            class="border-t-2 border-grid7 bg-white">
             <td v-if="checkable" class="py-5 px-3">
               <input type="checkbox" v-model="item.select">
             </td>
