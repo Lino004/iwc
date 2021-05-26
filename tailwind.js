@@ -157,6 +157,8 @@ module.exports = {
     extend: {
       stroke: ['hover'],
       outline: ['hover'],
+      opacity: ['disabled'],
+      cursor: ['disabled'],
       borderWidth: ['hover']
     }
   },

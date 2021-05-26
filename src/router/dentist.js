@@ -10,11 +10,6 @@ export default [
     component: () => import('@/views/dentist/DentistProfile.vue')
   },
   {
-    path: '/dentist/apply-for-accreditation',
-    name: 'apply-for-accreditation',
-    component: () => import('@/views/dentist/ApplyAccreditation.vue')
-  },
-  {
     path: '/dentist/procedures',
     name: 'procedures',
     component: () => import('@/views/dentist/Procedures.vue')

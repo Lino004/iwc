@@ -8,7 +8,7 @@
       >
         {{ question }}
         <div class="pr-14">
-          <icon-plus width="1.5rem" height="1.5rem" class="" />
+          <icon-plus width="1.5rem" height="1.5rem" class="stroke-primary" />
         </div>
       </button>
     </div>
@@ -21,7 +21,7 @@
       >
         {{ question }}
         <div class="pr-14 pt-2">
-          <icon-moins width="1.3rem" height="1.3rem" class="" />
+          <icon-moins width="1.3rem" height="1.3rem" class="stroke-primary" />
         </div>
       </button>
       <div></div>

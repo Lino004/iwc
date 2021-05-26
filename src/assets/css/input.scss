@@ -13,7 +13,7 @@
 }
 
 .input-admin {
-  @apply h-65px appearance-none p-5 border border-grid7 bg-grid3 rounded-15px w-full
+  @apply h-65px appearance-none p-5 border border-grid7 rounded-15px w-full
     focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
 
   &.search {
@@ -21,6 +21,14 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding-left: 0;
+  }
+
+  &.border-0 {
+    border: 0;
+  }
+
+  &.textarea {
+    height: auto;
   }
 }
 

@@ -14,6 +14,16 @@ export default [
         component: () => import('@/views/admin/sales/Products.vue')
       },
       {
+        path: 'add-products',
+        name: 'admin-sales-add-products',
+        component: () => import('@/views/admin/sales/EditProduct.vue')
+      },
+      {
+        path: 'edit-products',
+        name: 'admin-sales-edit-products',
+        component: () => import('@/views/admin/sales/EditProduct.vue')
+      },
+      {
         path: 'client-orders',
         name: 'admin-sales-client-orders',
         component: () => import('@/views/admin/sales/ClientOrders.vue')

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative" tabindex="0" @blur="show = false">
     <div
       class="flex cursor-pointer rounded-2xl py-5 px-4"
       :class="customClass"
@@ -24,7 +24,7 @@
     </div>
     <div
       v-if="show"
-      class="absolute bg-white w-full p-4 shadow-box1 rounded-2xl mt-2">
+      class="absolute bg-white w-full p-4 shadow-box1 rounded-2xl mt-2 space-y-4 z-10">
       <div
         v-for="(option, i) in options" :key="i"
         class="hover:text-secondary cursor-pointer"
@@ -56,6 +56,8 @@ export default {
     return {
       show: false
     }
+  },
+  methods: {
   }
 }
 </script>
