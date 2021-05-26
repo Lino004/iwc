@@ -67,7 +67,7 @@
 export default {
   data () {
     return {
-      categories: ['Categorie'],
+      categories: ['Individual Oral Care Plan', 'Group Dental Care Package'],
       categorie: 0,
       benefits: ['TWLB', 'TF', 'AFC', '1TAVD'],
       benefit: [],
