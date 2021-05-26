@@ -42,7 +42,8 @@ export default [
       {
         path: 'accreditation-applications',
         name: 'admin-accreditations-accreditation-applications',
-        component: () => import('@/views/admin/accreditations/AccreditationApplications.vue')
+        component: () =>
+          import('@/views/admin/accreditations/AccreditationApplications.vue')
       },
       {
         path: 'procedures',
@@ -52,7 +53,8 @@ export default [
       {
         path: 'dental-clinics',
         name: 'admin-accreditations-dental-clinics',
-        component: () => import('@/views/admin/accreditations/DentalClinics.vue')
+        component: () =>
+          import('@/views/admin/accreditations/DentalClinics.vue')
       },
       {
         path: 'dentists',
@@ -62,7 +64,8 @@ export default [
       {
         path: 'regions-provinces',
         name: 'admin-accreditations-regions-provinces',
-        component: () => import('@/views/admin/accreditations/RegionsProvinces.vue')
+        component: () =>
+          import('@/views/admin/accreditations/RegionsProvinces.vue')
       }
     ]
   },
@@ -94,8 +97,24 @@ export default [
   },
   {
     path: 'admin-reports',
-    name: 'admin-reports',
-    component: () => import('@/views/admin/Reports.vue')
+    component: () => import('@/views/admin/reports/index.vue'),
+    children: [
+      {
+        path: 'payment-reports',
+        name: 'admin-reports-payment-reports',
+        component: () => import('@/views/admin/reports/PaymentReports.vue')
+      },
+      {
+        path: 'availment-reports',
+        name: 'admin-reports-availment-reports',
+        component: () => import('@/views/admin/reports/AvailmentReports.vue')
+      },
+      {
+        path: 'print-cart',
+        name: 'admin-reports-print-cart',
+        component: () => import('@/views/admin/reports/PrintCart.vue')
+      }
+    ]
   },
   {
     path: 'admin-account',

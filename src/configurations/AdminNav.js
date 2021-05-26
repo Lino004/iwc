@@ -79,10 +79,23 @@ export default [
   },
   {
     label: 'Reports',
-    to: 'admin-reports',
+    to: 'admin-reports-payment-reports',
     reg: /^\/admin\/admin-reports/gm,
     icon: 'IconReports',
-    chidren: []
+    chidren: [
+      {
+        label: 'Payment Reports',
+        to: 'admin-reports-payment-reports'
+      },
+      {
+        label: 'Availment Reports',
+        to: 'admin-reports-availment-reports'
+      },
+      {
+        label: 'Print Cart',
+        to: 'admin-reports-print-cart'
+      }
+    ]
   },
   {
     label: 'Account',
