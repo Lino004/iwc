@@ -43,6 +43,20 @@
           </span>
         </a>
       </div>
+      <div class="col-span-2 flex items-center">
+        <textarea
+          placeholder="Tidbits"
+          rows="5"
+          class="input-admin textarea border-0 bg-white flex-1"
+        />
+        <div class="mx-10">
+          <IconQuestionCircle
+            width="2rem"
+            height="2rem"
+            class="fill-primary"
+          />
+        </div>
+      </div>
       <textarea
         placeholder="Details"
         rows="5"

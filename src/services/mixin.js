@@ -21,6 +21,7 @@ import IconAccount from '@/components/icons/IconAccount'
 import IconUser from '@/components/icons/IconUser'
 import IconTimelapse from '@/components/icons/IconTimelapse'
 import IconPlus from '@/components/icons/IconPlus'
+import IconQuestionCircle from '@/components/icons/IconQuestionCircle'
 
 import Modal from '@/components/public/general/modal'
 import Subtitle from '@/components/reusables/Subtitle'
@@ -56,6 +57,7 @@ export default {
     IconUser,
     IconTimelapse,
     IconPlus,
+    IconQuestionCircle,
 
     Modal,
     Subtitle,
