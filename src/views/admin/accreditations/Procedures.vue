@@ -5,7 +5,11 @@
     </h3>
 
     <div class="text-right space-x-4 my-10">
-      <button class="iwc-btn-action w-auto bg-secondary px-8"> ADD PROCEDURE </button>
+      <button
+        class="iwc-btn-action w-auto bg-secondary px-8"
+        @click="addProcedure = !addProcedure">
+        {{ addProcedure ? 'CANCEL' : 'ADD PROCEDURE'}}
+      </button>
       <div class="inline-block relative iwc-dropdown">
         <button
           class="iwc-btn-action bg-grid1 w-auto px-8">
@@ -31,6 +35,42 @@
         :data="procedures"
         checkable
       >
+      <template #add="" v-if="addProcedure">
+        <tr class="border-b-2 border-grid7 bg-white">
+          <td></td>
+          <td class="py-5 px-3">
+            <input
+              type="text"
+              class="input-admin h-10"
+            />
+          </td>
+          <td class="py-5 px-3">
+            <input
+              type="text"
+              class="input-admin h-10"
+            />
+          </td>
+          <td class="py-5 px-3">
+            <input
+              type="text"
+              class="input-admin h-10"
+            />
+          </td>
+          <td class="py-5 px-3">
+            <input
+              type="text"
+              class="input-admin h-10"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5" class="py-5 px-3 bg-grid3 text-center">
+            <p class="text-grid7 font-bold">
+              PRESS <span class="text-secondary">ENTER</span> TO ADD PROCEDURE
+            </p>
+          </td>
+        </tr>
+      </template>
       </table-admin>
     </div>
 
@@ -38,7 +78,10 @@
 </template>
 
 <script>
+
 export default {
+  components: {
+  },
   data () {
     return {
       filter: 0,
@@ -47,7 +90,7 @@ export default {
         {
           field: 'id',
           label: 'ID',
-          class: 'text-left text-lg',
+          class: 'text-left text-lg w-20',
           cellClass: 'text-lg font-bold'
         },
         {
@@ -106,7 +149,8 @@ export default {
           abbreviation: 'STE',
           variableName: 'Teeth'
         }
-      ]
+      ],
+      addProcedure: false
     }
   }
 }
