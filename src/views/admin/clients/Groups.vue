@@ -9,15 +9,15 @@
       <button class="iwc-btn-action bg-grid1 w-auto px-8"> ACTION </button>
     </div>
 
-    <div class="justify-end space-x-5 flex">
-      <p class="underline">Upload...</p>
-      <p class="underline">Generate Reports</p>
-    </div>
-
     <ActionsTable
       :data-filter="['All']"
       :data-sort-by="['Ascending']"
     />
+
+    <div class="flex flex-row justify-end gap-10 mt-5">
+      <p class="underline cursor-pointer">Upload..</p>
+      <p class="underline cursor-pointer">Generate Report</p>
+    </div>
 
     <div>
       <table-admin

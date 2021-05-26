@@ -11,6 +11,9 @@ const grid6 = '#707070'
 const grid8 = '#8f96a3'
 const grid7 = '#C4C8CD'
 const grid9 = '#D2D5D9'
+const vert = '#3F9C61'
+const jaune = '#D2AB3E'
+const rouge = '#B52F2F'
 
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -22,7 +25,11 @@ module.exports = {
       secondary,
       grid1,
       grid2,
-      grid3
+      grid3,
+      grid9,
+      vert,
+      jaune,
+      rouge
     }),
     placeholderColor: theme => ({
       ...theme('colors'),
@@ -44,7 +51,10 @@ module.exports = {
       grid6,
       grid7,
       grid8,
-      grid9
+      grid9,
+      vert,
+      jaune,
+      rouge
     }),
     fontFamily: {
       sans: ['Open Sans', 'sans-serif']

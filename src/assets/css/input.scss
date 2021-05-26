@@ -24,6 +24,17 @@
   }
 }
 
+.input-outlined {
+  @apply h-12 appearance-none py-5 pl-7 border border-grid7 rounded-15px w-full
+    focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
+
+  &.select {
+    background-image: url("../images/about/chevron.svg");
+    background-position: calc(100% - 30px) calc(1em);
+    background-repeat: no-repeat;
+  }
+}
+
 .input-select {
   @apply h-65px appearance-none py-4 pl-7 border border-grid7 rounded-15px w-full
     focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
