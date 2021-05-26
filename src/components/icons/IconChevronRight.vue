@@ -1,0 +1,23 @@
+<template>
+  <svg
+    :width="width"
+    :height="height"
+    viewBox="0 0 24 24">
+    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+</svg>
+</template>
+
+<script>
+export default {
+  props: {
+    height: {
+      type: String,
+      default: '2.564rem'
+    },
+    width: {
+      type: String,
+      default: '2.677rem'
+    }
+  }
+}
+</script>

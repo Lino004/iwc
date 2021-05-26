@@ -22,6 +22,7 @@ import IconUser from '@/components/icons/IconUser'
 import IconTimelapse from '@/components/icons/IconTimelapse'
 import IconPlus from '@/components/icons/IconPlus'
 import IconQuestionCircle from '@/components/icons/IconQuestionCircle'
+import IconChevronRight from '@/components/icons/IconChevronRight'
 
 import Modal from '@/components/public/general/modal'
 import Subtitle from '@/components/reusables/Subtitle'
@@ -58,6 +59,7 @@ export default {
     IconTimelapse,
     IconPlus,
     IconQuestionCircle,
+    IconChevronRight,
 
     Modal,
     Subtitle,
