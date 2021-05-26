@@ -6,7 +6,18 @@
 
     <div class="text-right space-x-4 my-10">
       <button class="iwc-btn-action w-auto bg-secondary px-8"> ADD MEMBER </button>
-      <button class="iwc-btn-action bg-grid1 w-auto px-8"> ACTION </button>
+      <div class="inline-block relative iwc-dropdown">
+        <button
+          class="iwc-btn-action bg-grid1 w-auto px-8">
+          ACTION
+        </button>
+        <div class="dropdown-content absolute z-10 w-full">
+          <div class="bg-white w-full p-4 shadow-box1 rounded-2xl mt-2 space-y-4">
+            <div class="hover:text-secondary cursor-pointer text-center text-lg"> Edit </div>
+            <div class="hover:text-secondary cursor-pointer text-center text-lg"> Delete </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <ActionsTable
