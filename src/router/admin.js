@@ -118,7 +118,33 @@ export default [
   },
   {
     path: 'admin-account',
-    name: 'admin-account',
-    component: () => import('@/views/admin/Account.vue')
+    component: () => import('@/views/admin/account/index.vue'),
+    children: [
+      {
+        path: 'users',
+        name: 'admin-account-users',
+        component: () => import('@/views/admin/account/Users.vue')
+      },
+      {
+        path: 'logs',
+        name: 'admin-account-logs',
+        component: () => import('@/views/admin/account/Logs.vue')
+      },
+      {
+        path: 'website-settings',
+        name: 'admin-account-website-settings',
+        component: () => import('@/views/admin/account/WebsiteSettings.vue')
+      },
+      {
+        path: 'payment-settings',
+        name: 'admin-account-payment-settings',
+        component: () => import('@/views/admin/account/PaymentSettings.vue')
+      },
+      {
+        path: 'sign-out',
+        name: 'admin-account-sign-out',
+        component: () => import('@/views/admin/account/SignOut.vue')
+      }
+    ]
   }
 ]

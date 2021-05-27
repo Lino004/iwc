@@ -99,9 +99,30 @@ export default [
   },
   {
     label: 'Account',
-    to: 'admin-account',
+    to: 'admin-account-users',
     reg: /^\/admin\/admin-account/gm,
     icon: 'IconAccount',
-    chidren: []
+    chidren: [
+      {
+        label: 'Users',
+        to: 'admin-account-users'
+      },
+      {
+        label: 'Logs',
+        to: 'admin-account-logs'
+      },
+      {
+        label: 'Website Settings',
+        to: 'admin-account-website-settings'
+      },
+      {
+        label: 'Payment Settings',
+        to: 'admin-account-payment-settings'
+      },
+      {
+        label: 'Sign Out',
+        to: 'admin-account-sign-out'
+      }
+    ]
   }
 ]
