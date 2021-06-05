@@ -5,6 +5,7 @@ import clientRoutes from './client'
 import dentistRoutes from './dentist'
 import adminRoutes from './admin'
 import { PAGE_DEFAULT } from './routerConf'
+import store from '../store'
 
 Vue.use(VueRouter)
 
@@ -36,7 +37,15 @@ const routes = [
   {
     path: '/admin',
     component: () => import('@/views/admin/index.vue'),
-    children: adminRoutes
+    children: adminRoutes,
+    beforeEnter: async (to, from, next) => {
+      try {
+        await store.dispatch('adminUser/getUser')
+        next()
+      } catch (error) {
+        next({ name: 'admin-signin' })
+      }
+    }
   }
 ]
 

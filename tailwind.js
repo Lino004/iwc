@@ -91,7 +91,8 @@ module.exports = {
       grid1,
       grid2,
       grid6,
-      grid7
+      grid7,
+      rouge
     }),
     screens: {
       sm: '640px',

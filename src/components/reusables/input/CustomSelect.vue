@@ -5,7 +5,7 @@
       :class="customClass"
       @click="show = !show">
       <div class="flex-1">
-        {{field ? options[value][field] : options[value]}}
+        {{field ? options[currentIndexValue][field] : options[value]}}
       </div>
       <div>
         <IconChevronDown
@@ -29,9 +29,9 @@
         v-for="(option, i) in options" :key="i"
         class="hover:text-secondary cursor-pointer"
         :class="{
-          'text-secondary': value === i
+          'text-secondary': currentIndexValue === i
         }"
-        @click="$emit('input', i); show = false">
+        @click="$emit('input', fieldValue ? option[fieldValue] : i); show = false">
         {{field ? option[field] : option}}
       </div>
     </div>
@@ -50,11 +50,18 @@ export default {
       default: 0
     },
     customClass: String,
-    field: String
+    field: String,
+    fieldValue: String
   },
   data () {
     return {
       show: false
+    }
+  },
+  computed: {
+    currentIndexValue () {
+      if (this.field) return this.options.findIndex(el => el[this.fieldValue] === this.value)
+      return this.value
     }
   },
   methods: {

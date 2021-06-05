@@ -13,6 +13,8 @@
         <input
           type="text"
           class="input-admin search bg-grid3"
+          v-model="valueSearch"
+          @keyup.enter="$emit('enter-key-is-click')"
         />
       </div>
     </div>
@@ -45,13 +47,26 @@ export default {
     dataSortBy: {
       type: Array,
       default: () => []
-    }
+    },
+    search: String
   },
   data () {
     return {
       filter: 0,
       sortBy: 0
     }
+  },
+  computed: {
+    valueSearch: {
+      get () {
+        return this.search
+      },
+      set (val) {
+        this.$emit('update:search', val)
+      }
+    }
+  },
+  methods: {
   }
 }
 </script>

@@ -18,12 +18,8 @@ const mutations = {
 
 const actions = {
   getSiteInfo: async ({ commit }) => {
-    try {
-      const res = (await get()).data.data
-      commit('SET_SITE_INFO', res)
-    } catch (error) {
-      //
-    }
+    const res = (await get()).data.data
+    commit('SET_SITE_INFO', res)
   }
 }
 

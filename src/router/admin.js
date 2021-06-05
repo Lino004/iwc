@@ -19,7 +19,7 @@ export default [
         component: () => import('@/views/admin/sales/EditProduct.vue')
       },
       {
-        path: 'edit-products',
+        path: 'edit-products/:id',
         name: 'admin-sales-edit-products',
         component: () => import('@/views/admin/sales/EditProduct.vue')
       },

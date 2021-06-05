@@ -15,17 +15,35 @@
           class="iwc-btn-action bg-grid1 w-auto px-8">
           ACTION
         </button>
-        <div class="dropdown-content absolute z-10 w-full">
+        <div v-if="productsSelect.length" class="dropdown-content absolute z-10 w-full">
           <div class="bg-white w-full p-4 shadow-box1 rounded-2xl mt-2 space-y-4">
-            <div class="hover:text-secondary cursor-pointer text-center text-lg"> Edit </div>
-            <div class="hover:text-secondary cursor-pointer text-center text-lg"> Delete </div>
+            <router-link
+              tag="div"
+              class="hover:text-secondary cursor-pointer text-center text-lg"
+              v-if="productsSelect.length === 1"
+              :to="{
+                name: 'admin-sales-edit-products',
+                params: {
+                  id: productsSelect[0].id
+                }
+              }">
+              Edit
+            </router-link>
+            <div
+              class="hover:text-secondary cursor-pointer text-center text-lg"
+              v-if="productsSelect.length"
+              @click="deleteProducts">
+              Delete
+            </div>
           </div>
         </div>
       </div>
     </div>
     <ActionsTable
       :data-filter="['All']"
-      :data-sort-by="['Ascending']"/>
+      :data-sort-by="['Ascending']"
+      :search.sync="search"
+      @enter-key-is-click="genereteData"/>
     <div>
       <table-admin
         :columns="columns"
@@ -33,21 +51,26 @@
         checkable
         children
         children-key="id">
-        <template #children="">
+        <template #children="props">
           <td colspan="2" class="py-5 px-3 border-l-8 border-primary"></td>
           <td colspan="4" class="py-5 px-3">
             <p class="font-bold text-lg">
-              Benefits: TWLB
+              Benefits: {{props.item.benefits.map(ben => ben.procedure).join(', ')}}
             </p>
-            <p class="font-bold text-lg">Details:</p>
+            <p class="font-bold text-lg">
+              Details: {{props.item.details}}
+            </p>
           </td>
         </template>
       </table-admin>
     </div>
+    <Loading v-if="loarding"/>
   </section>
 </template>
 
 <script>
+import { getProducts, deleteProducts } from '@/api/admin/products'
+
 export default {
   data () {
     return {
@@ -61,7 +84,7 @@ export default {
           cellClass: 'text-lg font-bold'
         },
         {
-          field: 'productName',
+          field: 'name',
           label: 'Product Name',
           class: 'text-left text-lg',
           cellClass: 'text-lg font-bold'
@@ -73,51 +96,53 @@ export default {
           cellClass: 'text-lg font-bold'
         },
         {
-          field: 'price',
+          field: 'priceString',
           label: 'Price',
           class: 'text-left text-lg',
           cellClass: 'text-lg font-bold'
         }
       ],
-      products: [
-        {
-          id: '1',
-          productName: 'Plan A',
-          category: 'Individual',
-          price: 'PHP 1,400'
-        },
-        {
-          id: '2',
-          productName: 'Plan A',
-          category: 'Individual',
-          price: 'PHP 1,400'
-        },
-        {
-          id: '3',
-          productName: 'Plan A',
-          category: 'Individual',
-          price: 'PHP 1,400'
-        },
-        {
-          id: '4',
-          productName: 'Plan A',
-          category: 'Individual',
-          price: 'PHP 1,400'
-        },
-        {
-          id: '5',
-          productName: 'Plan A',
-          category: 'Individual',
-          price: 'PHP 1,400'
-        },
-        {
-          id: '6',
-          productName: 'Plan A',
-          category: 'Individual',
-          price: 'PHP 1,400'
-        }
-      ]
+      products: [],
+      loarding: false,
+      search: ''
     }
+  },
+  computed: {
+    productsSelect () {
+      return this.products.filter(el => el.select)
+    }
+  },
+  methods: {
+    async genereteData () {
+      try {
+        this.loarding = true
+        const res = (await getProducts({
+          search: this.search
+        })).data
+        this.products = res.data
+        this.products.forEach(product => {
+          product.priceString = this.formatPrice(product.price)
+        })
+        this.loarding = false
+      } catch (error) {
+        this.loarding = false
+        this.actionError(error)
+      }
+    },
+    async deleteProducts () {
+      try {
+        this.loarding = true
+        await deleteProducts(this.productsSelect.map(el => el.id))
+        await this.genereteData()
+        this.loarding = false
+      } catch (error) {
+        this.loarding = false
+        this.actionError(error)
+      }
+    }
+  },
+  async mounted () {
+    await this.genereteData()
   }
 }
 </script>

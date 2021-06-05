@@ -16,11 +16,19 @@
   @apply h-65px appearance-none p-5 border border-grid7 rounded-15px w-full
     focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
 
+  &.error {
+    border-color: #b52f2f;
+  }
+
   &.search {
     border-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding-left: 0;
+
+    &.error {
+      border-color: #b52f2f;
+    }
   }
 
   &.border-0 {
@@ -29,6 +37,10 @@
 
   &.textarea {
     height: auto;
+
+    &.error {
+      border-color: #b52f2f;
+    }
   }
 
   &.h-10 {
@@ -59,7 +71,7 @@
     focus:outline-0 hover:outline-0 text-primary font-sans text-lg;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
   background-image: url("../images/cart/calendar.svg");
   background-repeat: no-repeat;
   padding-right: calc(1em + 10px);
@@ -89,8 +101,7 @@ input[type="date"]:focus::before {
 }
 
 .input-contact {
-  @apply
-    w-full pb-5 appearance-none border-b-3 border-grid7
+  @apply w-full pb-5 appearance-none border-b-3 border-grid7
     focus:outline-0 focus:placeholder-transparent
     hover:outline-0
     text-primary font-sans text-lg placeholder-primary;
