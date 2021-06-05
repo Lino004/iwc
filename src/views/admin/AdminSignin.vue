@@ -40,8 +40,8 @@ export default {
   data () {
     return {
       user: {
-        email: 'demo@accustack.ph',
-        password: 'AccuStack0*'
+        email: '',
+        password: ''
       },
       loarding: false
     }
